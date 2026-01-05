@@ -1,0 +1,15 @@
+@import './tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Corbel:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&family=Hind:wght@400;500;600;700&family=Mukta:wght@400;500;600;700&family=Pacifico:wght@400;500;600;700&family=Cormorant:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', 'Corbel', 'Nunito', 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}

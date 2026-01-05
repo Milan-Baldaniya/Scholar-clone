@@ -168,7 +168,7 @@ export function Navbar() {
                                                 product.name ? (
                                                     <Link
                                                         key={idx}
-                                                        href="#"
+                                                        href={product.name === "University & College Management System" ? "/products/university-management" : "#"}
                                                         className="flex items-start gap-2 p-3 rounded-lg hover:bg-slate-50 transition-colors group/item"
                                                     >
                                                         <span className="text-2xl flex-shrink-0">{product.icon}</span>
