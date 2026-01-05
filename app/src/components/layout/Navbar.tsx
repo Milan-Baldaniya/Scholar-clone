@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { Menu, X, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -16,6 +16,34 @@ const navigation = [
 export function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+    const dropdownRef = useRef<HTMLDivElement>(null);
+
+    // Close dropdown when clicking outside (desktop only)
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            const target = event.target as Node;
+
+            // Don't close if clicking inside the dropdown
+            if (dropdownRef.current && dropdownRef.current.contains(target)) {
+                return;
+            }
+
+            // Close if clicking outside
+            setProductsDropdownOpen(false);
+        }
+
+        // Only add listener when dropdown is open
+        if (productsDropdownOpen) {
+            // Small delay to prevent immediate closing
+            setTimeout(() => {
+                document.addEventListener("click", handleClickOutside);
+            }, 0);
+        }
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, [productsDropdownOpen]);
 
     return (
         <header className="sticky top-0 z-50 w-full bg-[#2A3E5C] text-white shadow-[0_8px_10px_0px_rgba(42,62,92,0.5)]">
@@ -57,6 +85,7 @@ export function Navbar() {
                             <div
                                 key={item.name}
                                 className="relative"
+                                ref={dropdownRef}
                             >
                                 <button
                                     onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
@@ -74,7 +103,9 @@ export function Navbar() {
                                 </button>
 
                                 {/* Mega Menu Dropdown */}
-                                <div className={`absolute right-0 top-full w-[1200px] transition-all duration-200 z-50 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                                <div
+                                    className={`absolute right-0 top-full w-[1200px] transition-all duration-200 z-50 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                                >
                                     <div className="bg-white rounded-lg shadow-2xl border border-slate-200 p-8">
                                         {/* Top 6 Categories in 3+3 Grid */}
                                         <div className="grid grid-cols-3 gap-6 mb-8 pb-8 border-b border-slate-200">
@@ -170,6 +201,7 @@ export function Navbar() {
                                                         key={idx}
                                                         href={product.name === "University & College Management System" ? "/products/university-management" : "#"}
                                                         className="flex items-start gap-2 p-3 rounded-lg hover:bg-slate-50 transition-colors group/item"
+                                                        onClick={() => setProductsDropdownOpen(false)}
                                                     >
                                                         <span className="text-2xl flex-shrink-0">{product.icon}</span>
                                                         <span className="text-base text-slate-700 group-hover/item:text-slate-900 leading-tight">{product.name}</span>
@@ -203,20 +235,67 @@ export function Navbar() {
             {/* Mobile Menu */}
             <div
                 className={cn(
-                    "lg:hidden fixed inset-x-0 top-20 z-50 bg-[#2A3E5C] border-t border-slate-700 shadow-lg transition-all duration-300 ease-in-out origin-top",
+                    "lg:hidden fixed inset-x-0 top-20 z-50 bg-[#2A3E5C] border-t border-slate-700 shadow-lg transition-all duration-300 ease-in-out origin-top overflow-y-auto max-h-[calc(100vh-5rem)]",
                     mobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
                 )}
             >
                 <div className="space-y-1 px-4 pb-3 pt-2">
                     {navigation.map((item) => (
-                        <Link
-                            key={item.name}
-                            href={item.href}
-                            className="block rounded-md px-3 py-2 text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white"
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            {item.name}
-                        </Link>
+                        item.name === "PRODUCTS" ? (
+                            <div key={item.name}>
+                                <button
+                                    onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
+                                    className="w-full flex items-center justify-between rounded-md px-3 py-2 text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white"
+                                >
+                                    {item.name}
+                                    <svg
+                                        className={`w-4 h-4 transition-transform duration-200 ${productsDropdownOpen ? 'rotate-180' : ''}`}
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                    </svg>
+                                </button>
+
+                                {/* Mobile Products Dropdown */}
+                                <div className={cn(
+                                    "overflow-hidden transition-all duration-300",
+                                    productsDropdownOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                                )}>
+                                    <div className="pl-4 pr-2 py-2 space-y-1">
+                                        {[
+                                            { name: "University & College Management System", href: "/products/university-management" },
+                                            { name: "Alumni Management System", href: "#" },
+                                            { name: "Timetable & Attendance Management", href: "#" },
+                                            { name: "Transport & Vehicle Management", href: "#" },
+                                            { name: "Inventory & Asset Management", href: "#" },
+                                        ].map((product) => (
+                                            <Link
+                                                key={product.name}
+                                                href={product.href}
+                                                className="block rounded-md px-3 py-2 text-sm text-slate-300 hover:bg-slate-700 hover:text-white"
+                                                onClick={() => {
+                                                    setProductsDropdownOpen(false);
+                                                    setMobileMenuOpen(false);
+                                                }}
+                                            >
+                                                {product.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        ) : (
+                            <Link
+                                key={item.name}
+                                href={item.href}
+                                className="block rounded-md px-3 py-2 text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-white"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                {item.name}
+                            </Link>
+                        )
                     ))}
                     <Link
                         href="#"
