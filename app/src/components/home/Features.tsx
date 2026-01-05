@@ -12,8 +12,9 @@ export function Features() {
     ];
 
     return (
-        <div className="pt-32 pb-24 bg-white" id="features">
+        <section className="pt-32 pb-24 bg-white" id="features" aria-labelledby="features-heading">
             <div className="mx-auto max-w-[1600px] px-6 lg:px-8">
+                <h2 id="features-heading" className="sr-only">Features and Benefits</h2>
                 <div className="grid lg:grid-cols-2 gap-16">
                     {/* Left: Component Image */}
                     <div className="relative -ml-12 lg:-ml-24">
@@ -58,6 +59,6 @@ export function Features() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

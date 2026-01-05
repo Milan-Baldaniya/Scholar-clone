@@ -5,7 +5,7 @@ export function Hero() {
         <div className="relative bg-[#F6F7ED] shadow-[0_4px_8px_0px_rgba(42,62,92,0.25)] z-10">
 
             {/* ================= HERO CONTENT ================= */}
-            <div className="mx-auto w-full px-6 lg:px-8 pt-12 lg:pt-20 pb-16 lg:pb-28 relative z-10">
+            <article className="mx-auto w-full px-6 lg:px-8 pt-12 lg:pt-20 pb-16 lg:pb-28 relative z-10" aria-label="Hero Section">
                 <div className="max-w-2xl space-y-6 lg:space-y-8">
 
                     {/* H1 */}
@@ -43,7 +43,7 @@ export function Hero() {
                     </div>
 
                 </div>
-            </div>
+            </article>
 
             {/* ================= RIGHT IMAGE ================= */}
             <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[45%] z-0 rounded-l-[80px] overflow-hidden">
@@ -94,6 +94,6 @@ export function Hero() {
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 }

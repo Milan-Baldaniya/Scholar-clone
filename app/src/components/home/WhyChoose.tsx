@@ -2,8 +2,9 @@ import Link from "next/link";
 
 export function WhyChoose() {
     return (
-        <section className="bg-white py-20 lg:py-28">
+        <section className="bg-white py-20 lg:py-28" aria-labelledby="why-choose-heading">
             <div className="mx-auto max-w-[1600px] px-6 lg:px-8">
+                <h2 id="why-choose-heading" className="sr-only">Why Choose Scholar Clone</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                     {/* Left Column: Text Content */}
