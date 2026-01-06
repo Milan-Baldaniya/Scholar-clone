@@ -45,7 +45,7 @@ export default function ScholarEdge() {
                             text_font_weight="font-bold"
                             text_color="text-white"
                             fill_background_color="bg-[#007f5f]"
-                            border_border_radius="rounded-lg"
+                            border_border_radius="rounded-full"
                             padding="py-3 px-8"
                             className="hover:bg-[#00664c] transition-colors duration-200 mt-4"
                             onClick={handleGetStarted}

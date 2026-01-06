@@ -21,7 +21,7 @@ export default function WhyUniversities() {
                             Manual administration creates inefficiencies, compliance challenges, and poor student engagement. Scholar Clone's UMS automates workflows, ensures regulatory compliance, and enhances collaboration with AI-driven insights. A centralized, secure platform streamlines operations and enables hybrid learning, making institutions future-ready.
                         </p>
 
-                        <button className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded flex items-center gap-2 transition-colors duration-200">
+                        <button className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-200">
                             Get Started Today
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

@@ -16,7 +16,7 @@ export default function UniversityHero() {
             {/* Background Vector */}
             <img
                 src="/Images/VectorProduct1.png"
-                alt=""
+                alt="Background Vector Pattern"
                 className="absolute left-[-2%] bottom-0 w-full h-full object-cover opacity-70 pointer-events-none"
             />
             <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">

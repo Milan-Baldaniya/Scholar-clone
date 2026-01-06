@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 const navigation = [
     { name: "HOME", href: "/" },
     { name: "PRODUCTS", href: "#products" },
-    { name: "SERVICES", href: "#services" },
-    { name: "ABOUT US", href: "#about" },
+    { name: "SERVICES", href: "/services" },
+    { name: "ABOUT US", href: "/about" },
     { name: "COMPANY", href: "#company" },
 ];
 
@@ -48,7 +48,8 @@ export function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full bg-[#2A3E5C] text-white shadow-[0_8px_10px_0px_rgba(42,62,92,0.5)]">
             <nav className="mx-auto w-full flex h-20 items-center justify-between px-4 lg:px-8" aria-label="Global">
-                <div className="flex lg:flex-1">
+                {/* Left: Logo */}
+                <div className="flex flex-none">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
                         <img
                             src="/Images/Logo.png"
@@ -65,7 +66,9 @@ export function Navbar() {
                         </div>
                     </Link>
                 </div>
-                <div className="flex lg:hidden">
+
+                {/* Mobile Menu Button */}
+                <div className="flex lg:hidden ml-auto">
                     <button
                         type="button"
                         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-300 hover:text-white"
@@ -79,17 +82,21 @@ export function Navbar() {
                         )}
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-x-8">
+
+                {/* Center: Navigation Items */}
+                <div className="hidden lg:flex flex-1 items-center justify-end gap-x-8">
                     {navigation.map((item) => (
                         item.name === "PRODUCTS" ? (
                             <div
                                 key={item.name}
-                                className="relative"
+                                className="relative h-full flex items-center"
                                 ref={dropdownRef}
+                                onMouseEnter={() => setProductsDropdownOpen(true)}
+                                onMouseLeave={() => setProductsDropdownOpen(false)}
                             >
                                 <button
+                                    className="text-sm font-medium leading-6 text-slate-200 hover:text-white transition-colors uppercase tracking-wide flex items-center gap-1 h-full py-2"
                                     onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
-                                    className="text-sm font-medium leading-6 text-slate-200 hover:text-white transition-colors uppercase tracking-wide flex items-center gap-1"
                                 >
                                     {item.name}
                                     <svg
@@ -104,7 +111,7 @@ export function Navbar() {
 
                                 {/* Mega Menu Dropdown */}
                                 <div
-                                    className={`absolute right-0 top-full w-[1200px] transition-all duration-200 z-50 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                                    className={`fixed left-1/2 -translate-x-1/2 top-20 w-[1200px] transition-all duration-200 z-50 pt-4 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                                 >
                                     <div className="bg-white rounded-lg shadow-2xl border border-slate-200 p-8">
                                         {/* Top 6 Categories in 3+3 Grid */}

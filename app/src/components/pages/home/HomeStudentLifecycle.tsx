@@ -75,7 +75,7 @@ export function HomeStudentLifecycle() {
                     <div className="grid lg:grid-cols-2 gap-8">
 
                         {/* Card 2: LMS */}
-                        <div className="bg-[#1E4584] p-8 shadow-lg text-white flex flex-col justify-between">
+                        <div className="bg-[#1E4584] p-8 shadow-lg text-white flex flex-col justify-between min-h-[305px]">
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">Learning Management System (LMS)</h3>
                                 <p className="text-slate-200 mb-6 text-sm">
@@ -96,7 +96,7 @@ export function HomeStudentLifecycle() {
                         </div>
 
                         {/* Card 3: Campus Management */}
-                        <div className="bg-[#1E4584] p-8 shadow-lg text-white flex flex-col justify-between">
+                        <div className="bg-[#1E4584] p-8 shadow-lg text-white flex flex-col justify-between min-h-[305px]">
                             <div>
                                 <h3 className="text-2xl font-bold mb-4">Campus Management & Administration</h3>
                                 <p className="text-slate-200 mb-6 text-sm">

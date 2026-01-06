@@ -22,14 +22,14 @@ export default function DigitalTransformation() {
                     {/* Background Vector: Left */}
                     <img
                         src="/Images/Vector 7368.png"
-                        alt=""
+                        alt="Background Vector Left Design"
                         className="absolute top-0 left-0 h-full w-auto pointer-events-none z-0"
                     />
 
                     {/* Background Vector: Right */}
                     <img
                         src="/Images/Vector 7369.png"
-                        alt=""
+                        alt="Background Vector Right Design"
                         className="absolute top-0 right-0 h-full w-auto pointer-events-none z-0"
                     />
 
