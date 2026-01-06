@@ -7,12 +7,12 @@ interface KeyFeature {
     description: string;
 }
 
-interface KeyFeaturesSectionProps {
+interface KeyFeaturesProps {
     keyFeatures: KeyFeature[];
     loading: boolean;
 }
 
-export default function KeyFeaturesSection({ keyFeatures, loading }: KeyFeaturesSectionProps) {
+export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) {
     const allFeatures = [...keyFeatures, ...keyFeatures, ...keyFeatures]
 
     return (

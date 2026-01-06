@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import HomePage from '@/components/products/HomePage';
+import { UniversityHomePage } from '@/components/pages/products/university-management';
 
 export const metadata: Metadata = {
     title: 'University Management System - AI-Driven Higher Education ERP | Scholar Clone',
@@ -22,5 +22,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-    return <HomePage />
+    return <UniversityHomePage />
 }

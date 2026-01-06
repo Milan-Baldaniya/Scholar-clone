@@ -1,8 +1,9 @@
-import { Hero } from "@/components/home/Hero";
-import { Features } from "@/components/home/Features";
-import { StudentLifecycle } from "@/components/home/StudentLifecycle";
-import { WhyChoose } from "@/components/home/WhyChoose";
+import { HomeHero } from "@/components/pages/home/HomeHero";
+import { HomeFeatures } from "@/components/pages/home/HomeFeatures";
+import { HomeStudentLifecycle } from "@/components/pages/home/HomeStudentLifecycle";
+import { HomeWhyChoose } from "@/components/pages/home/HomeWhyChoose";
 import type { Metadata } from "next";
+
 
 export const metadata: Metadata = {
     title: "Home - Higher Education ERP Software",
@@ -80,10 +81,10 @@ export default function Home() {
             />
 
             <main className="min-h-screen bg-background flex flex-col">
-                <Hero />
-                <Features />
-                <StudentLifecycle />
-                <WhyChoose />
+                <HomeHero />
+                <HomeFeatures />
+                <HomeStudentLifecycle />
+                <HomeWhyChoose />
             </main>
         </>
     );

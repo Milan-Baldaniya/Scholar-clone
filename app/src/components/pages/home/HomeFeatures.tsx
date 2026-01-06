@@ -1,4 +1,4 @@
-export function Features() {
+export function HomeFeatures() {
     const leftFeatures = [
         "Admissions & Enrollment",
         "Campus & Faculty Management",

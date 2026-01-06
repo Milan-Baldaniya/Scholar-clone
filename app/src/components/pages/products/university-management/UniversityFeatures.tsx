@@ -7,12 +7,12 @@ interface FeatureCard {
     image: string;
 }
 
-interface FeaturesSectionProps {
+interface UniversityFeaturesProps {
     featuredCards: FeatureCard[];
     loading: boolean;
 }
 
-export default function FeaturesSection({ featuredCards, loading }: FeaturesSectionProps) {
+export default function UniversityFeatures({ featuredCards, loading }: UniversityFeaturesProps) {
     return (
         <section className="w-full py-16 lg:py-24 mt-16 lg:mt-[50px]">
             <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">

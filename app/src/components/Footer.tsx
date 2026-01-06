@@ -29,11 +29,11 @@ export function Footer() {
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="w-full px-4 py-3 rounded-lg bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#76B900]"
+                                className="w-full px-4 py-3 rounded-full bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#76B900]"
                                 suppressHydrationWarning
                             />
                             <button
-                                className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold px-8 py-3 rounded-lg transition-all"
+                                className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-semibold px-8 py-3 rounded-full transition-all"
                                 suppressHydrationWarning
                             >
                                 Contact Us
@@ -102,7 +102,7 @@ export function Footer() {
                 {/* Bottom Section: Copyright & Social Media */}
                 <div className="mt-12 pt-8 border-t border-slate-600 flex flex-col lg:flex-row justify-between items-center gap-6">
                     <p className="text-sm text-slate-400">
-                        All Rights Are Reserved By 2024 © Triz Innovation PVT LTD.
+                        All Rights Are Reserved By 2024 © Scholar Clon.
                     </p>
 
                     {/* Social Media Icons */}
@@ -119,7 +119,7 @@ export function Footer() {
                         </Link>
                         <Link href="#" className="text-white hover:text-[#76B900] transition-colors">
                             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .533 5.333.533 12S5.867 24 12.48 24c3.44 0 6.04-1.133 7.973-3.04 1.96-1.96 2.533-4.707 2.533-6.947 0-.68-.067-1.333-.173-1.987h-10.333z" />
                             </svg>
                         </Link>
                         <Link href="#" className="text-white hover:text-[#76B900] transition-colors">

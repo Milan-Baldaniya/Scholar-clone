@@ -1,13 +1,9 @@
 'use client';
 import { useState } from 'react';
-import Button from '../ui/Button';
-import ChipView from '../ui/ChipView';
+import Button from '@/components/ui/Button';
+import ChipView from '@/components/ui/ChipView';
 
-interface HeroSectionProps {
-    loading: boolean;
-}
-
-export default function HeroSection({ loading }: HeroSectionProps) {
+export default function UniversityHero() {
     const [demoRequested, setDemoRequested] = useState<boolean>(false)
 
     const handleGetDemo = (): void => {
@@ -15,22 +11,15 @@ export default function HeroSection({ loading }: HeroSectionProps) {
         setTimeout(() => setDemoRequested(false), 3000)
     }
 
-    if (loading) {
-        return (
-            <section className="w-full bg-secondary-background min-h-[600px] flex items-center justify-center animate-pulse">
-                <div className="w-full max-w-[1440px] px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div className="space-y-6">
-                        <div className="h-16 bg-white/20 rounded w-3/4"></div>
-                        <div className="h-24 bg-white/20 rounded w-full"></div>
-                    </div>
-                </div>
-            </section>
-        )
-    }
-
     return (
-        <section className="w-full bg-secondary-background relative overflow-hidden">
-            <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+        <section className="w-full bg-secondary-background relative overflow-hidden pb-20 lg:pb-28">
+            {/* Background Vector */}
+            <img
+                src="/Images/VectorProduct1.png"
+                alt=""
+                className="absolute left-[-2%] bottom-0 w-full h-full object-cover opacity-70 pointer-events-none"
+            />
+            <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">
 
                     {/* Left Content Column */}
@@ -67,9 +56,9 @@ export default function HeroSection({ loading }: HeroSectionProps) {
                                 text_font_weight="font-medium"
                                 text_color="text-success-background"
                                 fill_background_color="bg-success-light"
-                                border_border_radius="rounded-lg"
+                                border_border_radius="rounded-full"
                                 padding="py-3 lg:py-4 px-6 lg:px-8"
-                                className="shadow-[12px_25px_48px_#6a867b42] hover:scale-105 transition-all duration-300"
+                                className="shadow-[12px_25px_48px_#6a867b42] hover:bg-success-light hover:scale-100"
                                 onClick={handleGetDemo}
                                 disabled={demoRequested}
                             >
@@ -83,15 +72,19 @@ export default function HeroSection({ loading }: HeroSectionProps) {
                                 </div>
                             </Button>
 
-                            {/* "Future Proof solution" annotation - hidden for now as requested */}
-                            <div className="absolute bottom-full right-0 mb-4 mr-8 hidden">
-                                <p className="text-sm font-normal italic text-[#84ffff] whitespace-nowrap font-['Hind_Guntur']">
-                                    Future Proof solution<br />for your University
+                            {/* "Future Proof solution" annotation with arrow */}
+                            <div className="absolute left-[280px] -top-4 flex-col items-start hidden lg:flex z-30">
+                                <p className="text-lg font-normal whitespace-nowrap font-['Hind_Guntur'] rotate-[20deg] ml-20 mt-4">
+                                    <span className="text-[#5DDBD3] italic">Future </span>
+                                    <span className="text-white">Proof solution</span>
+                                    <br />
+                                    <span className="text-white">for your University</span>
                                 </p>
-                                <svg className="w-24 h-16 ml-8" viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M 50 5 Q 30 20, 20 40 L 10 55" stroke="#84ffff" strokeWidth="2" fill="none" />
-                                    <path d="M 10 55 L 15 50 L 8 48 Z" fill="#84ffff" />
-                                </svg>
+                                <img
+                                    src="/Images/Arrow_UNIVERSITY_MANAGMENT.png"
+                                    alt="Arrow pointing to button"
+                                    className="w-24 h-auto mt-2 object-contain"
+                                />
                             </div>
                         </div>
                     </div>
@@ -103,7 +96,7 @@ export default function HeroSection({ loading }: HeroSectionProps) {
                             {/* Large Image - Top Right (University Campus) */}
                             <div className="absolute top-0 right-0 w-[72%] h-[62%] rounded-[24px] overflow-hidden shadow-2xl z-10">
                                 <img
-                                    src="/images/University Campus Technology.png"
+                                    src="/Images/University Campus Technology.png"
                                     alt="University Campus Technology"
                                     className="w-full h-full object-cover"
                                 />
@@ -112,14 +105,34 @@ export default function HeroSection({ loading }: HeroSectionProps) {
                             {/* Small Image - Bottom Left (Smart Learning) */}
                             <div className="absolute bottom-0 left-0 w-[50%] h-[58%] rounded-[24px] overflow-hidden shadow-2xl z-20">
                                 <img
-                                    src="/images/Smart Learning Environment.png"
+                                    src="/Images/Smart Learning Environment.png"
                                     alt="Smart Learning Environment"
                                     className="w-full h-full object-cover"
                                 />
                             </div>
 
-                            {/* Decorative border frame */}
-                            <div className="absolute inset-0 border-2 border-white/8 rounded-[32px] pointer-events-none"></div>
+                            {/* U-Shape Decorative Frame */}
+                            <svg
+                                className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible"
+                                viewBox="0 0 500 1200"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                preserveAspectRatio="none"
+                            >
+                                {/* U-shape: entire shape moved down */}
+                                <path
+                                    d="M 400 300
+                                       L 400 1160 
+                                       Q 400 1250 310 1250 
+                                       L 215 1250 
+                                       Q 125 1250 125 1160 
+                                       L 125 550"
+                                    stroke="#86A1A1"
+                                    strokeWidth="8"
+                                    fill="none"
+                                    strokeLinecap="round"
+                                />
+                            </svg>
                         </div>
                     </div>
 

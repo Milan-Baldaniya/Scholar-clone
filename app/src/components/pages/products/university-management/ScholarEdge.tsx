@@ -1,7 +1,7 @@
 'use client';
-import Button from '../ui/Button';
+import Button from '@/components/ui/Button';
 
-export default function ScholarEdgeSection() {
+export default function ScholarEdge() {
     const handleGetStarted = (): void => {
         console.log('Get Started clicked')
     }

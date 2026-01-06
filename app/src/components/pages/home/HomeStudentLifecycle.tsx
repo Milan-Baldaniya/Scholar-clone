@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function StudentLifecycle() {
+export function HomeStudentLifecycle() {
     return (
         <section className="relative py-20 overflow-hidden bg-gradient-to-br from-[#F4F6DC] to-[#EEF4C6]">
             {/* Background Vector Design */}

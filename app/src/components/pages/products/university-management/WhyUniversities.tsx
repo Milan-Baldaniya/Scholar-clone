@@ -1,7 +1,6 @@
 'use client';
-import Button from '../ui/Button';
 
-export default function WhyUniversitiesSection() {
+export default function WhyUniversities() {
     const handleGetStarted = (): void => {
         console.log('Get Started clicked')
     }

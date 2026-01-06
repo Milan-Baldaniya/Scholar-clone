@@ -1,11 +1,11 @@
 'use client';
 import { useState, useEffect } from 'react';
-import HeroSection from './HeroSection';
-import FeaturesSection from './FeaturesSection';
-import WhyUniversitiesSection from './WhyUniversitiesSection';
-import KeyFeaturesSection from './KeyFeaturesSection';
-import ScholarEdgeSection from './ScholarEdgeSection';
-import DigitalTransformationSection from './DigitalTransformationSection';
+import UniversityHero from './UniversityHero';
+import UniversityFeatures from './UniversityFeatures';
+import WhyUniversities from './WhyUniversities';
+import KeyFeatures from './KeyFeatures';
+import ScholarEdge from './ScholarEdge';
+import DigitalTransformation from './DigitalTransformation';
 
 interface FeatureCard {
     id: number;
@@ -21,7 +21,7 @@ interface KeyFeature {
     description: string;
 }
 
-export default function HomePage() {
+export default function UniversityHomePage() {
     const [featuredCards, setFeaturedCards] = useState<FeatureCard[]>([])
     const [keyFeatures, setKeyFeatures] = useState<KeyFeature[]>([])
     const [loading, setLoading] = useState<boolean>(true)
@@ -86,18 +86,18 @@ export default function HomePage() {
     return (
         <div className="min-h-screen bg-neutral-background">
             <main>
-                <HeroSection loading={loading} />
-                <FeaturesSection
+                <UniversityHero />
+                <UniversityFeatures
                     featuredCards={featuredCards}
                     loading={loading}
                 />
-                <WhyUniversitiesSection />
-                <KeyFeaturesSection
+                <WhyUniversities />
+                <KeyFeatures
                     keyFeatures={keyFeatures}
                     loading={loading}
                 />
-                <ScholarEdgeSection />
-                <DigitalTransformationSection />
+                <ScholarEdge />
+                <DigitalTransformation />
             </main>
         </div>
     )

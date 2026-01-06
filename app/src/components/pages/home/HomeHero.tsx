@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function Hero() {
+export function HomeHero() {
     return (
         <div className="relative bg-[#F6F7ED] shadow-[0_4px_8px_0px_rgba(42,62,92,0.25)] z-10">
 

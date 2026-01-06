@@ -1,7 +1,7 @@
 'use client';
-import Button from '../ui/Button';
+import Button from '@/components/ui/Button';
 
-export default function DigitalTransformationSection() {
+export default function DigitalTransformation() {
     const handleGetSystem = (): void => {
         console.log('Get System clicked')
     }
@@ -19,19 +19,19 @@ export default function DigitalTransformationSection() {
             <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-16 lg:py-20">
                 <div className="w-full rounded-3xl bg-[#e0f8f8] px-6 py-16 lg:px-20 lg:py-24 text-center shadow-lg relative overflow-hidden">
 
-                    {/* Decorative Curve: Top Right */}
-                    <div className="absolute top-0 right-0 w-[40%] h-full pointer-events-none opacity-60">
-                        <svg viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full preserve-3d">
-                            <path d="M400 0C300 0 100 200 100 400C100 500 0 600 0 600H400V0Z" fill="#B2EBF2" />
-                        </svg>
-                    </div>
+                    {/* Background Vector: Left */}
+                    <img
+                        src="/Images/Vector 7368.png"
+                        alt=""
+                        className="absolute top-0 left-0 h-full w-auto pointer-events-none z-0"
+                    />
 
-                    {/* Decorative Curve: Bottom Left */}
-                    <div className="absolute bottom-0 left-0 w-[40%] h-full pointer-events-none opacity-60">
-                        <svg viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full preserve-3d rotate-180">
-                            <path d="M400 0C300 0 100 200 100 400C100 500 0 600 0 600H400V0Z" fill="#B2EBF2" />
-                        </svg>
-                    </div>
+                    {/* Background Vector: Right */}
+                    <img
+                        src="/Images/Vector 7369.png"
+                        alt=""
+                        className="absolute top-0 right-0 h-full w-auto pointer-events-none z-0"
+                    />
 
                     <div className="relative z-10 flex flex-col justify-center items-center gap-6 lg:gap-8">
 
@@ -54,7 +54,7 @@ export default function DigitalTransformationSection() {
                             text_font_weight="font-bold"
                             text_color="text-white"
                             fill_background_color="bg-[#007f5f]"
-                            border_border_radius="rounded-lg"
+                            border_border_radius="rounded-full"
                             padding="py-3 px-8"
                             margin="mt-8"
                             className="hover:bg-[#00664c] transition-colors duration-200 shadow-md"

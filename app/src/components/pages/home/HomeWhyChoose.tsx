@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export function WhyChoose() {
+export function HomeWhyChoose() {
     return (
         <section className="bg-white py-20 lg:py-28" aria-labelledby="why-choose-heading">
             <div className="mx-auto max-w-[1600px] px-6 lg:px-8">
