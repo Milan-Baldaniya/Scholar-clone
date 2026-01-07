@@ -201,7 +201,10 @@ export function Navbar() {
                                                     product.name ? (
                                                         <Link
                                                             key={idx}
-                                                            href={product.name === "University & College Management System" ? "/products/university-management" : "#"}
+                                                            href={
+                                                                product.name === "University & College Management System" ? "/products/university-management" :
+                                                                    product.name === "Alumni Management System" ? "/products/alumni-management" : "#"
+                                                            }
                                                             className="flex items-start gap-2 p-3 rounded-lg hover:bg-slate-50 transition-colors group/item"
                                                             onClick={() => setProductsDropdownOpen(false)}
                                                         >
@@ -322,7 +325,7 @@ export function Navbar() {
                                         <div className="pl-4 pr-2 py-2 space-y-1">
                                             {[
                                                 { name: "University & College Management System", href: "/products/university-management" },
-                                                { name: "Alumni Management System", href: "#" },
+                                                { name: "Alumni Management System", href: "/products/alumni-management" },
                                                 { name: "Timetable & Attendance Management", href: "#" },
                                                 { name: "Transport & Vehicle Management", href: "#" },
                                                 { name: "Inventory & Asset Management", href: "#" },

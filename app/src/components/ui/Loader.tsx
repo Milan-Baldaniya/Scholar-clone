@@ -24,7 +24,7 @@ export default function Loader() {
     if (!isVisible) return null;
 
     return (
-        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-300">
+        <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-opacity duration-300">
             <div className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] relative flex items-center justify-center">
                 <img
                     src="/Images/Logo.png"
@@ -40,6 +40,9 @@ export default function Loader() {
                     autoplay={true}
                 />
             </div>
+            <h2 className="text-lg md:text-xl font-bold text-[#2A518A] -mt-6 animate-pulse">
+                Welcome to Scholar Clone
+            </h2>
         </div>
     );
 }

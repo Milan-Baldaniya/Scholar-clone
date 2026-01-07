@@ -1,0 +1,61 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
+export default function DisorganizedRecords() {
+    return (
+        <section className="py-10 lg:py-16 bg-white">
+            <div className="max-w-[1600px] mx-auto px-6 lg:px-8">
+                {/* Section Header */}
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#108A4B] mb-4">
+                        Disorganized Alumni Records
+                    </h2>
+                    <p className="text-[#475569] max-w-2xl mx-auto leading-relaxed">
+                        Disconnected alumni, outdated records, and missed opportunities—
+                        without a centralized system, engagement and networking suffer.
+                    </p>
+                </div>
+
+                {/* Main Card */}
+                <div className="bg-[#537396] rounded-[30px] p-8 md:p-12 overflow-hidden shadow-xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+                        {/* Left Content */}
+                        <div className="space-y-8">
+                            <p className="text-white/90 text-xl leading-[2.2] -mt-4">
+                                Institutions often struggle with scattered, outdated, and
+                                insecure alumni records, making it hard to track and engage
+                                graduates. Missing contact details, unorganized batch and
+                                course data, and error-prone manual updates create
+                                barriers to connection. Without a centralized system, alumni
+                                drift away, limiting networking, engagement, and
+                                fundraising opportunities.
+                            </p>
+
+                            <div className="pt-8">
+                                <Link
+                                    href="/contact"
+                                    className="inline-flex items-center gap-2 bg-[#76B900] hover:bg-[#65a300] text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
+                                >
+                                    Get Started Today
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Right Image */}
+                        <div className="relative h-full min-h-[250px] lg:min-h-[300px] w-full rounded-2xl overflow-hidden shadow-lg">
+                            <img
+                                src="/Images/Records_Alumni.png"
+                                alt="Disorganized records visualization"
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+}

@@ -1,79 +1,184 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'Alumni Management System - Connect & Engage',
-    description: 'Build and maintain strong alumni networks with Scholar Clone\'s Alumni Management System. Track engagement, organize events, and foster lifelong connections.',
-    keywords: 'alumni management, alumni network, alumni engagement, alumni events',
+    description: 'Build and maintain strong alumni networks with Scholar Clone\'s Alumni Management System.',
 };
 
+import DisorganizedRecords from '@/components/pages/alumni/DisorganizedRecords';
+
+// eslint-disable-next-line @next/next/no-img-element
 export default function AlumniManagementPage() {
     return (
-        <main className="min-h-screen bg-white">
-            {/* Hero Section */}
-            <section className="bg-gradient-to-br from-[#2A3E5C] to-[#1a2a40] text-white py-20 lg:py-28">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
-                    <div className="max-w-3xl">
-                        <span className="text-sm font-semibold text-[#76B900] uppercase tracking-wide">Product</span>
-                        <h1 className="text-4xl lg:text-6xl font-bold mt-2 mb-6">
+        <>
+            <main className="h-auto bg-[#F6F7ED] flex items-center py-12 lg:pt-56 lg:pb-24 overflow-x-hidden">
+                <div className="max-w-[1440px] mx-auto px-6 lg:px-8 w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center relative">
+
+                    {/* Left Content */}
+                    <div className="relative z-10 max-w-4xl"> {/* Increased max-width to prevent text wrapping */}
+
+                        {/* 
+                        [USER CONFIGURATION]: NETWORK BADGE (Top-Left)
+                    */}
+                        <div
+                            className="absolute"
+                            style={{
+                                top: '-11rem',                        // <--- CHANGE Y POSITION
+                                left: '-9rem',                        // <--- CHANGE X POSITION
+                                transform: 'rotate(-10deg)',          // <--- CHANGE ROTATION
+                                zIndex: 40
+                            }}
+                        >
+                            <span
+                                className="bg-[#E0F2FE] text-[#0284C7] px-6 py-3 rounded-md font-bold shadow-md inline-block" // Increased padding
+                                style={{
+                                    fontSize: '1.30rem',              // <--- INCREASED FONT SIZE
+                                    transform: 'rotate(-2deg)'
+                                }}
+                            >
+                                Network
+                            </span>
+                        </div>
+
+                        {/* 
+                         [USER CONFIGURATION]: MAIN HEADING (H1)
+                    */}
+                        <h1
+                            className="font-bold text-[#1E293B] leading-[1.1]"
+                            style={{
+                                fontSize: '4rem',                     // Increased Font Size
+                                marginBottom: '1.5rem',
+                                transform: 'translate(-180px, -60px)', // Preserved User Edit
+                                display: 'block',
+                                width: '150%'                         // Force wider width to prevent wrapping
+                            }}
+                        >
                             Alumni Management System
                         </h1>
-                        <p className="text-xl text-slate-200 mb-8">
-                            Build lasting relationships with your alumni community. Track engagement,
-                            organize events, and create meaningful connections that benefit your institution.
-                        </p>
-                        <div className="flex gap-4">
+
+                        {/* 
+                         [USER CONFIGURATION]: SUB HEADING (H2)
+                    */}
+                        <h2
+                            className="text-[#334155] font-medium leading-snug"
+                            style={{
+                                fontSize: '1.75rem',                  // Increased Font Size
+                                marginBottom: '2rem',
+                                transform: 'translate(-180px, -60px)', // Preserved User Edit
+                                width: '130%'
+                            }}
+                        >
+                            Empower Your Institution with a Smart <br className="hidden lg:block" />
+                            Alumni Management Solution
+                        </h2>
+
+                        <div className="relative">
+                            {/* 
+                             [USER CONFIGURATION]: PARAGRAPH TEXT (P)
+                        */}
+                            <p
+                                className="text-[#475569] leading-relaxed max-w-2xl" // Increased max-width
+                                style={{
+                                    fontSize: '1.25rem',              // Increased Font Size
+                                    marginBottom: '2.5rem',
+                                    transform: 'translate(-180px, -60px)', // Preserved User Edit
+                                    width: '150%',
+                                }}
+                            >
+                                Our Alumni Management System helps institutions seamlessly track,
+                                engage, and manage alumni data, ensuring long-term relationships and
+                                valuable networking opportunities.
+                            </p>
+
+                            {/* 
+                            [USER CONFIGURATION]: RECONNECT BADGE (Top-Right of Text)
+                        */}
+                            <div
+                                className="absolute"
+                                style={{
+                                    top: '1.5rem',
+                                    right: '-10rem',
+                                    transform: 'rotate(15deg) translate(-120px, -60px)', // Preserved User Edit
+                                    zIndex: 20
+                                }}
+                            >
+                                <span
+                                    className="bg-[#E0F2FE] text-[#0369A1] px-5 py-2.5 rounded-md font-bold shadow-md inline-block" // Increased padding
+                                    style={{ fontSize: '1.30rem' }}     // Increased Font Size
+                                >
+                                    Reconnect
+                                </span>
+                            </div>
+                        </div>
+
+                        <div className="relative inline-flex items-center">
+                            {/* 
+                             [USER CONFIGURATION]: BUTTON
+                        */}
                             <Link
                                 href="/contact"
-                                className="rounded-[20px] bg-[#76B900] px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#67a300] transition-all"
+                                className="flex items-center gap-2 rounded-lg bg-[#76B900] text-white font-semibold shadow-lg hover:bg-[#67a300] transition-transform hover:-translate-y-1"
+                                style={{
+                                    padding: '1.25rem 2.5rem',        // Increased Padding
+                                    fontSize: '1.25rem',              // Increased Font Size
+                                    transform: 'translate(-180px, -10px)', // Preserved User Edit
+                                }}
                             >
-                                Get Demo
+                                Get Your Free Demo
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"> {/* Increased Icon Size */}
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
                             </Link>
-                            <Link
-                                href="/products"
-                                className="rounded-[20px] bg-white/10 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-white/20 transition-all"
+
+                            {/* 
+                            [USER CONFIGURATION]: ENGAGE BADGE 
+                        */}
+                            <div
+                                className="absolute"
+                                style={{
+                                    top: '50%',
+                                    right: '-15rem',
+                                    transform: 'translateY(-50%) rotate(-12deg) translate(-160px, -80px)', // Preserved User Edit
+                                    zIndex: 20,
+                                }}
                             >
-                                All Products
-                            </Link>
+                                <span
+                                    className="bg-[#2A3E5C] text-white px-5 py-2.5 rounded-md font-bold shadow-md inline-block" // Changed to Banner/Navbar Color
+                                    style={{ fontSize: '1.30rem' }}     // Increased Font Size
+                                >
+                                    Engage
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
 
-            {/* Features Section */}
-            <section className="py-20">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold text-center mb-12">Key Features</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {[
-                            { title: 'Alumni Directory', description: 'Comprehensive searchable directory of all alumni', icon: '📖' },
-                            { title: 'Event Management', description: 'Organize and track alumni events and reunions', icon: '📅' },
-                            { title: 'Fundraising', description: 'Manage donations and fundraising campaigns', icon: '💰' },
-                            { title: 'Mentorship Programs', description: 'Connect current students with alumni mentors', icon: '🤝' },
-                        ].map((feature) => (
-                            <div key={feature.title} className="bg-[#F6F7ED] rounded-2xl p-6 text-center">
-                                <div className="text-4xl mb-4">{feature.icon}</div>
-                                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-                                <p className="text-slate-600">{feature.description}</p>
-                            </div>
-                        ))}
+                    {/* Right Image */}
+                    <div className="relative w-full flex justify-end mt-12 lg:mt-0">
+                        {/* 
+                        [USER CONFIGURATION]: IMAGE SETTINGS (UPDATED BY USER)
+                    */}
+                        <div
+                            className="relative aspect-[16/11] rounded-[40px] overflow-hidden border-4 border-white shadow-2xl"
+                            style={{
+                                width: '1550px',                     // Preserved User Edit
+                                height: '550px',                     // Preserved User Edit
+                                transform: 'translate(280px, -80px)', // Preserved User Edit
+                            }}
+                        >
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                                src="/Images/hero_alumni.png"
+                                alt="Alumni Group at University"
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
                     </div>
-                </div>
-            </section>
 
-            {/* CTA Section */}
-            <section className="bg-[#1E4584] py-16 text-white text-center">
-                <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
-                    <h2 className="text-3xl font-bold mb-4">Ready to engage your alumni?</h2>
-                    <p className="text-lg text-blue-100 mb-8">Get a personalized demo of our Alumni Management System.</p>
-                    <Link
-                        href="/contact"
-                        className="inline-block rounded-[20px] bg-[#76B900] px-10 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#67a300] transition-all"
-                    >
-                        Request Demo
-                    </Link>
                 </div>
-            </section>
-        </main>
+            </main>
+            <DisorganizedRecords />
+        </>
     );
 }
