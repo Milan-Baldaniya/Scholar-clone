@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/Footer";
 import GlobalLoader from "@/components/ui/GlobalLoader";
+import ScrollToTop from "@/components/utils/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -85,13 +86,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
     children,
-}: Readonly<{
-    children: React.ReactNode;
-}>) {
+}: {
+    children: React.ReactNode
+}) {
     return (
         <html lang="en" suppressHydrationWarning={true}>
             <body className={inter.className} suppressHydrationWarning={true}>
                 <GlobalLoader />
+                <ScrollToTop />
                 <Navbar />
                 {children}
                 <Footer />

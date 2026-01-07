@@ -50,7 +50,7 @@ export function Footer() {
                             <li><Link href="#" className="hover:text-white transition-colors">Why We Serve</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Changes and Benefits</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Blogs and broachers</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Conat us</Link></li>
+                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Request a free demo</Link></li>
                         </ul>
                     </div>
@@ -64,7 +64,7 @@ export function Footer() {
                             <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Conat us</Link></li>
+                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
                         </ul>
                     </div>
@@ -78,7 +78,7 @@ export function Footer() {
                             <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Conat us</Link></li>
+                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
                         </ul>
                     </div>
@@ -92,7 +92,7 @@ export function Footer() {
                             <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Conat us</Link></li>
+                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
                             <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
                         </ul>
                     </div>

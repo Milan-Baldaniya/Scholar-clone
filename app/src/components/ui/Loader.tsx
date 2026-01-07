@@ -1,7 +1,7 @@
 'use client';
 
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
-import animationData from './Loading.json';
+import animationData from '../../../public/animations/loading.json';
 import { useEffect, useState, useRef } from 'react';
 
 export default function Loader() {
