@@ -11,7 +11,6 @@ export default function WhatWeDo() {
                         alt="What We Do"
                         fill
                         className="object-cover"
-                        quality={100}
                         priority
                     />
                 </div>
@@ -35,7 +34,6 @@ export default function WhatWeDo() {
                             alt="What We Offer Icons"
                             fill
                             className="object-contain"
-                            quality={100}
                         />
                     </div>
                 </div>
@@ -65,7 +63,6 @@ export default function WhatWeDo() {
                             alt="Value You Unlock Icons"
                             fill
                             className="object-contain"
-                            quality={100}
                         />
                     </div>
                 </div>
