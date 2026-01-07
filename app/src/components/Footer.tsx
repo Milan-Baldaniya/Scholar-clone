@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { FOOTER_LINKS } from "@/lib/data";
 
 export function Footer() {
     return (
@@ -45,13 +46,10 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Home</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            <li><Link href="#" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Why We Serve</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Changes and Benefits</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Blogs and broachers</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Request a free demo</Link></li>
+                            {/* @ts-ignore */}
+                            {FOOTER_LINKS.home.map((link) => (
+                                <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
+                            ))}
                         </ul>
                     </div>
 
@@ -59,13 +57,10 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">K-12 Solution</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            <li><Link href="#" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
+                            {/* @ts-ignore */}
+                            {FOOTER_LINKS.k12.map((link) => (
+                                <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
+                            ))}
                         </ul>
                     </div>
 
@@ -73,13 +68,10 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Higher Education</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            <li><Link href="#" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
+                            {/* @ts-ignore */}
+                            {FOOTER_LINKS.higherEd.map((link) => (
+                                <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
+                            ))}
                         </ul>
                     </div>
 
@@ -87,13 +79,10 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Corporate Solution</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            <li><Link href="#" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Products</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Services</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Resources & Blogs</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
-                            <li><Link href="#" className="hover:text-white transition-colors">Book Demo</Link></li>
+                            {/* @ts-ignore */}
+                            {FOOTER_LINKS.corporate.map((link) => (
+                                <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
+                            ))}
                         </ul>
                     </div>
 

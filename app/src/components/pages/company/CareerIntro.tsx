@@ -1,22 +1,22 @@
 'use client';
 
 import dynamic from 'next/dynamic';
+import { useState, useEffect } from 'react';
 import animationData from '../../../../public/animations/Career_animation.json';
 
 const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 export default function CareerIntro() {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     return (
         <section className="py-20 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="
-                    flex flex-col lg:flex-row items-center gap-12 lg:gap-20
-                    relative
-                    // Change top-[-110px] to move Up/Down (Y-axis)
-                    top-[-110px]
-                    // Change left-[0px] to move Left/Right (X-axis)
-                    left-[0px]
-                ">
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative top-[-110px] left-[0px]">
                     {/* Left Side: Content */}
                     <div className="w-full lg:w-1/2 text-left space-y-6">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
@@ -42,12 +42,14 @@ export default function CareerIntro() {
                     {/* Right Side: Animation */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <div className="w-full max-w-[600px] relative">
-                            <Lottie
-                                animationData={animationData}
-                                loop={true}
-                                autoplay={true}
-                                className="w-full h-auto"
-                            />
+                            {isMounted && (
+                                <Lottie
+                                    animationData={animationData}
+                                    loop={true}
+                                    autoplay={true}
+                                    className="w-full h-auto"
+                                />
+                            )}
                         </div>
                     </div>
                 </div>

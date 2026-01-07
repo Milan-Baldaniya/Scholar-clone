@@ -3,21 +3,23 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
+const VALUES_DATA = [
+    {
+        title: "Career Growth & Development",
+        description: "Gain hands-on experience with structured learning, mentorship, and leadership training in AI, EdTech, and SaaS."
+    },
+    {
+        title: "Work That Matters",
+        description: "Create impactful AI-driven education solutions that empower students, educators, and institutions globally."
+    },
+    {
+        title: "Culture of Innovation",
+        description: "Thrive in a collaborative, data-driven environment that values bold thinking and creative problem-solving."
+    }
+];
+
 export default function CareerValues() {
-    const values = [
-        {
-            title: "Career Growth & Development",
-            description: "Gain hands-on experience with structured learning, mentorship, and leadership training in AI, EdTech, and SaaS."
-        },
-        {
-            title: "Work That Matters",
-            description: "Create impactful AI-driven education solutions that empower students, educators, and institutions globally."
-        },
-        {
-            title: "Culture of Innovation",
-            description: "Thrive in a collaborative, data-driven environment that values bold thinking and creative problem-solving."
-        }
-    ];
+    const values = VALUES_DATA;
 
     const targetRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({

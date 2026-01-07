@@ -2,28 +2,14 @@
 
 import { motion } from 'framer-motion';
 import { Monitor, Code2, Briefcase } from 'lucide-react';
+import { CAREER_ROLES_DATA } from '@/lib/data';
 
 export default function CareerRoles() {
-    const roles = [
-        {
-            title: "Full Stack Developers",
-            location: "Onsite/Remote",
-            experience: "2-6 years",
-            icon: <Code2 className="w-10 h-10 text-blue-500" strokeWidth={1.5} />
-        },
-        {
-            title: "UI/UX Designer",
-            location: "Remote / Onsite",
-            experience: "1-4 years",
-            icon: <Monitor className="w-10 h-10 text-blue-500" strokeWidth={1.5} />
-        },
-        {
-            title: "Product Manager",
-            location: "Remote / Hybrid",
-            experience: "3-7 years",
-            icon: <Briefcase className="w-10 h-10 text-blue-500" strokeWidth={1.5} />
-        }
-    ];
+    const iconMap: Record<string, React.ReactNode> = {
+        code: <Code2 className="w-10 h-10 text-blue-500" strokeWidth={1.5} />,
+        monitor: <Monitor className="w-10 h-10 text-blue-500" strokeWidth={1.5} />,
+        briefcase: <Briefcase className="w-10 h-10 text-blue-500" strokeWidth={1.5} />
+    };
 
     return (
         <section className="py-20 bg-white relative z-20 mt-[-200px] mb-40 // [MANUAL CONTROL] Adjust 'mb-40' to change space before Footer">
@@ -33,7 +19,7 @@ export default function CareerRoles() {
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-                    {roles.map((role, index) => (
+                    {CAREER_ROLES_DATA.map((role, index) => (
                         <motion.div
                             key={index}
                             className="bg-white border border-slate-100 p-8 rounded-2xl shadow-lg w-full max-w-[350px] flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300"
@@ -44,7 +30,7 @@ export default function CareerRoles() {
                         >
                             {/* Icon Container */}
                             <div className="mb-6 p-4 rounded-full bg-blue-50">
-                                {role.icon}
+                                {iconMap[role.iconKey] || <Briefcase className="w-10 h-10 text-blue-500" strokeWidth={1.5} />}
                             </div>
 
                             <h3 className="text-xl font-bold text-blue-900 mb-4">

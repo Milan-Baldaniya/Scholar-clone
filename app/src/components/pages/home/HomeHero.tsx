@@ -47,7 +47,8 @@ export function HomeHero() {
 
             {/* ================= RIGHT IMAGE ================= */}
             <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[45%] z-0 rounded-l-[80px] overflow-hidden">
-                <div className="h-full w-full relative">
+                <div className="relative w-full h-full">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/Images/HeroImage.png"
                         alt="University Campus"

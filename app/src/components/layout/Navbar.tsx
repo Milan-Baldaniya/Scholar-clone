@@ -5,13 +5,9 @@ import Link from "next/link";
 import { Menu, X, Users, Briefcase, Handshake } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const navigation = [
-    { name: "HOME", href: "/" },
-    { name: "PRODUCTS", href: "#products" },
-    { name: "SERVICES", href: "/services" },
-    { name: "ABOUT US", href: "/about" },
-    { name: "COMPANY", href: "#company" },
-];
+import { MAIN_NAVIGATION } from "@/lib/data";
+
+const navigation = MAIN_NAVIGATION;
 
 export function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

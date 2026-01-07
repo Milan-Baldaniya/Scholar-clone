@@ -1,10 +1,35 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../../../../public/animations/form_contactus.json';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function ContactForm() {
+    const [isMounted, setIsMounted] = useState(false);
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log('Form submitted:', formData);
+    };
+
     return (
         <section className="relative z-10 -mt-24 mb-20">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,11 +39,15 @@ export default function ContactForm() {
                         {/* LEFT COLUMN: Input Form */}
                         <div className="w-full lg:w-1/2 p-8 lg:p-12">
                             <h2 className="text-xl font-medium text-slate-800 mb-8">Enter Your Full name</h2>
-                            <div className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6">
                                 <div>
                                     <input
                                         type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
+                                        required
                                     />
                                 </div>
 
@@ -26,7 +55,11 @@ export default function ContactForm() {
                                     <h2 className="text-xl font-medium text-slate-800 mb-2">Enter Your Email Address</h2>
                                     <input
                                         type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
+                                        required
                                     />
                                 </div>
 
@@ -34,6 +67,9 @@ export default function ContactForm() {
                                     <h2 className="text-xl font-medium text-slate-800 mb-2">Enter Your Mobile Number</h2>
                                     <input
                                         type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
                                     />
                                 </div>
@@ -41,20 +77,27 @@ export default function ContactForm() {
                                 <div>
                                     <h2 className="text-xl font-medium text-slate-800 mb-2">Enter Your Message</h2>
                                     <textarea
+                                        name="message"
                                         rows={4}
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-3xl px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20 resize-none"
+                                        required
                                     />
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row sm:items-center gap-4 pt-4">
-                                    <button className="bg-[#4169E1] hover:bg-[#3154C4] text-white px-8 py-3 rounded-full font-bold text-lg transition-colors shadow-lg whitespace-nowrap">
+                                    <button
+                                        type="submit"
+                                        className="bg-[#4169E1] hover:bg-[#3154C4] text-white px-8 py-3 rounded-full font-bold text-lg transition-colors shadow-lg whitespace-nowrap"
+                                    >
                                         Send Message
                                     </button>
                                     <p className="text-xs text-slate-500 max-w-xs">
                                         We appreciate your message! Our team will connect with you soon.
                                     </p>
                                 </div>
-                            </div>
+                            </form>
                         </div>
 
                         {/* RIGHT COLUMN: Lottie & Info */}
@@ -63,11 +106,13 @@ export default function ContactForm() {
                             <div className="w-full max-w-md mx-auto">
                                 {/* Lottie Animation */}
                                 <div className="w-full max-w-[480px] mx-auto mb-6 transform scale-[1.15]">
-                                    <Lottie
-                                        animationData={animationData}
-                                        loop={true}
-                                        autoplay={true}
-                                    />
+                                    {isMounted && (
+                                        <Lottie
+                                            animationData={animationData}
+                                            loop={true}
+                                            autoplay={true}
+                                        />
+                                    )}
                                 </div>
 
                                 {/* Contact Details */}

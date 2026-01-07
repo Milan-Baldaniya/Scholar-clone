@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Link from "next/link";
 
 export default function AboutHero() {
     return (
@@ -7,12 +7,11 @@ export default function AboutHero() {
             <div className="relative w-full">
                 {/* Image */}
                 <div className="relative h-[600px] overflow-hidden">
-                    <Image
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
                         src="/Images/hero_aboutus.jpg"
                         alt="About Us Hero"
-                        fill
-                        className="object-cover"
-                        priority
+                        className="object-cover w-full h-full"
                     />
                     {/* Overlay Layer */}
                     <div
@@ -86,6 +85,7 @@ export default function AboutHero() {
                             right-[-60px]
                         ">
                             {/* Logo */}
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src="/Images/Logo.png"
                                 alt="Scholar Clone Logo"

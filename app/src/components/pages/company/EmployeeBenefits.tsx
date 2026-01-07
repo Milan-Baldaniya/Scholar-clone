@@ -1,15 +1,10 @@
 import Image from 'next/image';
 import { Check } from 'lucide-react';
 
+import { EMPLOYEE_BENEFITS_DATA } from '@/lib/data';
+
 export default function EmployeeBenefits() {
-    const benefits = [
-        "Competitive Salary & Performance-Based Growth",
-        "Flexible Work Arrangements (Hybrid & Remote Work Options)",
-        "Medical & Wellness Benefits (Health insurance, mental well-being programs)",
-        "Learning & Upskilling Programs (Certifications, AI training, workshops)",
-        "Hackathons, Innovation Challenges & Tech Events",
-        "Annual Team Retreats, Offsite Events & Celebrations"
-    ];
+    const benefits = EMPLOYEE_BENEFITS_DATA;
 
     return (
         <section className="pt-20 pb-0 bg-white">
