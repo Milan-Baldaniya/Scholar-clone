@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         siteName: 'Scholar Clone',
         images: [
             {
-                url: '/Images/Logo.png',
+                url: '/images/Logo.png',
                 width: 1200,
                 height: 630,
                 alt: 'Scholar Clone - Higher Education ERP',
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Scholar Clone - Higher Education Management System',
         description: 'Transform your institution with comprehensive ERP solution for higher education.',
-        images: ['/Images/Logo.png'],
+        images: ['/images/Logo.png'],
         creator: '@scholarclone',
     },
     robots: {
@@ -80,8 +80,8 @@ export const metadata: Metadata = {
         },
     },
     icons: {
-        icon: '/Images/Logo.png',
-        apple: '/Images/Logo.png',
+        icon: '/images/Logo.png',
+        apple: '/images/Logo.png',
     },
     verification: {
         google: 'your-google-verification-code',
