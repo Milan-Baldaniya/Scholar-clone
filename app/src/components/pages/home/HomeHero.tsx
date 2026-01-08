@@ -9,7 +9,10 @@ export function HomeHero() {
                 <div className="max-w-2xl space-y-6 lg:space-y-8">
 
                     {/* H1 */}
-                    <h1 className="text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900 leading-[1.15]">
+                    <h1
+                        className="text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900"
+                        style={{ lineHeight: '1.4' }}
+                    >
                         Future-Ready Solutions that Empower Your Campus
                     </h1>
 
