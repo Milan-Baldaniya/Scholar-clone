@@ -203,7 +203,8 @@ export function Navbar() {
                                                             key={idx}
                                                             href={
                                                                 product.name === "University & College Management System" ? "/products/university-management" :
-                                                                    product.name === "Alumni Management System" ? "/products/alumni-management" : "#"
+                                                                    product.name === "Alumni Management System" ? "/products/alumni-management" :
+                                                                        product.name === "Timetable & Attendance Management System" ? "/products/timetable-attendance" : "#"
                                                             }
                                                             className="flex items-start gap-2 p-3 rounded-lg hover:bg-slate-50 transition-colors group/item"
                                                             onClick={() => setProductsDropdownOpen(false)}
@@ -326,7 +327,7 @@ export function Navbar() {
                                             {[
                                                 { name: "University & College Management System", href: "/products/university-management" },
                                                 { name: "Alumni Management System", href: "/products/alumni-management" },
-                                                { name: "Timetable & Attendance Management", href: "#" },
+                                                { name: "Timetable & Attendance Management", href: "/products/timetable-attendance" },
                                                 { name: "Transport & Vehicle Management", href: "#" },
                                                 { name: "Inventory & Asset Management", href: "#" },
                                             ].map((product) => (

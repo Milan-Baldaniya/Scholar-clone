@@ -8,6 +8,9 @@ export const metadata: Metadata = {
 };
 
 import DisorganizedRecords from '@/components/pages/alumni/DisorganizedRecords';
+import SmartTools from '@/components/pages/alumni/SmartTools';
+import HowItWorks from '@/components/pages/alumni/HowItWorks';
+import TrustSystem from '@/components/pages/alumni/TrustSystem';
 
 // eslint-disable-next-line @next/next/no-img-element
 export default function AlumniManagementPage() {
@@ -132,6 +135,9 @@ export default function AlumniManagementPage() {
                 </div>
             </main>
             <DisorganizedRecords />
+            <SmartTools />
+            <HowItWorks />
+            <TrustSystem />
         </>
     );
 }
