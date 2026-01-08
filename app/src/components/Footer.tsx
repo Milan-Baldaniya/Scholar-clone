@@ -14,7 +14,7 @@ export function Footer() {
                         {/* Logo */}
                         <div className="flex items-center gap-3">
                             <img
-                                src="/Images/Logo.png"
+                                src="/images/Logo.png"
                                 alt="Scholar Clone Logo"
                                 className="h-12 w-auto"
                             />

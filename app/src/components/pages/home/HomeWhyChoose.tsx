@@ -37,7 +37,7 @@ export function HomeWhyChoose() {
                     {/* Right Column: Image */}
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                         <img
-                            src="/Images/whychoose.png"
+                            src="/images/whychoose.png"
                             alt="Why Choose Scholar Clone - E-Learning Features"
                             className="w-full h-auto object-cover"
                         />

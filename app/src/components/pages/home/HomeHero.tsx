@@ -53,7 +53,7 @@ export function HomeHero() {
                 <div className="relative w-full h-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="/Images/HeroImage.png"
+                        src="/images/HeroImage.png"
                         alt="University Campus"
                         className="object-cover w-full h-full"
                     />

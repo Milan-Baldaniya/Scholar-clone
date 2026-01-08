@@ -45,7 +45,7 @@ export function Navbar() {
                 <div className="flex flex-none">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
                         <img
-                            src="/Images/Logo.png"
+                            src="/images/Logo.png"
                             alt="Scholar Clone Logo"
                             className="h-12 w-auto"
                         />
@@ -293,7 +293,7 @@ export function Navbar() {
             {/* Mobile Menu */}
             <div
                 className={cn(
-                    "lg:hidden fixed inset-x-0 top-20 z-50 bg-[#2A3E5C] border-t border-slate-700 shadow-lg transition-all duration-300 ease-in-out origin-top overflow-y-auto max-h-[calc(100vh-5rem)]",
+                    "lg:hidden fixed inset-x-0 top-20 z-50 bg-[#2A3E5C] border-t border-slate-700 shadow-lg transition-all duration-300 ease-in-out origin-top overflow-y-auto max-h-[calc(100dvh-5rem)]",
                     mobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
                 )}
             >

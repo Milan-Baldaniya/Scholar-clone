@@ -27,7 +27,7 @@ export default function Loader() {
         <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-opacity duration-300">
             <div className="w-[200px] h-[200px] md:w-[250px] md:h-[250px] relative flex items-center justify-center">
                 <img
-                    src="/Images/Logo.png"
+                    src="/images/Logo.png"
                     alt="Scholar Clone Logo"
                     // Adjust top-[50%] and left-[50%] to change position.
                     // Adjust w-14 to change size.

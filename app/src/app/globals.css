@@ -73,6 +73,12 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground min-h-screen overflow-x-hidden antialiased;
   }
+}
+
+/* Production Layout Safety */
+html {
+  width: 100%;
+  overflow-x: hidden;
 }

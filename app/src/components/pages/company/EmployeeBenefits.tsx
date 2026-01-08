@@ -24,7 +24,7 @@ export default function EmployeeBenefits() {
                         h-[280px] md:h-[350px] lg:h-[470px]
                     ">
                         <Image
-                            src="/Images/Employee_Benifits_Career.png"
+                            src="/images/Employee_Benifits_Career.png"
                             alt="Employee Benefits at Scholar Clone"
                             fill
                             className="object-cover"

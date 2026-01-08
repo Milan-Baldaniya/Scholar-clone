@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -6,7 +6,14 @@ import { Footer } from "@/components/Footer";
 import GlobalLoader from "@/components/ui/GlobalLoader";
 import ScrollToTop from "@/components/utils/ScrollToTop";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
+
+export const viewport: Viewport = {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+    themeColor: '#1186fe',
+};
 
 export const metadata: Metadata = {
     title: {

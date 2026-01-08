@@ -15,7 +15,7 @@ export default function UniversityHero() {
         <section className="w-full bg-secondary-background relative overflow-hidden pb-20 lg:pb-28">
             {/* Background Vector */}
             <img
-                src="/Images/VectorProduct1.png"
+                src="/images/VectorProduct1.png"
                 alt="Background Vector Pattern"
                 className="absolute left-[-2%] bottom-0 w-full h-full object-cover opacity-70 pointer-events-none"
             />
@@ -81,7 +81,7 @@ export default function UniversityHero() {
                                     <span className="text-white">for your University</span>
                                 </p>
                                 <img
-                                    src="/Images/Arrow_UNIVERSITY_MANAGMENT.png"
+                                    src="/images/Arrow_UNIVERSITY_MANAGMENT.png"
                                     alt="Arrow pointing to button"
                                     className="w-24 h-auto mt-2 object-contain"
                                 />
@@ -96,7 +96,7 @@ export default function UniversityHero() {
                             {/* Large Image - Top Right (University Campus) */}
                             <div className="absolute top-0 right-0 w-[72%] h-[62%] rounded-[24px] overflow-hidden shadow-2xl z-10">
                                 <img
-                                    src="/Images/University Campus Technology.png"
+                                    src="/images/University Campus Technology.png"
                                     alt="University Campus Technology"
                                     className="w-full h-full object-cover"
                                 />
@@ -105,7 +105,7 @@ export default function UniversityHero() {
                             {/* Small Image - Bottom Left (Smart Learning) */}
                             <div className="absolute bottom-0 left-0 w-[50%] h-[58%] rounded-[24px] overflow-hidden shadow-2xl z-20">
                                 <img
-                                    src="/Images/Smart Learning Environment.png"
+                                    src="/images/Smart Learning Environment.png"
                                     alt="Smart Learning Environment"
                                     className="w-full h-full object-cover"
                                 />

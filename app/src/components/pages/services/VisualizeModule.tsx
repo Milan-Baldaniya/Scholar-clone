@@ -13,7 +13,7 @@ export default function VisualizeModule() {
                 {/* Image Container */}
                 <div className="w-full max-w-6xl">
                     <img
-                        src="/Images/Visual_services.png"
+                        src="/images/Visual_services.png"
                         alt="Visualize your module dashboard"
                         className="w-full h-auto object-contain"
                     />

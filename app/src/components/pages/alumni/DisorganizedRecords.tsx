@@ -48,7 +48,7 @@ export default function DisorganizedRecords() {
                         {/* Right Image */}
                         <div className="relative h-full min-h-[250px] lg:min-h-[300px] w-full rounded-2xl overflow-hidden shadow-lg">
                             <img
-                                src="/Images/Records_Alumni.png"
+                                src="/images/Records_Alumni.png"
                                 alt="Disorganized records visualization"
                                 className="w-full h-full object-cover"
                             />

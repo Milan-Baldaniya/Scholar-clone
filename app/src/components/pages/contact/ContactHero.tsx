@@ -6,7 +6,7 @@ export default function ContactHero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/Images/Hero_contactus.png"
+                    src="/images/Hero_contactus.png"
                     alt="Contact Us Hero"
                     fill
                     className="object-cover"

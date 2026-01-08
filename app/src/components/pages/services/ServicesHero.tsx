@@ -19,7 +19,7 @@ export default function ServicesHero() {
                     {/* Right Column: Image */}
                     <div className="w-full lg:w-1/2">
                         <img
-                            src="/Images/HeroServices.png"
+                            src="/images/HeroServices.png"
                             alt="Attendance and Tracking System Features"
                             className="w-full h-auto object-contain"
                         />

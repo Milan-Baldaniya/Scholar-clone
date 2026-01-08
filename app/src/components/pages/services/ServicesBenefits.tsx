@@ -27,7 +27,7 @@ export default function ServicesBenefits() {
     return (
         <section
             className="w-full py-20 lg:py-32 relative bg-cover bg-center bg-no-repeat overflow-hidden"
-            style={{ backgroundImage: "url('/Images/Benifits_services.png')" }}
+            style={{ backgroundImage: "url('/images/Benifits_services.png')" }}
         >
             <div className="absolute inset-0 bg-black/10"></div> {/* Optional overlay if text contrast needed */}
 
