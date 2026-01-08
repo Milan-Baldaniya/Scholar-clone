@@ -17,12 +17,12 @@ export default function DisorganizedRecords() {
                 </div>
 
                 {/* Main Card */}
-                <div className="bg-[#537396] rounded-[30px] p-8 md:p-12 overflow-hidden shadow-xl">
+                <div className="bg-[#537396] rounded-[20px] lg:rounded-[30px] p-6 md:p-8 lg:p-12 overflow-hidden shadow-xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
                         {/* Left Content */}
                         <div className="space-y-8">
-                            <p className="text-white/90 text-xl leading-[2.2] -mt-4">
+                            <p className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed lg:leading-[2.2] mt-0 lg:-mt-4">
                                 Institutions often struggle with scattered, outdated, and
                                 insecure alumni records, making it hard to track and engage
                                 graduates. Missing contact details, unorganized batch and
@@ -35,7 +35,7 @@ export default function DisorganizedRecords() {
                             <div className="pt-8">
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-2 bg-[#76B900] hover:bg-[#65a300] text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg"
+                                    className="inline-flex items-center gap-2 bg-[#76B900] hover:bg-[#65a300] text-white px-6 py-2.5 lg:px-8 lg:py-3 rounded-lg font-semibold transition-colors shadow-lg text-sm lg:text-base"
                                 >
                                     Get Started Today
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

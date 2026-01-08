@@ -72,7 +72,7 @@ export default function UniversityFeatures({ featuredCards, loading }: Universit
                         </div>
 
                         {/* Third Feature Card - Image Overlay */}
-                        <div className="relative rounded-3xl overflow-hidden min-h-[400px] lg:mt-24 border border-gray-200 shadow-xl">
+                        <div className="relative rounded-3xl overflow-hidden min-h-[400px] mt-0 lg:mt-24 border border-gray-200 shadow-xl">
                             {loading ? (
                                 <div className="w-full h-full bg-gray-200 animate-pulse" />
                             ) : (
@@ -93,7 +93,7 @@ export default function UniversityFeatures({ featuredCards, loading }: Universit
                         </div>
 
                         {/* Fourth Feature Card - Light Beige Background */}
-                        <div className="flex flex-col rounded-3xl p-8 bg-[#f1f8e9] justify-center lg:mt-24 h-[380px] border border-gray-200 shadow-xl">
+                        <div className="flex flex-col rounded-3xl p-8 bg-[#f1f8e9] justify-center mt-0 lg:mt-24 h-[380px] border border-gray-200 shadow-xl">
                             <h3 className="text-xl font-bold text-black mb-4 leading-tight font-['Mukta']">
                                 End-to-End University Automation
                             </h3>

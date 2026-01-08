@@ -9,7 +9,7 @@ export function HomeHero() {
                 <div className="max-w-2xl space-y-6 lg:space-y-8">
 
                     {/* H1 */}
-                    <h1 className="text-5xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900 leading-[1.15]">
+                    <h1 className="text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900 leading-[1.15]">
                         Future-Ready Solutions that Empower Your Campus
                     </h1>
 
@@ -26,7 +26,7 @@ export function HomeHero() {
                     </p>
 
                     {/* Buttons */}
-                    <div className="flex gap-4 lg:ml-12 mt-16">
+                    <div className="flex flex-col sm:flex-row gap-4 lg:ml-12 mt-16">
                         <Link
                             href="#"
                             className="rounded-[20px] bg-[#76B900] px-10 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#67a300] transition-all"

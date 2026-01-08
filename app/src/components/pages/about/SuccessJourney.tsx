@@ -121,8 +121,8 @@ export default function SuccessJourney() {
                                     className={`journey-card flex flex-col md:flex-row items-center w-full relative group transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
                                         }`}
                                 >
-                                    {/* Left Content */}
-                                    <div className={`w-full md:w-1/2 pl-8 md:pl-0 md:pr-16 order-2 md:order-1 ${!isLeft ? 'md:invisible' : ''} text-left md:text-right`}>
+                                    {/* Left Content - Shows on mobile for ALL events, on desktop only for even events */}
+                                    <div className={`w-full md:w-1/2 pl-8 md:pl-0 md:pr-16 order-2 md:order-1 text-left md:text-right ${!isLeft ? 'md:invisible' : ''}`}>
                                         <div className="relative bg-white p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-gray-100 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                                             <span className="text-6xl md:text-8xl font-black text-gray-200 absolute -bottom-4 right-0 opacity-100 select-none z-0 pointer-events-none">
                                                 {event.year}
@@ -136,8 +136,8 @@ export default function SuccessJourney() {
                                     {/* Center Dot (Fixed) - Perfectly Centered */}
                                     <div className={`absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-3 h-3 bg-white border-2 border-gray-300 rounded-full z-10 transition-colors duration-500 order-1 md:order-2 ${isVisible ? 'border-orange-500 bg-orange-50' : ''}`}></div>
 
-                                    {/* Right Content */}
-                                    <div className={`w-full md:w-1/2 pl-8 md:pl-16 order-3 md:order-3 ${isLeft ? 'md:invisible' : ''} text-left`}>
+                                    {/* Right Content - Hidden on mobile, only visible on desktop for odd events */}
+                                    <div className={`hidden md:block w-full md:w-1/2 pl-8 md:pl-16 order-3 md:order-3 text-left ${isLeft ? 'md:invisible' : ''}`}>
                                         <div className="relative bg-white p-8 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.08)] border border-gray-100 hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.15)] hover:-translate-y-1 transition-all duration-300 overflow-hidden">
                                             <span className="text-6xl md:text-8xl font-black text-gray-200 absolute -bottom-4 right-0 opacity-100 select-none z-0 pointer-events-none">
                                                 {event.year}

@@ -12,20 +12,16 @@ export default function EmployeeBenefits() {
                 <div className="
                     flex flex-col lg:flex-row items-center
                     relative
-                    // Change top-[-300px] to move Section Up/Down
-                    top-[-300px]
-                    // Change left-[0px] to move Section Left/Right
-                    left-[0px]
+                    top-0 lg:top-[-300px]
+                    left-0
                 ">
                     {/* Left Side: Image */}
                     <div className="
                         w-full 
                         relative 
                         rounded-2xl overflow-hidden shadow-lg
-                        // Change lg:w-[50%] to adjust Image Width
                         lg:w-[50%]
-                        // Change h-[470px] to adjust Image Height
-                        h-[470px] lg:h-[470px]
+                        h-[280px] md:h-[350px] lg:h-[470px]
                     ">
                         <Image
                             src="/Images/Employee_Benifits_Career.png"
@@ -39,11 +35,8 @@ export default function EmployeeBenefits() {
                     <div className="
                         w-full 
                         relative z-10
-                        // Change lg:w-[70%] to adjust Card Width
                         lg:w-[70%]
-                        // Change mt-[-50px] (mobile) or lg:mt-[0px] (desktop) to move Up/Down
-                        mt-[-50px] lg:mt-[0px]
-                        // Change lg:ml-[-130px] to move Left/Right
+                        mt-4 lg:mt-0
                         lg:ml-[-130px]
                     ">
                         <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-xl border border-slate-100">

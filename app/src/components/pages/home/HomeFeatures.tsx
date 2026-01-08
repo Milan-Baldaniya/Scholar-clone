@@ -17,7 +17,7 @@ export function HomeFeatures() {
                 <h2 id="features-heading" className="sr-only">Features and Benefits</h2>
                 <div className="grid lg:grid-cols-2 gap-16">
                     {/* Left: Component Image */}
-                    <div className="relative -ml-12 lg:-ml-24">
+                    <div className="relative ml-0 lg:-ml-24">
                         <div className="w-full rounded-2xl overflow-hidden flex items-center justify-center bg-[#E8E8E8]/[.22]">
                             <div className="relative w-full h-full">
                                 <img

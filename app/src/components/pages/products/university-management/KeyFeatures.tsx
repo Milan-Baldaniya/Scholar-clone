@@ -57,7 +57,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
                         </div>
 
                         {/* Row 2: Shifted Right (Zig-Zag) */}
-                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 lg:ml-24">
+                        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 ml-0 lg:ml-24">
                             {loading ? (
                                 Array.from({ length: 3 }).map((_, index) => (
                                     <div key={`skel-2-${index}`} className="bg-gray-200 animate-pulse rounded-lg h-[280px]" />

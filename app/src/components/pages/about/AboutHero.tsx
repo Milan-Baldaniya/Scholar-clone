@@ -6,7 +6,7 @@ export default function AboutHero() {
             {/* --- HERO IMAGE SECTION --- */}
             <div className="relative w-full">
                 {/* Image */}
-                <div className="relative h-[600px] overflow-hidden">
+                <div className="relative h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/Images/hero_aboutus.jpg"
@@ -54,14 +54,11 @@ export default function AboutHero() {
                     <div className="md:w-2/3 text-left flex items-center">
                         <p className="
                             text-gray-700 
-                            // Change text size here (e.g., text-2xl)
-                            text-lg md:text-1/3xl 
+                            text-base md:text-lg 
                             leading-normal
                             relative
-                            // Change top-[-100px] to move Up/Down (Y-axis)
-                            top-[-100px]
-                            // Change left-[-70px] to move Left/Right (X-axis)
-                            left-[-70px]
+                            top-0 lg:top-[-100px]
+                            left-0 lg:left-[-70px]
                         ">
                             Founded in 2010, Scholar Clone has been a pioneering force in transforming technology for
                             education and corporate sectors. Specializes in software solutions for the education and
@@ -77,27 +74,25 @@ export default function AboutHero() {
                     {/* Right Side: Logo Block */}
                     <div className="md:w-1/3 flex justify-center md:justify-end">
                         <div className="
-                            bg-[#F5F5F5] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl w-full h-full min-h-[300px] p-8 flex items-center justify-center gap-6
+                            bg-[#F5F5F5] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl w-full h-full min-h-[200px] md:min-h-[300px] p-6 md:p-8 flex items-center justify-center gap-6
                             relative
-                            // Change top-[-100px] to move Up/Down (Y-axis)
-                            top-[-100px]
-                            // Change right-[-60px] to move Left/Right (X-axis)
-                            right-[-60px]
+                            top-0 lg:top-[-100px]
+                            right-0 lg:right-[-60px]
                         ">
                             {/* Logo */}
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                                 src="/Images/Logo.png"
                                 alt="Scholar Clone Logo"
-                                className="h-24 w-auto"
+                                className="h-16 md:h-24 w-auto"
                             />
 
                             {/* Brand Text */}
                             <div className="flex flex-col">
-                                <span className="text-4xl font-bold leading-none text-gray-900">
+                                <span className="text-2xl md:text-4xl font-bold leading-none text-gray-900">
                                     Scholar
                                 </span>
-                                <span className="text-4xl font-bold leading-none text-gray-900">
+                                <span className="text-2xl md:text-4xl font-bold leading-none text-gray-900">
                                     Clone
                                 </span>
                             </div>
