@@ -12,7 +12,7 @@ export default function CareerRoles() {
     };
 
     return (
-        <section className="py-20 bg-white relative z-20 mt-[-200px] mb-40 // [MANUAL CONTROL] Adjust 'mb-40' to change space before Footer">
+        <section className="py-20 bg-white relative z-20 mt-0 mb-40 // [MANUAL CONTROL] Adjust 'mb-40' to change space before Footer">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-16">
                     Explore Open Roles
@@ -42,7 +42,10 @@ export default function CareerRoles() {
                                 <p>Experience: {role.experience}</p>
                             </div>
 
-                            <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-8 rounded-full transition-colors duration-300">
+                            <button
+                                className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-8 rounded-full transition-colors duration-300"
+                                suppressHydrationWarning
+                            >
                                 Apply Now
                             </button>
                         </motion.div>

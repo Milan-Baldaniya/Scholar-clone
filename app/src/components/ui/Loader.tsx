@@ -4,24 +4,27 @@ import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import animationData from '../../../public/animations/loading.json';
 import { useEffect, useState, useRef } from 'react';
 
-export default function Loader() {
+export default function Loader({ isRouteLoading = false }: { isRouteLoading?: boolean }) {
     const [isVisible, setIsVisible] = useState(true);
     const lottieRef = useRef<LottieRefCurrentProps>(null);
+
     useEffect(() => {
-        // Optimize animation speed
+        // Initial load logic
         if (lottieRef.current) {
-            lottieRef.current.setSpeed(2.5); // 2.5x speed (Slower, but faster than default)
+            lottieRef.current.setSpeed(2.5);
         }
 
-        // Hide after delay (Allows animation to complete)
         const timer = setTimeout(() => {
             setIsVisible(false);
-        }, 2000); // 2.0s duration
+        }, 2000);
 
         return () => clearTimeout(timer);
-    }, []); // Run only once on mount (Reload/Initial Load)
+    }, []);
 
-    if (!isVisible) return null;
+    // Combine initial load state with route transition state
+    const showLoader = isVisible || isRouteLoading;
+
+    if (!showLoader) return null;
 
     return (
         <div className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-opacity duration-300">
@@ -29,8 +32,6 @@ export default function Loader() {
                 <img
                     src="/assets/Logo.png"
                     alt="Scholar Clone Logo"
-                    // Adjust top-[50%] and left-[50%] to change position.
-                    // Adjust w-14 to change size.
                     className="absolute w-14 h-auto z-10 top-[62%] left-[51%] -translate-x-[50%] -translate-y-[50%]"
                 />
                 <Lottie

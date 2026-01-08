@@ -11,8 +11,12 @@ Last Updated: January 2026
 
 This is a Next.js 14+ application using the App Router for a Higher Education
 ERP website. The project supports multiple products, services, about, and
-company pages with a scalable, modular architecture.
+company pages with a scalable, modular architecture, focused on high performance
+and rich interactivity.
 
+================================================================================
+                           FOLDER STRUCTURE
+================================================================================
 
 ================================================================================
                            FOLDER STRUCTURE
@@ -21,89 +25,87 @@ company pages with a scalable, modular architecture.
 app/src/
 │
 ├── app/                          # Next.js App Router (Pages & Routes)
-│   ├── layout.tsx                # Root layout with Navbar & Footer
-│   ├── page.tsx                  # Home page (/)
-│   ├── globals.css               # Global styles
-│   ├── sitemap.ts                # SEO sitemap generator
-│   │
-│   ├── products/                 # Product pages section
-│   │   ├── page.tsx              # Products overview (/products)
+│   ├── about/                    # About Us page
+│   ├── company/                  # Company sub-pages (Careers, Partners, etc.)
+│   │   ├── careers/              # /company/careers
+│   │   └── partners/             # /company/partners
+│   ├── contact/                  # Contact page
+│   ├── products/                 # Product landing pages
 │   │   ├── university-management/
-│   │   │   └── page.tsx          # University & College Management
 │   │   ├── alumni-management/
-│   │   │   └── page.tsx          # Alumni Management System
 │   │   ├── timetable-attendance/
-│   │   │   └── page.tsx          # Timetable & Attendance
 │   │   ├── transport-management/
-│   │   │   └── page.tsx          # Transport & Vehicle Management
 │   │   ├── inventory-management/
-│   │   │   └── page.tsx          # Inventory & Asset Management
-│   │   └── accreditation-compliance/
-│   │       └── page.tsx          # Accreditation & Compliance
-│   │
-│   ├── services/                 # Services section
-│   │   └── page.tsx              # Services overview (/services)
-│   │   # TODO: Add sub-pages: implementation, support, training, consulting
-│   │
-│   ├── about/                    # About Us section
-│   │   └── page.tsx              # About overview (/about)
-│   │   # TODO: Add sub-pages: our-story, team, mission-vision, careers
-│   │
-│   ├── company/                  # Company section
-│   │   └── page.tsx              # Company overview (/company)
-│   │   # TODO: Add sub-pages: partners, clients, news, contact
-│   │
-│   └── contact/                  # Contact page
-│       └── page.tsx              # Contact form (/contact)
+│   │   └── ...
+│   ├── services/                 # Service offering pages
+│   ├── globals.css               # Global styles & Tailwind directives
+│   ├── layout.tsx                # Root layout (GlobalLoader, Navbar, Footer)
+│   ├── loading.tsx               # Next.js default loading UI
+│   ├── page.tsx                  # Home page (/)
+│   └── sitemap.ts                # Dynamic SEO sitemap generator
 │
 ├── components/                   # React Components
-│   │
-│   ├── layout/                   # Layout components (used in root layout)
-│   │   └── Navbar.tsx            # Main navigation bar
-│   │
-│   ├── ui/                       # Reusable UI primitives
-│   │   ├── Button.tsx            # Custom button component
-│   │   ├── ChipView.tsx          # Chip/tag component
-│   │   └── EditText.tsx          # Input component
-│   │
+│   ├── layout/                   # Global layout components
+│   │   ├── Navbar.tsx            # Main Navigation
+│   │   └── ...
 │   ├── pages/                    # Page-specific components
-│   │   │
-│   │   ├── home/                 # Home page components
-│   │   │   ├── index.ts          # Barrel export
-│   │   │   ├── HomeHero.tsx      # Hero section for home
-│   │   │   ├── HomeFeatures.tsx  # Features section for home
-│   │   │   ├── HomeStudentLifecycle.tsx
-│   │   │   └── HomeWhyChoose.tsx
-│   │   │
-│   │   └── products/             # Product page components
-│   │       └── university-management/
-│   │           ├── index.ts      # Barrel export
-│   │           ├── UniversityHomePage.tsx  # Main container
-│   │           ├── UniversityHero.tsx
-│   │           ├── UniversityFeatures.tsx
-│   │           ├── WhyUniversities.tsx
-│   │           ├── KeyFeatures.tsx
-│   │           ├── ScholarEdge.tsx
-│   │           └── DigitalTransformation.tsx
-│   │
-│   └── Footer.tsx                # Main footer component
+│   │   ├── home/                 # Home page widgets
+│   │   ├── company/              # Company page widgets
+│   │   ├── products/             # Product page widgets
+│   │   ├── inventory/            # Inventory page widgets
+│   │   └── ...
+│   ├── ui/                       # Reusable UI primitives
+│   │   ├── GlobalLoader.tsx      # Route transition manager
+│   │   ├── Loader.tsx            # Lottie Animation Loader
+│   │   ├── Button.tsx            # Standard Button
+│   │   ├── ChipView.tsx          # Tag/Chip component
+│   │   └── EditText.tsx          # Form Input
+│   ├── utils/                    # Utility components
+│   │   └── ScrollToTop.tsx       # Scroll handler
+│   └── Footer.tsx                # Global Footer
 │
-├── constants/                    # Application constants
-│   └── routes.ts                 # All route path definitions
+├── config/                       # App Configuration
+│   └── navigation.ts             # Menu structure & Product configuration
 │
-├── config/                       # Configuration files
-│   └── navigation.ts             # Navigation menu structure & product list
+├── constants/                    # Constants & Static Data
+│   ├── routes.ts                 # Route path definitions
+│   └── data.ts                   # Static content (Partners, Roles, etc.)
 │
-├── types/                        # TypeScript type definitions
-│   └── index.ts                  # Common types (FeatureCard, Product, etc.)
+├── lib/                          # Libraries & Utilities
+│   ├── utils.ts                  # Helper functions (clsx, twMerge)
+│   └── ...
 │
-├── lib/                          # Utility functions
-│   └── utils.ts                  # Helper functions (cn, etc.)
+├── styles/                       # Additional Styles
+│   ├── index.css                 # Base styles
+│   └── tailwind.css              # Custom Tailwind configs
 │
-└── styles/                       # Additional styles
-    ├── index.css                 # Main stylesheet imports
-    └── tailwind.css              # Tailwind configuration
+└── types/                        # TypeScript Definitions
+    └── index.ts                  # Shared interfaces
 
+================================================================================
+                          PERFORMANCE & BEST PRACTICES
+================================================================================
+
+1. IMAGE OPTIMIZATION (LCP):
+   - All "Hero" images (above the fold) MUST have the `priority` prop.
+   - Example:
+     <Image src="..." fill priority className="object-cover" />
+   - Use `sizes` prop for responsive images to prevent downloading 4k images on mobile.
+
+2. GLOBAL LOADER & TRANSITIONS:
+   - The app uses a custom `GlobalLoader` in `layout.tsx`.
+   - It listens for route changes via `usePathname` and triggers a smooth transition.
+   - DO NOT remove `GlobalLoader` from the root layout.
+
+3. ANIMATIONS:
+   - Use `framer-motion` for scroll-triggered animations (fade-ins, slides).
+   - Use `lottie-react` for complex vector animations (Loader, Illustrations).
+   - Ensure `suppressHydrationWarning` is used on interactive elements if browser extensions cause mismatch errors.
+
+4. RESPONSIVENESS:
+   - Mobile First approach.
+   - Standard Grid: `grid-cols-1` (Mobile) -> `grid-cols-2` (Tablet) -> `grid-cols-3/4` (Desktop).
+   - Use fluid typography (e.g., `text-3xl md:text-5xl`) to prevent overflow.
 
 ================================================================================
                            NAMING CONVENTIONS
@@ -111,124 +113,45 @@ app/src/
 
 COMPONENTS:
 -----------
-Components are PREFIXED by their page/section to avoid naming conflicts:
-
-  ✅ HomeHero.tsx          - Hero for Home page
-  ✅ UniversityHero.tsx    - Hero for University product page
-  ✅ AlumniHero.tsx        - Hero for Alumni product page (if created)
-
-  ❌ Hero.tsx              - Ambiguous, don't use
-  ❌ HeroSection.tsx       - Old naming, don't use
-
-
-ROUTES:
--------
-All routes are defined in constants/routes.ts. Use these instead of hardcoding:
-
-  ✅ import { ROUTES } from '@/constants/routes';
-     <Link href={ROUTES.PRODUCTS.UNIVERSITY_MANAGEMENT}>
-
-  ❌ <Link href="/products/university-management">
-
+Components are PREFIXED by their page/section:
+  ✅ CareerHero.tsx
+  ✅ PartnerGrid.tsx
+  ❌ Hero.tsx (Ambiguous)
 
 IMPORTS:
 --------
-Use barrel exports for cleaner imports:
-
-  ✅ import { HomeHero, HomeFeatures } from '@/components/pages/home';
-  ✅ import { UniversityHomePage } from '@/components/pages/products/university-management';
-
-  ❌ import HomeHero from '@/components/pages/home/HomeHero';
-
+Use absolute imports `@/...`:
+  ✅ import Navbar from '@/components/layout/Navbar';
+  ❌ import Navbar from '../../components/layout/Navbar';
 
 ================================================================================
-                         HOW TO ADD A NEW PRODUCT
-================================================================================
-
-1. CREATE ROUTE PAGE:
-   app/products/[your-product-slug]/page.tsx
-
-2. ADD TO ROUTES (constants/routes.ts):
-   PRODUCTS: {
-     ...
-     YOUR_PRODUCT: '/products/your-product-slug',
-   }
-
-3. ADD TO NAVIGATION (config/navigation.ts):
-   - Add to mainNavigation products children
-   - Add to allProducts array
-
-4. (OPTIONAL) CREATE CUSTOM COMPONENTS:
-   components/pages/products/your-product-slug/
-   ├── index.ts
-   ├── YourProductHomePage.tsx
-   ├── YourProductHero.tsx
-   └── ... other sections
-
-
-================================================================================
-                         HOW TO ADD A SUB-PAGE
-================================================================================
-
-Example: Adding /services/implementation
-
-1. Create folder: app/services/implementation/
-2. Create file: app/services/implementation/page.tsx
-3. Add route to constants/routes.ts
-4. Update navigation.ts if needed
-
-
-================================================================================
-                              KEY FILES
-================================================================================
-
-MUST-READ FILES FOR NEW DEVELOPERS:
-- constants/routes.ts        → Understand all available routes
-- config/navigation.ts       → Understand menu structure & products
-- app/layout.tsx             → Root layout with Navbar/Footer
-- components/pages/home/     → Example of page component structure
-
-
-================================================================================
-                              TECH STACK
+                               TECH STACK
 ================================================================================
 
 - Next.js 14+ (App Router)
 - React 18+
 - TypeScript
 - Tailwind CSS
-- Lucide Icons
-
-
-================================================================================
-                              COMMANDS
-================================================================================
-
-npm run dev       → Start development server (http://localhost:3000)
-npm run build     → Build for production
-npm run start     → Start production server
-npm run lint      → Run ESLint
-
+- Framer Motion (Animations)
+- Lottie React (Vector Animations)
+- Lucide React (Icons)
 
 ================================================================================
-                              TODO LIST
+                               TODO LIST
 ================================================================================
 
-[ ] Create sub-pages for /services (implementation, support, training, consulting)
-[ ] Create sub-pages for /about (our-story, team, mission-vision, careers)
-[ ] Create sub-pages for /company (partners, clients, news)
-[ ] Update Navbar.tsx to use routes from constants/routes.ts
-[ ] Create shared product components (_shared/) for reuse
-[ ] Add more product-specific components as designs are finalized
-
-
-================================================================================
-                         CONTACT / QUESTIONS
-================================================================================
-
-If you have questions about the project structure, refer to:
-- This file (DEVELOPER_GUIDE.md)
-- config/navigation.ts for product/menu structure
-- constants/routes.ts for all routes
+[x] Create Career page components
+[x] Create Partner page components
+[x] Implement Global Preloader & Page Transitions
+[x] Optimize Hero images (LCP)
+[x] Verify Global Responsiveness
+[ ] Create sub-pages for remaining /services
+[ ] Integrate backend API for Contact Form
+[ ] Add SEO metadata for all product pages
 
 ================================================================================
+                          CONTACT / QUESTIONS
+================================================================================
+
+Refer to `constants/routes.ts` for route definitions and `config/navigation.ts`
+for menu structure.

@@ -16,7 +16,7 @@ export default function CareerIntro() {
     return (
         <section className="py-20 bg-white overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative top-[-110px] left-[0px]">
+                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 relative top-0 lg:top-[-110px] left-[0px]">
                     {/* Left Side: Content */}
                     <div className="w-full lg:w-1/2 text-left space-y-6">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">

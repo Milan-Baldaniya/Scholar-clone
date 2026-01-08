@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function PartnersHero() {
     return (
-        <section className="relative w-full h-[60vh] min-h-[500px]">
+        <section className="relative w-full h-[80vh] md:h-[60vh] min-h-[700px] md:min-h-[500px]">
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
                 <Image
@@ -12,6 +12,7 @@ export default function PartnersHero() {
                     alt="Partners Hero"
                     fill
                     className="object-cover"
+                    priority
                 />
 
                 {/* Blue Overlay */}
@@ -20,7 +21,7 @@ export default function PartnersHero() {
             </div>
 
             {/* Content Container */}
-            <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white pb-12">
+            <div className="relative z-20 container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white pb-56 md:pb-12">
 
                 {/* Main Text */}
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 max-w-4xl drop-shadow-md">
@@ -42,12 +43,12 @@ export default function PartnersHero() {
             </div>
 
             {/* Search Bar Container - Bottom Left */}
-            <div className="absolute bottom-10 left-4 md:left-20 z-20 flex items-center gap-4 w-full max-w-md">
+            <div className="absolute bottom-20 md:bottom-8 left-4 right-4 md:left-20 md:right-auto z-20 flex items-center gap-4 w-auto md:w-full md:max-w-md">
                 <div className="relative flex-grow">
                     <input
                         type="text"
                         placeholder="Search"
-                        className="w-full pl-10 pr-4 py-3 rounded-md text-gray-700 bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                        className="w-full pl-10 pr-4 py-3 rounded-full text-gray-700 bg-white shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
                         suppressHydrationWarning
                     />
                     <svg className="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -28,6 +28,7 @@ export default function EmployeeBenefits() {
                             alt="Employee Benefits at Scholar Clone"
                             fill
                             className="object-cover"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
 
