@@ -48,69 +48,36 @@ export default function TimetableHero() {
                 </div>
             </div>
 
-            {/* Decorative white curve/step shape at the bottom */}
-            <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10">
-                <svg
-                    className="relative block w-full h-[60px] lg:h-[100px]"
-                    data-name="Layer 1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120"
-                    preserveAspectRatio="none"
-                >
-                    {/* 
-                        This path creates a shape that is white on the bottom right, 
-                        curving up from the middle. 
-                        It effectively "cuts out" the beige background.
-                    */}
-                    <path
-                        d="M600,0 C750,0 800,80 1200,80 V120 H0 V0 Z"
-                        fill="#FFFFFF"
-                        className="hidden" // Hiding this draft path, using a cleaner one below
-                    />
+            {/* 
+                Configurable Curved White Box 
+                ADJUST VALUES BELOW to change position (top/left) and size (width/height).
+            */}
+            <div
+                className="absolute bg-white rounded-tl-[50px] hidden lg:block"
+                style={{
+                    top: '85%',       // Y-axis position
+                    right: '-10%',      // anchored to right
+                    width: '1000px',   // Box width
+                    height: '150px',  // Box height
+                    zIndex: 10
+                }}
+            ></div>
 
-                    {/* Actual implementation based on "step" look in screenshot */}
-                    <path
-                        d="M0,120 L0,120 L1200,120 L1200,0 C1150,0 1100,50 1050,50 L750,50 C700,50 650,120 600,120 L0,120"
-                        fill="#FFFFFF"
-                        // This path fills the bottom white area. 
-                        // It starts bottom left (0,120), goes right... wait. 
-                        // Let's interpret the negative space (Beige).
-                        // Better to fill the WHITE part.
-                        // White part is at the bottom right?
-                        // "curve boxes on hero banner image"
-                        // Screenshot shows White shape filling the bottom, rising up on the right? 
-                        // No, rising up on the LEFT. Beige is Top-Left. White is Bottom-Right? 
-                        // In the screenshot, the blue box selection is on the *white* part below the beige.
-                        // The shape seems to be: White bar at bottom, but on the right it goes WAY up? 
-                        // Or on the left it goes way up?
-                        // Let's assume a standard modern wave:
-                        // Fill white at bottom.
-                        d="M0,120 L1200,120 L1200,20 C1100,20 1050,100 950,100 L0,100 Z"
-                    // Trying a simple curve first.
-                    />
-
-                    {/* 
-                       Re-evaluating based on "uploaded_image_0_...png": 
-                       It shows a sharp corner radius.
-                       Like a folder tab. 
-                       White rises up on the right. 
-                       Let's try a path that creates a rounded corner "step down".
-                    */}
-                    <path
-                        d="M0,120 L1440,120 L1440,0 C1400,0 1360,40 1320,40 H0 V120 Z"
-                        fill="#ffffff"
-                    />
-                </svg>
-                {/* 
-                    Let's try a simpler CSS approach for the "rounded corner step" 
-                    if the SVG is guessed.
-                    But user asked for "curve boxes".
-                    I'll add a specific SVG shape that mimics a "tab".
-                */}
-                <svg className="w-full h-16 lg:h-24 text-white fill-current" viewBox="0 0 1440 100" preserveAspectRatio="none">
-                    <path d="M0,100 H1440 V0 C1440,50 1380,100 1300,100 H0 V100 Z" />
-                </svg>
-            </div>
+            {/* 
+                Configurable Box 2
+                ADJUST VALUES BELOW
+            */}
+            <div
+                className="absolute bg-white rounded-br-[50px] hidden lg:block"
+                style={{
+                    top: '94%',        // Y-axis position
+                    left: '51%',      // X-axis position
+                    width: '1000px',   // Box width
+                    height: '150px',  // Box height
+                    rotate: '180deg',
+                    zIndex: 11
+                }}
+            ></div>
         </section>
     );
 }
