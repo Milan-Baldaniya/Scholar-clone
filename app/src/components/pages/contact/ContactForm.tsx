@@ -48,6 +48,7 @@ export default function ContactForm() {
                                         onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
                                         required
+                                        suppressHydrationWarning
                                     />
                                 </div>
 
@@ -60,6 +61,7 @@ export default function ContactForm() {
                                         onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
                                         required
+                                        suppressHydrationWarning
                                     />
                                 </div>
 
@@ -71,6 +73,7 @@ export default function ContactForm() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20"
+                                        suppressHydrationWarning
                                     />
                                 </div>
 
@@ -83,6 +86,7 @@ export default function ContactForm() {
                                         onChange={handleChange}
                                         className="w-full bg-[#EBEBEB] rounded-3xl px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500/20 resize-none"
                                         required
+                                        suppressHydrationWarning
                                     />
                                 </div>
 
@@ -90,6 +94,7 @@ export default function ContactForm() {
                                     <button
                                         type="submit"
                                         className="bg-[#4169E1] hover:bg-[#3154C4] text-white px-8 py-3 rounded-full font-bold text-lg transition-colors shadow-lg whitespace-nowrap"
+                                        suppressHydrationWarning
                                     >
                                         Send Message
                                     </button>
