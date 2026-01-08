@@ -45,7 +45,7 @@ export function Navbar() {
                 <div className="flex flex-none">
                     <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
                         <img
-                            src="/images/Logo.png"
+                            src="/assets/Logo.png"
                             alt="Scholar Clone Logo"
                             className="h-12 w-auto"
                         />

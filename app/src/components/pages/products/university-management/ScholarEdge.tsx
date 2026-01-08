@@ -61,7 +61,7 @@ export default function ScholarEdge() {
 
                     <div className="w-full lg:w-[46%]">
                         <img
-                            src="/images/University Management Dashboard.png"
+                            src="/assets/University Management Dashboard.png"
                             alt="University Management Dashboard"
                             className="w-full h-auto object-cover rounded-3xl shadow-lg"
                         />

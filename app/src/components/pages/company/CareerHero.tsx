@@ -6,7 +6,7 @@ export default function CareerHero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/Hero_Career.png"
+                    src="/assets/Hero_Career.png"
                     alt="Careers at Scholar Clone"
                     fill
                     className="object-cover"

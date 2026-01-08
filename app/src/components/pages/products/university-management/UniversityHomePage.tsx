@@ -38,19 +38,19 @@ export default function UniversityHomePage() {
                         id: 1,
                         title: 'AI-Powered Insights & Analytics',
                         description: 'Gain deep institutional insights, track student progress, and make data-driven decisions effortlessly.',
-                        image: '/images/img_image_326x420.png'
+                        image: '/assets/img_image_326x420.png'
                     },
                     {
                         id: 2,
                         title: 'Seamless Academic & Administrative Workflows',
                         description: 'Automate faculty workload, payroll processing, budget allocation, and leave approvals.',
-                        image: '/images/img_image_524x420.png'
+                        image: '/assets/img_image_524x420.png'
                     },
                     {
                         id: 3,
                         title: 'Next-Gen Learning & Student Success',
                         description: 'Enhance student engagement with Personalized Adaptive Learning (PAL).',
-                        image: '/images/img_image_524x420.png'
+                        image: '/assets/img_image_524x420.png'
                     }
                 ])
 

@@ -21,7 +21,7 @@ export function HomeFeatures() {
                         <div className="w-full rounded-2xl overflow-hidden flex items-center justify-center bg-[#E8E8E8]/[.22]">
                             <div className="relative w-full h-full">
                                 <img
-                                    src="/images/Comprehensive Features for Every Need.png"
+                                    src="/assets/Comprehensive Features for Every Need.png"
                                     alt="Education Isometric Illustration"
                                     className="w-full h-[450px] object-contain"
                                 />

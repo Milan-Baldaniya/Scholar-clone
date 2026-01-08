@@ -15,7 +15,7 @@ export default function VehicleTrackingBenefits() {
                     {/* Left Column: Image */}
                     <div className="w-full lg:w-[45%]">
                         <img
-                            src="/images/VehicleTrackingBenefits.png"
+                            src="/assets/VehicleTrackingBenefits.png"
                             alt="Vehicle Tracking Benefits and Safety"
                             className="w-full h-auto object-contain rounded-2xl"
                         />

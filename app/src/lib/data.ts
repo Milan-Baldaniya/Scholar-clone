@@ -51,28 +51,28 @@ export const PARTNERS_DATA = [
         category: "School",
         title: "School Partners",
         description: "Empowering K-12 schools with modern management and learning tools.",
-        image: "/images/partner_school.png"
+        image: "/assets/partner_school.png"
     },
     {
         id: 2,
         category: "Product",
         title: "Higher Education Partners",
         description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
-        image: "/images/partner_university.png"
+        image: "/assets/partner_university.png"
     },
     {
         id: 3,
         category: "Software Engineering",
         title: "Corporate Partners",
         description: "Providing cutting-edge training and HRMS solutions for corporate growth.",
-        image: "/images/partner_corporate.png"
+        image: "/assets/partner_corporate.png"
     },
     {
         id: 4,
         category: "Sales",
         title: "Channel Partners",
         description: "Collaborating to expand Scholar Clone's reach and impact globally.",
-        image: "/images/partner_channel.png"
+        image: "/assets/partner_channel.png"
     },
     // Repeats for grid to look full as per original design
     {
@@ -80,56 +80,56 @@ export const PARTNERS_DATA = [
         category: "School",
         title: "School Partners",
         description: "Empowering K-12 schools with modern management and learning tools.",
-        image: "/images/partner_school.png"
+        image: "/assets/partner_school.png"
     },
     {
         id: 6,
         category: "Product",
         title: "Higher Education Partners",
         description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
-        image: "/images/partner_university.png"
+        image: "/assets/partner_university.png"
     },
     {
         id: 7,
         category: "Software Engineering",
         title: "Corporate Partners",
         description: "Providing cutting-edge training and HRMS solutions for corporate growth.",
-        image: "/images/partner_corporate.png"
+        image: "/assets/partner_corporate.png"
     },
     {
         id: 8,
         category: "Sales",
         title: "Channel Partners",
         description: "Collaborating to expand Scholar Clone's reach and impact globally.",
-        image: "/images/partner_channel.png"
+        image: "/assets/partner_channel.png"
     },
     {
         id: 9,
         category: "School",
         title: "School Partners",
         description: "Empowering K-12 schools with modern management and learning tools.",
-        image: "/images/partner_school.png"
+        image: "/assets/partner_school.png"
     },
     {
         id: 10,
         category: "Product",
         title: "Higher Education Partners",
         description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
-        image: "/images/partner_university.png"
+        image: "/assets/partner_university.png"
     },
     {
         id: 11,
         category: "Software Engineering",
         title: "Corporate Partners",
         description: "Providing cutting-edge training and HRMS solutions for corporate growth.",
-        image: "/images/partner_corporate.png"
+        image: "/assets/partner_corporate.png"
     },
     {
         id: 12,
         category: "Sales",
         title: "Channel Partners",
         description: "Collaborating to expand Scholar Clone's reach and impact globally.",
-        image: "/images/partner_channel.png"
+        image: "/assets/partner_channel.png"
     }
 ];
 

@@ -34,7 +34,7 @@ export default function WhyUniversities() {
                         {/* Main Image */}
                         <div className="relative rounded-[2rem] overflow-hidden shadow-2xl">
                             <img
-                                src="/images/University Management Interface.png"
+                                src="/assets/University Management Interface.png"
                                 alt="Advanced Management System"
                                 className="w-full h-auto object-cover"
                             />

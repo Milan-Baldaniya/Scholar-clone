@@ -8,7 +8,7 @@ export default function PartnersHero() {
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
                 <Image
-                    src="/images/Hero_Partners.png"
+                    src="/assets/Hero_Partners.png"
                     alt="Partners Hero"
                     fill
                     className="object-cover"

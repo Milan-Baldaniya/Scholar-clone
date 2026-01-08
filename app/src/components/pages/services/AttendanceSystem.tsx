@@ -15,7 +15,7 @@ export default function AttendanceSystem() {
                     {/* Left Column: Image */}
                     <div className="w-full lg:w-[45%]">
                         <img
-                            src="/images/attendancesystem_services.png"
+                            src="/assets/attendancesystem_services.png"
                             alt="Biometric and RFID Attendance Devices"
                             className="w-full h-auto object-contain"
                         />

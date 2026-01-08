@@ -40,7 +40,7 @@ export default function UniversityFeatures({ featuredCards, loading }: Universit
                                     <div className="w-full h-full bg-gray-200 animate-pulse" />
                                 ) : (
                                     <img
-                                        src="/images/AI-Powered Analytics.png"
+                                        src="/assets/AI-Powered Analytics.png"
                                         alt="AI-Powered Analytics"
                                         className="w-full h-full object-cover"
                                     />
@@ -77,7 +77,7 @@ export default function UniversityFeatures({ featuredCards, loading }: Universit
                                 <div className="w-full h-full bg-gray-200 animate-pulse" />
                             ) : (
                                 <img
-                                    src="/images/Next-Gen Learning.png"
+                                    src="/assets/Next-Gen Learning.png"
                                     alt="Next-Gen Learning"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />

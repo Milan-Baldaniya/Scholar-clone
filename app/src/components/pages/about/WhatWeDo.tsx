@@ -7,7 +7,7 @@ export default function WhatWeDo() {
             <div className="sticky top-0 w-full h-screen z-0 overflow-hidden">
                 <div className="relative w-full h-full">
                     <Image
-                        src="/images/what_we_about.png"
+                        src="/assets/what_we_about.png"
                         alt="What We Do"
                         fill
                         className="object-cover"
@@ -30,7 +30,7 @@ export default function WhatWeDo() {
 
                     <div className="relative w-full max-w-[1000px] mx-auto h-[300px] md:h-[500px]">
                         <Image
-                            src="/images/what_we_1_about.png"
+                            src="/assets/what_we_1_about.png"
                             alt="What We Offer Icons"
                             fill
                             className="object-contain"
@@ -59,7 +59,7 @@ export default function WhatWeDo() {
 
                     <div className="relative w-full max-w-[1000px] mx-auto h-[300px] md:h-[500px]">
                         <Image
-                            src="/images/what_we_2_about.png"
+                            src="/assets/what_we_2_about.png"
                             alt="Value You Unlock Icons"
                             fill
                             className="object-contain"

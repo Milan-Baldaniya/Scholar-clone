@@ -93,7 +93,7 @@ export default function VehicleTrackingSystem() {
                     {/* Right Column: Image */}
                     <div className="w-full lg:w-[45%]">
                         <img
-                            src="/images/VTS_Services.png"
+                            src="/assets/VTS_Services.png"
                             alt="Vehicle Tracking System Mobile Interface"
                             className="w-full h-auto object-contain"
                         />

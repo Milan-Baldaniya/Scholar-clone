@@ -9,7 +9,7 @@ export default function AboutHero() {
                 <div className="relative h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="/images/hero_aboutus.jpg"
+                        src="/assets/hero_aboutus.jpg"
                         alt="About Us Hero"
                         className="object-cover w-full h-full"
                     />
@@ -82,7 +82,7 @@ export default function AboutHero() {
                             {/* Logo */}
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
-                                src="/images/Logo.png"
+                                src="/assets/Logo.png"
                                 alt="Scholar Clone Logo"
                                 className="h-16 md:h-24 w-auto"
                             />
