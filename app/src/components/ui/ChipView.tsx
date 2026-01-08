@@ -79,6 +79,7 @@ const ChipView = ({
     return (
         <div
             role="button"
+            suppressHydrationWarning
             tabIndex={disabled ? -1 : 0}
             onClick={handleClick}
             className={twMerge(

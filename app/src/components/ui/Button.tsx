@@ -93,6 +93,7 @@ const Button = ({
     return (
         <button
             type={type}
+            suppressHydrationWarning
             disabled={disabled}
             className={twMerge(
                 buttonClasses({ variant, size }),

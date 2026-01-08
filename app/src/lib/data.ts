@@ -162,3 +162,69 @@ export const EMPLOYEE_BENEFITS_DATA = [
     "Hackathons, Innovation Challenges & Tech Events",
     "Annual Team Retreats, Offsite Events & Celebrations"
 ];
+
+export const PRODUCTS_DROPDOWN_DATA = [
+    {
+        category: "Administrative Management Systems",
+        description: "Streamline campus operations with automated tools.",
+        icon: "Building2", // Using string keys for Lucide icons
+        products: [
+            { name: "Transport & Vehicle Management System", href: "/products/transport-management", icon: "Bus" },
+            { name: "Inventory, Purchase & Asset Management", href: "/products/inventory-management", icon: "Package" },
+            { name: "Event & Guest House Booking Management", href: "#", icon: "CalendarCheck" },
+            { name: "Website Management System", href: "#", icon: "Globe" }
+        ]
+    },
+    {
+        category: "Student Lifecycle & Academic Management",
+        description: "Manage the entire student journey from admission to alumni.",
+        icon: "GraduationCap",
+        products: [
+            { name: "University & College Management System", href: "/products/university-management", icon: "School" },
+            { name: "Timetable & Attendance Management", href: "/products/timetable-attendance", icon: "Clock" },
+            { name: "Student Lifecycle Management", href: "#", icon: "UserCheck" }
+        ]
+    },
+    {
+        category: "Examination & Assessment Solutions",
+        description: "Secure and efficient exam management tools.",
+        icon: "ClipboardCheck",
+        products: [
+            { name: "Examination Management System", href: "#", icon: "FileText" },
+            { name: "Lapses & Grievance Management", href: "#", icon: "AlertCircle" },
+            { name: "Accreditation & Compliance Management", href: "#", icon: "ShieldCheck" }
+        ]
+    },
+    {
+        category: "Learning & Teaching Platforms",
+        description: "Empower educators and enhance student engagement.",
+        icon: "BookOpen",
+        products: [
+            { name: "Learning Management System (LMS)", href: "#", icon: "Laptop" },
+            { name: "Library Management System", href: "#", icon: "Book" },
+            { name: "360° Feedback System", href: "#", icon: "MessageSquare" }
+        ]
+    },
+    {
+        category: "Research & Institutional Growth",
+        description: "Foster collaboration and track institutional progress.",
+        icon: "TrendingUp",
+        products: [
+            { name: "Alumni Management System", href: "/products/alumni-management", icon: "Users" },
+            { name: "Convocation Management System", href: "#", icon: "Award" },
+            { name: "National & International Linkages", href: "#", icon: "Globe2" },
+            { name: "Affiliation & Licensing Module", href: "#", icon: "BadgeCheck" }
+        ]
+    },
+    {
+        category: "Finance & HR Solutions",
+        description: "Integrated financial and human resource management.",
+        icon: "Banknote",
+        products: [
+            { name: "Finance & Accounting", href: "#", icon: "Calculator" },
+            { name: "Human Resource Management (HRMS)", href: "#", icon: "Users2" },
+            { name: "Payroll Management", href: "#", icon: "Wallet" },
+            { name: "Application/Document Tracking", href: "#", icon: "FileSearch" } // Moved here as it fits admin/HR workflows
+        ]
+    }
+];
