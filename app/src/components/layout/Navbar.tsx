@@ -106,7 +106,7 @@ export function Navbar() {
 
                                     {/* Products Mega Menu Dropdown */}
                                     <div
-                                        className={`fixed left-1/2 -translate-x-1/2 top-20 w-[1200px] transition-all duration-200 z-50 pt-4 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+                                        className={`fixed left-1/2 -translate-x-1/2 top-20 w-[90vw] max-w-[1200px] transition-all duration-200 z-50 pt-4 ${productsDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
                                     >
                                         <div className="bg-white rounded-lg shadow-2xl border border-slate-200 p-8">
                                             {/* Top 6 Categories */}
