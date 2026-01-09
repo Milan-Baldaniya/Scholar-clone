@@ -77,49 +77,8 @@
   }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   PRODUCTION SCALE LOCK - Forces identical rendering on dev & prod
-   ═══════════════════════════════════════════════════════════════════ */
-
-/* TASK A & C: Lock base font-size - prevents ANY responsive scaling */
+/* Production Layout Safety */
 html {
-  font-size: 16px !important;
   width: 100%;
   overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/* TASK B: Global scale reset - prevents zoom and transform scaling */
-body {
-  zoom: 1 !important;
-  -ms-zoom: 1 !important;
-  transform: none !important;
-  -webkit-transform: none !important;
-}
-
-/* Prevent any element from having implicit scaling */
-*,
-*::before,
-*::after {
-  transform-origin: unset;
-}
-
-/* ═══════════════════════════════════════════════════════════════════
-   TASK E: DEBUG PROOF - Remove after confirming fix
-   This text MUST appear IDENTICAL size on localhost AND Vercel
-   ═══════════════════════════════════════════════════════════════════ */
-body::before {
-  content: "GLOBAL SCALE DEBUG - 16px";
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: red;
-  color: white;
-  font-size: 16px;
-  padding: 4px 8px;
-  z-index: 99999;
-  font-family: monospace;
-  pointer-events: none;
 }
