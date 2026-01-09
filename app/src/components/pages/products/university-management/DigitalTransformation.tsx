@@ -16,7 +16,7 @@ export default function DigitalTransformation() {
                 <div className="h-[50%] w-full bg-[#2A3E5C]"></div>
             </div>
 
-            <div className="w-full max-w-scaled mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-16 lg:py-20">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-16 lg:py-20">
                 <div className="w-full rounded-3xl bg-[#e0f8f8] px-6 py-16 lg:px-20 lg:py-24 text-center shadow-lg relative overflow-hidden">
 
                     {/* Background Vector: Left */}

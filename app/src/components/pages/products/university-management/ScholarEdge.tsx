@@ -16,7 +16,7 @@ export default function ScholarEdge() {
 
     return (
         <section className="w-full py-10 lg:py-20 mt-0 lg:mt-0">
-            <div className="w-full max-w-scaled mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16">
 
                     <div className="w-full lg:w-[54%] flex flex-col gap-8 lg:gap-8 justify-start items-start">

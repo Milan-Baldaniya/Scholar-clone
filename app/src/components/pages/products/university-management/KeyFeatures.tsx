@@ -17,7 +17,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
 
     return (
         <section className="w-full py-16 lg:py-24 bg-white">
-            <div className="w-full max-w-scaled mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-12 lg:gap-16 justify-start items-center">
 
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-center text-[#007f5f] w-full lg:w-[70%] font-['Corbel']">
@@ -34,7 +34,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
                                 ))
                             ) : (
                                 allFeatures.slice(0, 3).map((feature, index) => (
-                                    <div key={`${feature.id}-${index}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-scaled-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <div key={`${feature.id}-${index}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
 
                                         <div className="flex justify-start items-center gap-5">
                                             <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
@@ -64,7 +64,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
                                 ))
                             ) : (
                                 allFeatures.length > 0 && Array.from({ length: 3 }).map((_, i) => (
-                                    <div key={`static-copy-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-scaled-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <div key={`static-copy-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                                         <div className="flex justify-start items-center gap-5">
                                             <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
                                                 <span className="text-3xl font-bold text-[#1a237e] font-['Mukta']">
@@ -93,7 +93,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
                                 ))
                             ) : (
                                 allFeatures.length > 0 && Array.from({ length: 3 }).map((_, i) => (
-                                    <div key={`static-copy-2-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-scaled-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <div key={`static-copy-2-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
                                         <div className="flex justify-start items-center gap-5">
                                             <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
                                                 <span className="text-3xl font-bold text-[#1a237e] font-['Mukta']">

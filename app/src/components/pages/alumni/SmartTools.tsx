@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function SmartTools() {
     return (
         <section className="bg-white py-16 lg:py-24 overflow-hidden">
-            <div className="max-w-scaled mx-auto px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
                 {/* Section Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -21,7 +21,7 @@ export default function SmartTools() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
 
                     {/* Card 1: Workflow Builder */}
-                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-scaled-xl p-6 lg:p-8 flex flex-col items-center text-center">
+                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
                         <h3 className="text-2xl font-bold text-slate-800 mb-4">Workflow Builder</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
                             Create structured processes to store, update, and manage alumni records effortlessly.
@@ -37,7 +37,7 @@ export default function SmartTools() {
                     </div>
 
                     {/* Card 2: Smart Data Collection */}
-                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-scaled-xl p-6 lg:p-8 flex flex-col items-center text-center">
+                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
                         <h3 className="text-2xl font-bold text-slate-800 mb-4">Smart Data Collection</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
                             Collect and update alumni information with user-friendly, custom-tailored forms.
@@ -53,7 +53,7 @@ export default function SmartTools() {
                     </div>
 
                     {/* Card 3: Actionable Insights */}
-                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-scaled-xl p-6 lg:p-8 flex flex-col items-center text-center">
+                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
                         <h3 className="text-2xl font-bold text-slate-800 mb-4">Actionable Insights</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
                             Analyze alumni engagement and trends with detailed, secure reports.
@@ -69,7 +69,7 @@ export default function SmartTools() {
                     </div>
 
                     {/* Card 4: Key Features (Text Only) */}
-                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-scaled-xl p-6 lg:p-8 flex flex-col items-center text-center justify-center">
+                    <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center justify-center">
                         <h3 className="text-2xl font-bold text-slate-800 mb-2">Key Features of Our</h3>
                         <h3 className="text-2xl font-bold text-[#1E4584] mb-8">Alumni Management System</h3>
 

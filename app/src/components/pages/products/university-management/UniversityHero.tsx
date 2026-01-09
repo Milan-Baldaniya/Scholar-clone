@@ -19,7 +19,7 @@ export default function UniversityHero() {
                 alt="Background Vector Pattern"
                 className="absolute left-[-2%] bottom-0 w-full h-full object-cover opacity-70 pointer-events-none"
             />
-            <div className="w-full max-w-scaled mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
                 <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-16">
 
                     {/* Left Content Column */}

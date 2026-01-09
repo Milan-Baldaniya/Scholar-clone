@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function HowItWorks() {
     return (
         <section className="bg-[#2A3E5C] py-16 lg:py-24 text-white">
-            <div className="max-w-scaled mx-auto px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-12 lg:mb-20">
@@ -57,7 +57,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Right Column: Image */}
-                    <div className="relative w-full h-full min-h-scaled-lg lg:min-h-auto rounded-scaled-lg overflow-hidden shadow-2xl">
+                    <div className="relative w-full h-full min-h-[400px] lg:min-h-auto rounded-3xl overflow-hidden shadow-2xl">
                         <Image
                             src="/assets/Howitswork_alumni.png"
                             alt="How Scholar Clone Alumni System Works"
