@@ -167,64 +167,64 @@ export const PRODUCTS_DROPDOWN_DATA = [
     {
         category: "Administrative Management Systems",
         description: "Streamline campus operations with automated tools.",
-        icon: "Building2", // Using string keys for Lucide icons
+        icon: "LayoutDashboard", // Modern dashboard icon for admin systems
         products: [
-            { name: "Transport & Vehicle Management System", href: "/products/transport-management", icon: "Bus" },
-            { name: "Inventory, Purchase & Asset Management", href: "/products/inventory-management", icon: "Package" },
-            { name: "Event & Guest House Booking Management", href: "#", icon: "CalendarCheck" },
-            { name: "Website Management System", href: "#", icon: "Globe" }
+            { name: "Transport & Vehicle Management System", href: "/products/transport-management", icon: "Truck" },
+            { name: "Inventory, Purchase & Asset Management", href: "/products/inventory-management", icon: "Boxes" },
+            { name: "Event & Guest House Booking Management", href: "#", icon: "CalendarHeart" },
+            { name: "Website Management System", href: "#", icon: "PanelsTopLeft" }
         ]
     },
     {
         category: "Student Lifecycle & Academic Management",
         description: "Manage the entire student journey from admission to alumni.",
-        icon: "GraduationCap",
+        icon: "UserSquare2",
         products: [
-            { name: "University & College Management System", href: "/products/university-management", icon: "School" },
-            { name: "Timetable & Attendance Management", href: "/products/timetable-attendance", icon: "Clock" },
-            { name: "Student Lifecycle Management", href: "#", icon: "UserCheck" }
+            { name: "University & College Management System", href: "/products/university-management", icon: "GraduationCap" },
+            { name: "Timetable & Attendance Management", href: "/products/timetable-attendance", icon: "CalendarClock" },
+            { name: "Student Lifecycle Management", href: "#", icon: "UserCog" }
         ]
     },
     {
         category: "Examination & Assessment Solutions",
         description: "Secure and efficient exam management tools.",
-        icon: "ClipboardCheck",
+        icon: "FileCheck2",
         products: [
-            { name: "Examination Management System", href: "#", icon: "FileText" },
-            { name: "Lapses & Grievance Management", href: "#", icon: "AlertCircle" },
-            { name: "Accreditation & Compliance Management", href: "#", icon: "ShieldCheck" }
+            { name: "Examination Management System", href: "#", icon: "ClipboardList" },
+            { name: "Lapses & Grievance Management", href: "#", icon: "MessageCircleWarning" },
+            { name: "Accreditation & Compliance Management", href: "#", icon: "Shield" }
         ]
     },
     {
         category: "Learning & Teaching Platforms",
         description: "Empower educators and enhance student engagement.",
-        icon: "BookOpen",
+        icon: "Presentation",
         products: [
-            { name: "Learning Management System (LMS)", href: "#", icon: "Laptop" },
-            { name: "Library Management System", href: "#", icon: "Book" },
-            { name: "360° Feedback System", href: "#", icon: "MessageSquare" }
+            { name: "Learning Management System (LMS)", href: "#", icon: "MonitorPlay" },
+            { name: "Library Management System", href: "#", icon: "Library" },
+            { name: "360° Feedback System", href: "#", icon: "MessagesSquare" }
         ]
     },
     {
         category: "Research & Institutional Growth",
         description: "Foster collaboration and track institutional progress.",
-        icon: "TrendingUp",
+        icon: "Rocket",
         products: [
-            { name: "Alumni Management System", href: "/products/alumni-management", icon: "Users" },
-            { name: "Convocation Management System", href: "#", icon: "Award" },
-            { name: "National & International Linkages", href: "#", icon: "Globe2" },
+            { name: "Alumni Management System", href: "/products/alumni-management", icon: "UsersRound" },
+            { name: "Convocation Management System", href: "#", icon: "PartyPopper" },
+            { name: "National & International Linkages", href: "#", icon: "Globe" },
             { name: "Affiliation & Licensing Module", href: "#", icon: "BadgeCheck" }
         ]
     },
     {
         category: "Finance & HR Solutions",
         description: "Integrated financial and human resource management.",
-        icon: "Banknote",
+        icon: "Landmark",
         products: [
-            { name: "Finance & Accounting", href: "#", icon: "Calculator" },
-            { name: "Human Resource Management (HRMS)", href: "#", icon: "Users2" },
-            { name: "Payroll Management", href: "#", icon: "Wallet" },
-            { name: "Application/Document Tracking", href: "#", icon: "FileSearch" } // Moved here as it fits admin/HR workflows
+            { name: "Finance & Accounting", href: "#", icon: "Receipt" },
+            { name: "Human Resource Management (HRMS)", href: "#", icon: "Contact" },
+            { name: "Payroll Management", href: "#", icon: "HandCoins" },
+            { name: "Application/Document Tracking", href: "#", icon: "FolderSearch" }
         ]
     }
 ];
