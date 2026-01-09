@@ -13,12 +13,12 @@ export default function WhyUniversities() {
                     {/* Left Content Column */}
                     <div className="w-full lg:w-1/2 flex flex-col items-start gap-8">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-[#1a237e] font-['Nunito']">
-                            Why Universities<br />
-                            Need an <span className="font-bold text-[#1a3e59]">Advanced<br />Management System?</span>
+                            Why Centralized<br />
+                            <span className="font-bold text-[#1a3e59]">Administrative<br />Management?</span>
                         </h2>
 
                         <p className="text-base sm:text-lg lg:text-xl text-[#37474f] leading-relaxed font-['Hind_Guntur']">
-                            Manual administration creates inefficiencies, compliance challenges, and poor student engagement. Scholar Clone's UMS automates workflows, ensures regulatory compliance, and enhances collaboration with AI-driven insights. A centralized, secure platform streamlines operations and enables hybrid learning, making institutions future-ready.
+                            Fragmented tools lead to operational silos and compliance lapses. This unified suite orchestrates all administrative functions—from accreditation and inventory to alumni relations and file tracking—ensuring total visibility, regulatory readiness, and seamless execution across the institution.
                         </p>
 
                         <button className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-200">

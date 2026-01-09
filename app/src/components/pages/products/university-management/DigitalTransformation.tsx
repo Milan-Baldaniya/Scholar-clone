@@ -36,15 +36,15 @@ export default function DigitalTransformation() {
                     <div className="relative z-10 flex flex-col justify-center items-center gap-6 lg:gap-8">
 
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-[#264653] font-['Mukta']">
-                            Secure. Scalable. Smart.
+                            Secure. Scalable. Compliant.
                         </h2>
 
                         <h3 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-[#1a237e] font-['Mukta']">
-                            Your Digital Transformation Begins Here!
+                            Your Operational Backbone Begins Here!
                         </h3>
 
                         <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-gray-600 max-w-4xl font-['Hind_Guntur']">
-                            Scholar Clone's University Management System ensures 100% data security, regulatory compliance, and seamless cloud integration. Stay ahead in the education revolution with a future-ready, AI-powered university ecosystem.
+                            Scholar Clone's Administrative Management System ensures 100% data security, regulatory compliance, and seamless cloud integration. Stay ahead with a future-ready, AI-powered institutional ecosystem.
                         </p>
 
                         <Button

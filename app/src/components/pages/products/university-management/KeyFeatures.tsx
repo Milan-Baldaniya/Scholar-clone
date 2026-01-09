@@ -21,7 +21,7 @@ export default function KeyFeatures({ keyFeatures, loading }: KeyFeaturesProps) 
                 <div className="flex flex-col gap-12 lg:gap-16 justify-start items-center">
 
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-center text-[#007f5f] w-full lg:w-[70%] font-['Corbel']">
-                        Key Features That Redefine<br />University Management
+                        Operational Modules for<br />Every Institutional Need
                     </h2>
 
                     <div className="w-full flex flex-col gap-8 lg:gap-12">

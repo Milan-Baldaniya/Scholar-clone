@@ -6,6 +6,7 @@ import WhyUniversities from './WhyUniversities';
 import KeyFeatures from './KeyFeatures';
 import ScholarEdge from './ScholarEdge';
 import DigitalTransformation from './DigitalTransformation';
+import AdminModuleCards from './AdminModuleCards';
 
 interface FeatureCard {
     id: number;
@@ -58,20 +59,20 @@ export default function UniversityHomePage() {
                     {
                         id: 1,
                         number: '1.',
-                        title: 'Student Lifecycle & Adaptive Learning Management',
-                        description: 'Manage the entire student journey with AI-driven Personalized Adaptive Learning (PAL), competency-based education, and career mapping.'
+                        title: 'Core ERP & Governance',
+                        description: 'University Management, Website, Grievance Redressal, and Communication systems.'
                     },
                     {
                         id: 2,
                         number: '2.',
-                        title: 'Faculty Research & Development',
-                        description: 'Streamline research funding, publication tracking, and plagiarism detection while enabling CPD modules.'
+                        title: 'Resource & Asset Operations',
+                        description: 'Inventory, Purchase, Transport, Guest House, and Hall Booking management.'
                     },
                     {
                         id: 3,
                         number: '3.',
-                        title: 'Smart Classroom & Hybrid Education',
-                        description: 'Leverage IoT-enabled classrooms, AI-powered engagement, LMS integration, and VR/AR learning.'
+                        title: 'Academic & Feedback Cycles',
+                        description: 'Timetable, Attendance, Convocation, 360° Feedback, and Impact Studies.'
                     }
                 ])
 
@@ -87,6 +88,7 @@ export default function UniversityHomePage() {
         <div className="min-h-screen bg-neutral-background">
             <main>
                 <UniversityHero />
+                <AdminModuleCards />
                 <UniversityFeatures
                     featuredCards={featuredCards}
                     loading={loading}

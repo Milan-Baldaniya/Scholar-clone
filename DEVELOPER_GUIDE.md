@@ -107,6 +107,16 @@ app/src/
    - Standard Grid: `grid-cols-1` (Mobile) -> `grid-cols-2` (Tablet) -> `grid-cols-3/4` (Desktop).
    - Use fluid typography (e.g., `text-3xl md:text-5xl`) to prevent overflow.
 
+5. GLOBAL SCALING & LAYOUT STANDARDS:
+   - **Global Zoom**: The application enforces a global `zoom: 0.8` in `globals.css` to align with design requirements.
+   - **Layout Containers**: 
+     - ❌ DO NOT use custom undefined classes like `max-w-scaled`, `w-scaled-xs`, `min-h-scaled-lg`.
+     - ✅ USE standard Tailwind classes:
+       - Page Container: `max-w-7xl`
+       - Card Widths: `w-[250px]`, `w-[350px]` (or relative percentages)
+       - Min Heights: `min-h-[400px]`, etc.
+   - All layout components must be tested at this 0.8 scale to ensure proper spacing and alignment.
+
 ================================================================================
                            NAMING CONVENTIONS
 ================================================================================

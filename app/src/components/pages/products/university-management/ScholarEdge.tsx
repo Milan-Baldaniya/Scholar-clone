@@ -7,11 +7,11 @@ export default function ScholarEdge() {
     }
 
     const features = [
-        '🔹 Designed Specifically for Universities, Not Generic ERP',
-        '🔹 Built-in AI, Big Data, & Predictive Analytics',
-        '🔹 Seamless Integration with LMS, HRMS, and Digital Learning',
-        '🔹 Cloud-Based, Scalable & Future-Ready Architecture',
-        '🔹 Customizable to Fit Your Institution\'s Unique Needs'
+        '🔹 Integrated University & College Management Systems',
+        '🔹 End-to-End Application & Document Tracking',
+        '🔹 360° Feedback & Grievance Redressal Mechanisms',
+        '🔹 Digital Accreditation & Compliance Readiness',
+        '🔹 Seamless Alumni & International Linkages'
     ]
 
     return (
@@ -22,9 +22,9 @@ export default function ScholarEdge() {
                     <div className="w-full lg:w-[54%] flex flex-col gap-8 lg:gap-8 justify-start items-start">
 
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-left text-[#264653] w-full lg:w-[96%] font-['Mukta']">
-                            The Scholar Clone Edge<br />
+                            The Administrative Advantage<br />
                             Streamline, Simplify & <br />
-                            Supercharge Your University!
+                            Supercharge Your Institution!
                         </h2>
 
                         <div className="flex flex-col gap-4">
