@@ -15,7 +15,7 @@ export default function InventoryFutureProof() {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-8">
                     {/* Image Side */}
                     <div className="w-full md:w-1/2 flex justify-center md:justify-end lg:-translate-x-64">
-                        <div className="relative w-full max-w-[500px] h-[300px] md:h-[400px]">
+                        <div className="relative w-full max-w-[500px] h-[300px] md:h-scaled-xl">
                             <Image
                                 src="/assets/Fututreproof_inventory.png"
                                 alt="Future Proof Inventory Management"

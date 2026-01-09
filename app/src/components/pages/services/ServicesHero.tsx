@@ -3,7 +3,7 @@
 export default function ServicesHero() {
     return (
         <section className="bg-white py-16 lg:py-24">
-            <div className="max-w-[1800px] mx-auto px-6 lg:px-8">
+            <div className="max-w-scaled-lg mx-auto px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
                     {/* Left Column: Content */}

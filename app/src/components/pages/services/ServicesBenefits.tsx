@@ -31,7 +31,7 @@ export default function ServicesBenefits() {
         >
             <div className="absolute inset-0 bg-black/10"></div> {/* Optional overlay if text contrast needed */}
 
-            <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="max-w-scaled-lg mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <h2 className="text-4xl lg:text-5xl font-bold text-white text-center mb-16 lg:mb-24">
                     Benefits
                 </h2>
@@ -48,7 +48,7 @@ export default function ServicesBenefits() {
                         return (
                             <div
                                 key={benefit.id}
-                                className={`w-[250px] h-[250px] shrink-0 rounded-2xl p-8 flex flex-col justify-start bg-gradient-to-b from-[#6594DC] to-[#3770C6] shadow-lg text-white ${marginTopClass}`}
+                                className={`w-scaled-sm h-[250px] shrink-0 rounded-2xl p-8 flex flex-col justify-start bg-gradient-to-b from-[#6594DC] to-[#3770C6] shadow-lg text-white ${marginTopClass}`}
                             >
                                 <span className="text-2xl font-bold opacity-90 mb-6 font-['Consolas']">
                                     {benefit.id}

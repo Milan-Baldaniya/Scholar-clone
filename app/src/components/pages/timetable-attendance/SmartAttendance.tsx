@@ -3,7 +3,7 @@ import React from 'react';
 export default function SmartAttendance() {
     return (
         <section className="bg-white py-16 lg:py-24">
-            <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+            <div className="max-w-scaled mx-auto px-6 lg:px-8">
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#15803d] mb-12 lg:mb-16">
@@ -13,7 +13,7 @@ export default function SmartAttendance() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto">
 
                     {/* Card 1: RFID Attendance */}
-                    <div className="bg-[#2A3E5C] rounded-[30px] p-8 lg:p-12 relative overflow-hidden min-h-[340px] flex flex-col justify-center">
+                    <div className="bg-[#2A3E5C] rounded-scaled-lg p-8 lg:p-12 relative overflow-hidden min-h-scaled-md flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
                             <svg className="w-full h-full" viewBox="0 0 600 400" preserveAspectRatio="none">
@@ -47,7 +47,7 @@ export default function SmartAttendance() {
                     </div>
 
                     {/* Card 2: Biometric Attendance */}
-                    <div className="bg-[#2A3E5C] rounded-[30px] p-8 lg:p-12 relative overflow-hidden min-h-[340px] flex flex-col justify-center">
+                    <div className="bg-[#2A3E5C] rounded-scaled-lg p-8 lg:p-12 relative overflow-hidden min-h-scaled-md flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
                             <svg className="w-full h-full" viewBox="0 0 600 400" preserveAspectRatio="none">
@@ -81,7 +81,7 @@ export default function SmartAttendance() {
                     </div>
 
                     {/* Card 3: QR-Based (Full Width) */}
-                    <div className="md:col-span-2 bg-[#2A3E5C] rounded-[30px] p-8 lg:p-12 relative overflow-hidden min-h-[280px] flex flex-col justify-center">
+                    <div className="md:col-span-2 bg-[#2A3E5C] rounded-scaled-lg p-8 lg:p-12 relative overflow-hidden min-h-scaled-sm flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
                             <svg className="w-full h-full" viewBox="0 0 1200 400" preserveAspectRatio="none">

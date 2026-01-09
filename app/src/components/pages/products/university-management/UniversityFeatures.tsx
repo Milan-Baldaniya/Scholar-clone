@@ -15,7 +15,7 @@ interface UniversityFeaturesProps {
 export default function UniversityFeatures({ featuredCards, loading }: UniversityFeaturesProps) {
     return (
         <section className="w-full py-16 lg:py-24 mt-16 lg:mt-[50px]">
-            <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full max-w-scaled mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-12 lg:gap-16 justify-start items-center">
 
                     {/* Section Header */}
@@ -72,7 +72,7 @@ export default function UniversityFeatures({ featuredCards, loading }: Universit
                         </div>
 
                         {/* Third Feature Card - Image Overlay */}
-                        <div className="relative rounded-3xl overflow-hidden min-h-[400px] mt-0 lg:mt-24 border border-gray-200 shadow-xl">
+                        <div className="relative rounded-3xl overflow-hidden min-h-scaled-lg mt-0 lg:mt-24 border border-gray-200 shadow-xl">
                             {loading ? (
                                 <div className="w-full h-full bg-gray-200 animate-pulse" />
                             ) : (

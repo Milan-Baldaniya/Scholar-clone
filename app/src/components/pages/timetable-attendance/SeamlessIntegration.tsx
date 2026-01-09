@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function SeamlessIntegration() {
     return (
         <section className="bg-[#5373A3] py-16 lg:py-24 overflow-hidden text-white">
-            <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+            <div className="max-w-scaled mx-auto px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                     {/* Left Column: Image */}
-                    <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px]">
+                    <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-scaled-lg">
                         <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-white/10">
                             <Image
                                 src="/assets/Seamless_timetable.png"

@@ -33,7 +33,7 @@ export default function ContactForm() {
     return (
         <section className="relative z-10 -mt-24 mb-20">
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-white rounded-[40px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden">
+                <div className="bg-white rounded-scaled-xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden">
                     <div className="flex flex-col lg:flex-row">
 
                         {/* LEFT COLUMN: Input Form */}

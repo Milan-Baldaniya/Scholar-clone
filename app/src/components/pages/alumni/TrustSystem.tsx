@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function TrustSystem() {
     return (
         <section className="bg-[#F4F6DE] py-16 lg:py-24">
-            <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+            <div className="max-w-scaled mx-auto px-6 lg:px-8">
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-center text-[#1E8A55] mb-16 max-w-4xl mx-auto">
@@ -69,7 +69,7 @@ export default function TrustSystem() {
                 </div>
 
                 {/* Bottom Image */}
-                <div className="relative w-full max-w-5xl mx-auto aspect-[16/9] rounded-[40px] overflow-hidden shadow-sm">
+                <div className="relative w-full max-w-5xl mx-auto aspect-[16/9] rounded-scaled-xl overflow-hidden shadow-sm">
                     <Image
                         src="/assets/Trust_alumni.png"
                         alt="Why Universities Trust Scholar Clone"

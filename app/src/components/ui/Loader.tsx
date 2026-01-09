@@ -32,7 +32,7 @@ export default function Loader({ isRouteLoading = false }: { isRouteLoading?: bo
                 <img
                     src="/assets/Logo.png"
                     alt="Scholar Clone Logo"
-                    className="absolute w-14 h-auto z-10 top-[62%] left-[51%] -translate-x-[50%] -translate-y-[50%]"
+                    className="absolute w-14 h-auto z-10 top-[62%] left-1/2 -translate-x-1/2 -translate-y-1/2"
                 />
                 <Lottie
                     lottieRef={lottieRef}

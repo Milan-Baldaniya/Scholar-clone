@@ -3,7 +3,7 @@
 export default function VehicleTrackingBenefits() {
     return (
         <section className="w-full bg-white py-16 lg:py-24">
-            <div className="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-scaled-lg mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header - Centered Title */}
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F3B77] text-center mb-16">

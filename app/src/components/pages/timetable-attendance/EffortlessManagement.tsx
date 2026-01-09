@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function EffortlessManagement() {
     return (
         <section className="bg-[#F4F6DE] py-16 lg:py-24 overflow-hidden">
-            <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
+            <div className="max-w-scaled mx-auto px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
                     {/* Left Column: Content */}
@@ -55,7 +55,7 @@ export default function EffortlessManagement() {
                     </div>
 
                     {/* Right Column: Image */}
-                    <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px]">
+                    <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-scaled-lg">
                         {/* 
                             Styling Note: 
                             "one side cornerd and one side curve also"

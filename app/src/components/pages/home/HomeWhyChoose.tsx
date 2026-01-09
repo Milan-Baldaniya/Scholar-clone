@@ -27,7 +27,7 @@ export function HomeWhyChoose() {
 
                             <Link
                                 href="#"
-                                className="inline-block rounded-[20px] bg-[#76B900] px-12 py-4 text-white font-semibold shadow-lg hover:bg-[#67a300] transition-all min-w-[200px] text-center"
+                                className="inline-block rounded-[20px] bg-[#76B900] px-12 py-4 text-white font-semibold shadow-lg hover:bg-[#67a300] transition-all min-w-scaled-xs text-center"
                             >
                                 Get Started
                             </Link>

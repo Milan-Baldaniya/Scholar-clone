@@ -17,7 +17,7 @@ export default function DisorganizedRecords() {
                 </div>
 
                 {/* Main Card */}
-                <div className="bg-[#537396] rounded-[20px] lg:rounded-[30px] p-6 md:p-8 lg:p-12 overflow-hidden shadow-xl">
+                <div className="bg-[#537396] rounded-[20px] lg:rounded-scaled-lg p-6 md:p-8 lg:p-12 overflow-hidden shadow-xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
                         {/* Left Content */}

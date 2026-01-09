@@ -50,7 +50,7 @@ export default function InventoryKeyFeatures() {
                     </div>
 
                     {/* Image Content */}
-                    <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-auto">
+                    <div className="w-full lg:w-1/2 relative min-h-scaled-lg lg:min-h-auto">
                         <div className="relative w-full h-full">
                             <Image
                                 src="/assets/keyfetures_inventory.png"
