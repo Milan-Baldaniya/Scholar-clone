@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/Footer";
@@ -100,7 +101,9 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning={true}>
             <body className={inter.className} suppressHydrationWarning={true}>
-                <GlobalLoader />
+                <Suspense fallback={null}>
+                    <GlobalLoader />
+                </Suspense>
                 <ScrollToTop />
                 <Navbar />
                 {children}
