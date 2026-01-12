@@ -21,7 +21,10 @@ export default function WhyUniversities() {
                             Fragmented tools lead to operational silos and compliance lapses. This unified suite orchestrates all administrative functions—from accreditation and inventory to alumni relations and file tracking—ensuring total visibility, regulatory readiness, and seamless execution across the institution.
                         </p>
 
-                        <button className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-200">
+                        <button
+                            suppressHydrationWarning
+                            className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-200"
+                        >
                             Get Started Today
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

@@ -8,12 +8,12 @@ export default function TransportCTA() {
             <div className="container mx-auto text-center space-y-8">
                 <h2 className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex flex-col md:flex-row items-center justify-center gap-3">
                     <span className="text-3xl md:text-4xl">🚀</span>
-                    Upgrade your campus transport system with AI-driven efficiency.
+                    Transform your student experience today.
                 </h2>
 
                 <p className="text-xl md:text-2xl text-white/90 flex flex-col md:flex-row items-center justify-center gap-3">
                     <span className="text-2xl">📞</span>
-                    Schedule a Free Demo Today!
+                    Schedule a Free Demo of the Lifecycle Suite!
                 </p>
 
                 <div className="pt-4">

@@ -4,18 +4,18 @@ import Image from "next/image";
 
 export default function TransportWhyChooseUs() {
     const benefits = [
-        "AI-Powered Efficiency: Reduce costs with automated route planning.",
-        "Student Safety First: Real-time tracking, attendance monitoring, and emergency alerts.",
-        "Seamless ERP Integration: Works with your existing student information system.",
-        "Cloud-Based & Scalable: Accessible anytime, anywhere.",
-        "Customizable to Your Needs: Tailored for universities, colleges & institutes.",
+        "End-to-End Visibility: Track student progress from admission to alumni.",
+        "Unified Data: Eliminate silos with a single source of truth.",
+        "Seamless Integration: Connects with Finance, Library, and HR modules.",
+        "Student Centric: Enhances experience with mobile apps and portals.",
+        "Regulatory Compliance: Automated reporting for NAAC/NBA/NIRF.",
     ];
 
     return (
         <section className="py-16 md:py-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4 md:px-6">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#0A8940] mb-12 md:mb-16">
-                    Why Choose Our Transport & Vehicle Management System?
+                    Why Choose Our Student Lifecycle System?
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -23,7 +23,7 @@ export default function TransportWhyChooseUs() {
                     <div className="relative w-full aspect-[4/3] max-w-[600px] mx-auto lg:mx-0">
                         <div className="relative h-full w-full rounded-2xl overflow-hidden border border-gray-200/50 shadow-sm">
                             <Image
-                                src="/assets/chosse_trasport.png"
+                                src="/assets/student_life.png"
                                 alt="Students walking near a yellow school bus"
                                 fill
                                 className="object-cover"

@@ -4,16 +4,16 @@ import React from 'react';
 
 const benefits = [
     {
-        title: "Increased Efficiency & Automation",
-        description: "Streamlines inventory, procurement, and asset tracking with automation, reducing manual effort and errors."
+        title: "Smart Digital Learning",
+        description: "Enables anywhere, anytime learning with LMS, mobile apps, and digital content delivery."
     },
     {
-        title: "Cost Savings & Budget Control",
-        description: "Optimizes resource allocation, prevents over-purchasing, and ensures financial compliance to control costs."
+        title: "Outcome-Based Excellence",
+        description: "Aligns curriculum, teaching, and assessment with OBE standards to ensure student success."
     },
     {
-        title: "Enhanced Accountability & Security",
-        description: "Provides real-time monitoring, audit trails, and compliance enforcement to prevent loss and mismanagement."
+        title: "Automated Academic Planning",
+        description: "Streamlines lesson planning, timetable management, and syllabus tracking for faculty ease."
     }
 ];
 
@@ -22,7 +22,7 @@ export default function InventoryBenefits() {
         <section className="bg-white pt-40 pb-20 px-4">
             <div className="container mx-auto max-w-7xl">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#059669] mb-12">
-                    Smarter Management, Lower Costs, Total Control!
+                    Empowering Educators, Engaging Learners!
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

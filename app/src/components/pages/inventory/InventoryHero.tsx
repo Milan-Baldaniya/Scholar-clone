@@ -8,26 +8,26 @@ export default function InventoryHero() {
         <section className="bg-[#F9F9E0] pt-16 pb-8 md:pt-24 md:pb-12 px-4 relative overflow-visible">
             <div className="container mx-auto text-center max-w-7xl relative z-10">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A8A] mb-8 leading-tight whitespace-normal lg:whitespace-nowrap px-2 lg:-translate-x-6">
-                    The Ultimate Solution for Smarter Resource Management!
+                    Transform Education with Advanced Learning<br className="hidden lg:block" />
+                    & Teaching Platforms
                 </h1>
 
                 <div className="flex flex-wrap justify-center gap-6 md:gap-10 text-xl md:text-3xl text-[#4B5563] font-medium mb-8">
                     <span className="flex items-center gap-3">
-                        <span>📦</span> Smart Inventory.
+                        <span>🎓</span> Smart Learning.
                     </span>
                     <span className="flex items-center gap-3">
-                        <span>💰</span> Smarter Purchasing.
+                        <span>📊</span> Outcome Based.
                     </span>
                     <span className="flex items-center gap-3">
-                        <span>🏛</span> Maximized Assets.
+                        <span>🏫</span> Digital Campus.
                     </span>
                 </div>
 
                 <p className="text-gray-600 mb-10 max-w-6xl mx-auto leading-relaxed text-lg md:text-xl px-4">
-                    Managing inventory, procurement, and assets in higher education is
-                    complex. From supplies to infrastructure, institutions handle vast
-                    resources daily. This solution streamlines operations, cuts costs, and
-                    ensures accountability with ease.
+                    Empower your institution with next-generation tools. From digital content creation
+                    and adaptive learning to outcome-based education and automated academic planning,
+                    we provide everything you need to deliver excellence.
                 </p>
 
                 <div className="mb-12">

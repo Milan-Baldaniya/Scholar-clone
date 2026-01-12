@@ -8,7 +8,7 @@ export default function TrustSystem() {
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-center text-[#1E8A55] mb-16 max-w-4xl mx-auto">
-                    Why Universities & Colleges Trust Our System?
+                    Why Institutions Trust Our Exam System?
                 </h2>
 
                 {/* Features Grid */}
@@ -19,10 +19,10 @@ export default function TrustSystem() {
                         <div className="w-[2px] bg-slate-400 h-full min-h-[60px]"></div>
                         <div>
                             <h3 className="text-[#335CAB] text-xl font-medium mb-1">
-                                Built for Higher Education
+                                Regulatory Compliance
                             </h3>
                             <p className="text-slate-500 text-base">
-                                Tailored specifically for universities & colleges.
+                                Adheres to UGC, AICTE, and NAAC accreditation standards.
                             </p>
                         </div>
                     </div>
@@ -32,10 +32,10 @@ export default function TrustSystem() {
                         <div className="w-[2px] bg-slate-400 h-full min-h-[60px]"></div>
                         <div>
                             <h3 className="text-[#335CAB] text-xl font-medium mb-1">
-                                100% Secure & Compliant
+                                Zero-Error Processing
                             </h3>
                             <p className="text-slate-500 text-base">
-                                Protects alumni records with high-end security measures.
+                                Automated totaling and validation eliminates calculation errors.
                             </p>
                         </div>
                     </div>
@@ -45,10 +45,10 @@ export default function TrustSystem() {
                         <div className="w-[2px] bg-slate-400 h-full min-h-[60px]"></div>
                         <div>
                             <h3 className="text-[#335CAB] text-xl font-medium mb-1">
-                                Scalable & Future-Ready
+                                High-Scale Concurrency
                             </h3>
                             <p className="text-slate-500 text-base">
-                                Handles growing alumni networks effortlessly.
+                                Supports thousands of simultaneous exams without downtime.
                             </p>
                         </div>
                     </div>
@@ -58,10 +58,10 @@ export default function TrustSystem() {
                         <div className="w-[2px] bg-slate-400 h-full min-h-[60px]"></div>
                         <div>
                             <h3 className="text-[#335CAB] text-xl font-medium mb-1">
-                                User-Friendly Interface
+                                Bank-Grade Security
                             </h3>
                             <p className="text-slate-500 text-base">
-                                Easy for staff to manage, update, and retrieve alumni details.
+                                Encrypted databases and secure role-based access control.
                             </p>
                         </div>
                     </div>
@@ -71,8 +71,8 @@ export default function TrustSystem() {
                 {/* Bottom Image */}
                 <div className="relative w-full max-w-5xl mx-auto aspect-[16/9] rounded-scaled-xl overflow-hidden shadow-sm">
                     <Image
-                        src="/assets/Trust_alumni.png"
-                        alt="Why Universities Trust Scholar Clone"
+                        src="/assets/institution4_inventory.png"
+                        alt="Examination Analytics Dashboard"
                         fill
                         className="object-cover"
                     />

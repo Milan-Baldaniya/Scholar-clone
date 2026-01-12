@@ -8,11 +8,11 @@ export default function DisorganizedRecords() {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-[#108A4B] mb-4">
-                        Disorganized Alumni Records
+                        Challenges in Traditional Examination Systems
                     </h2>
                     <p className="text-[#475569] max-w-2xl mx-auto leading-relaxed">
-                        Disconnected alumni, outdated records, and missed opportunities—
-                        without a centralized system, engagement and networking suffer.
+                        Manual paperwork, security risks, and delayed results—
+                        without a digital system, examination integrity and speed suffer.
                     </p>
                 </div>
 
@@ -23,13 +23,12 @@ export default function DisorganizedRecords() {
                         {/* Left Content */}
                         <div className="space-y-8">
                             <p className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed lg:leading-[2.2] mt-0 lg:-mt-4">
-                                Institutions often struggle with scattered, outdated, and
-                                insecure alumni records, making it hard to track and engage
-                                graduates. Missing contact details, unorganized batch and
-                                course data, and error-prone manual updates create
-                                barriers to connection. Without a centralized system, alumni
-                                drift away, limiting networking, engagement, and
-                                fundraising opportunities.
+                                Institutions often struggle with chaotic manual exams, leading to
+                                question paper leaks, seating mismanagement, and evaluation errors.
+                                Handling thousands of physical answer scripts delays result processing,
+                                frustrating students and parents. Lack of real-time monitoring makes
+                                malpractice detection difficult. Scaling operations without automation
+                                becomes impossible, risking the institution's reputation.
                             </p>
 
                             <div className="pt-8">
@@ -48,8 +47,8 @@ export default function DisorganizedRecords() {
                         {/* Right Image */}
                         <div className="relative h-full min-h-[250px] lg:min-h-[300px] w-full rounded-2xl overflow-hidden shadow-lg">
                             <img
-                                src="/assets/Records_Alumni.png"
-                                alt="Disorganized records visualization"
+                                src="/assets/effortless_timetable.png"
+                                alt="Examination process visual"
                                 className="w-full h-full object-cover"
                             />
                         </div>

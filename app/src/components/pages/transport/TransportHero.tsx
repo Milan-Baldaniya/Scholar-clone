@@ -10,15 +10,14 @@ export default function TransportHero() {
                     {/* Left Column: Text */}
                     <div className="max-w-2xl">
                         <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                            Transform Campus Transportation with Smart, Efficient & Secure Solutions
+                            Empower the Complete Student Journey from Admission to Alumni
                         </h1>
                         <h2 className="text-xl lg:text-2xl text-slate-300 font-medium mb-8">
-                            Transport & Vehicle Management System for Higher Education
+                            Student Lifecycle & Academic Management System
                         </h2>
                         <p className="text-slate-300 text-lg leading-relaxed mb-10 max-w-xl">
-                            Seamlessly manage and optimize student & staff transportation
-                            with real-time tracking, automated scheduling, and smart fleet
-                            management.
+                            A unified ecosystem that manages every stage of academic life—from
+                            pre-registration and enrollment to career development and alumni success.
                         </p>
 
                         <Link

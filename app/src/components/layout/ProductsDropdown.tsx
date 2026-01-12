@@ -46,9 +46,9 @@ export default function ProductsDropdown({
                 exit={{ opacity: 0, y: -10, scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 className={`
-                    relative z-50 rounded-2xl overflow-hidden flex min-h-[520px] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top-right
+                    relative z-50 rounded-2xl overflow-hidden flex h-[85vh] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top-right
                     backdrop-blur-xl bg-white/95 border border-white/20 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/5
-                    ${activeCategory ? 'w-[950px]' : 'w-[340px]'}
+                    ${activeCategory ? 'w-[1100px]' : 'w-[340px]'}
                 `}
             >
                 {/* LEFT SIDEBAR: Categories */}
@@ -64,8 +64,10 @@ export default function ProductsDropdown({
 
                     <div className="flex flex-col gap-1 px-3 relative">
                         {PRODUCTS_DROPDOWN_DATA.map((category, idx) => (
-                            <button
+                            <Link
                                 key={idx}
+                                href={category.href || "#"}
+                                onClick={onClose}
                                 onMouseEnter={() => setActiveCategoryIndex(idx)}
                                 className={`
                                     relative flex items-center gap-4 px-5 py-4 rounded-xl text-left transition-all duration-300 group overflow-hidden
@@ -98,22 +100,24 @@ export default function ProductsDropdown({
                                         <ChevronRight className="w-3.5 h-3.5 text-white/90" />
                                     </motion.div>
                                 )}
-                            </button>
+                            </Link>
+
                         ))}
                     </div>
                 </div>
 
                 {/* RIGHT CONTENT: Products Grid */}
+                {/* RIGHT CONTENT: Products Grid - SCROLLABLE */}
                 <AnimatePresence mode="popLayout" initial={false}>
                     {activeCategory && (
                         <motion.div
-                            className="w-[65%] bg-white/60 p-8 flex flex-col relative"
+                            className="w-[65%] bg-white/60 p-8 flex flex-col relative h-full overflow-y-auto custom-scrollbar"
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
                         >
-                            <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-[0.03] pointer-events-none" />
+                            <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-[0.03] pointer-events-none sticky top-0" />
 
                             <motion.div
                                 key={activeCategoryIndex}
@@ -124,16 +128,16 @@ export default function ProductsDropdown({
                                     visible: {
                                         opacity: 1,
                                         transition: {
-                                            staggerChildren: 0.05
+                                            staggerChildren: 0.03 // Faster stagger for many items
                                         }
                                     }
                                 }}
-                                className="h-full flex flex-col relative z-10"
+                                className="flex flex-col relative z-10"
                             >
                                 {/* Category Header */}
                                 <motion.div
                                     variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
-                                    className="mb-6"
+                                    className="mb-6 shrink-0"
                                 >
                                     <div className="flex items-center gap-3 mb-2">
                                         <div className="p-3 bg-gradient-to-br from-[#2A3E5C]/10 to-[#3B5478]/5 rounded-xl text-[#2A3E5C] shadow-sm ring-1 ring-[#2A3E5C]/10">
@@ -144,7 +148,7 @@ export default function ProductsDropdown({
                                                 {activeCategory.category}
                                             </h2>
                                             <p className="text-slate-500 text-sm mt-0.5 line-clamp-1">
-                                                Explore our {activeCategory.category.toLowerCase()} suite
+                                                {activeCategory.products.length} Modules Included
                                             </p>
                                         </div>
                                     </div>
@@ -153,35 +157,43 @@ export default function ProductsDropdown({
                                     </p>
                                 </motion.div>
 
-                                {/* Products Grid */}
-                                <div className="grid grid-cols-2 gap-4">
+                                {/* Products Grid - UPDATED: 3 Cols, Scrollable */}
+                                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 pb-8">
                                     {activeCategory.products.map((product, pIdx) => (
                                         <motion.div
                                             key={pIdx}
-                                            variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                                            variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
                                         >
-                                            <Link
-                                                href={product.href}
-                                                onClick={onClose}
-                                                className="group flex flex-col gap-2 p-4 rounded-xl border border-slate-100 bg-white hover:border-[#2A3E5C]/30 hover:shadow-lg hover:shadow-[#2A3E5C]/5 hover:-translate-y-0.5 transition-all duration-300 relative overflow-hidden"
+                                            <div
+                                                className="group relative h-[160px] bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden cursor-default border border-slate-100"
                                             >
-                                                <div className="absolute inset-0 bg-gradient-to-br from-[#2A3E5C]/0 via-[#2A3E5C]/0 to-[#2A3E5C]/5 group-hover:via-[#2A3E5C]/5 transition-all duration-500" />
-
-                                                <div className="flex items-start gap-3 relative z-10">
-                                                    <div className="p-2.5 bg-slate-50 rounded-lg group-hover:bg-[#2A3E5C] group-hover:text-white transition-colors duration-300 shadow-sm">
-                                                        {getIcon(product.icon, "w-5 h-5 text-slate-400 group-hover:text-white transition-colors")}
+                                                {/* Card Content (Default State) */}
+                                                <div className="absolute inset-0 p-4 flex flex-col items-center justify-center text-center transition-transform duration-300 group-hover:-translate-y-2">
+                                                    <div className="p-2.5 bg-[#2A3E5C]/5 rounded-full text-[#2A3E5C] mb-2 group-hover:scale-110 transition-transform duration-300">
+                                                        {getIcon(product.icon, "w-7 h-7")}
                                                     </div>
-                                                    <div>
-                                                        <h4 className="font-bold text-sm text-slate-800 group-hover:text-[#2A3E5C] transition-colors leading-snug mb-0.5">
-                                                            {product.name}
-                                                        </h4>
-                                                        <div className="flex items-center gap-1 text-xs font-medium text-slate-400 group-hover:text-[#2A3E5C] transition-colors">
-                                                            <span>View Details</span>
-                                                            <ChevronRight className="w-2.5 h-2.5 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
-                                                        </div>
-                                                    </div>
+                                                    <h4 className="font-bold text-xs text-slate-800 leading-tight">
+                                                        {product.name}
+                                                    </h4>
                                                 </div>
-                                            </Link>
+
+                                                {/* Hover Overlay (Slide Up) */}
+                                                <div className="absolute inset-0 bg-gradient-to-t from-[#2A3E5C] via-[#2A3E5C] to-[#3B5478] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out flex flex-col items-center justify-center p-4 text-center">
+                                                    <h4 className="font-bold text-xs text-white mb-2 leading-tight">
+                                                        {product.name}
+                                                    </h4>
+
+                                                    {product.description && (
+                                                        <p className="text-[10px] text-white/80 leading-relaxed mb-2 line-clamp-2">
+                                                            {product.description}
+                                                        </p>
+                                                    )}
+
+                                                    <span className="px-2 py-0.5 bg-white/20 backdrop-blur-md rounded-full text-[9px] font-bold text-white uppercase tracking-wider border border-white/10">
+                                                        Preview
+                                                    </span>
+                                                </div>
+                                            </div>
                                         </motion.div>
                                     ))}
                                 </div>

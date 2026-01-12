@@ -3,47 +3,47 @@ import React from 'react';
 export default function TransportCoreFeatures() {
     const features = [
         {
-            title: "Route & Trip Management",
-            icon: "📍",
+            title: "Admission & Enrollment",
+            icon: "📝",
             bg: "bg-[#2A3E5C]",
             text: "text-white",
             points: [
-                "Plan and optimize pick-up & drop-off points for students and staff.",
-                "Automate route assignments based on demand and schedules.",
-                "AI-based rerouting to avoid traffic congestion."
+                "Digital application forms and document verification.",
+                "Automated merit list generation and fee collection.",
+                "Seamless onboarding workflow for new students."
             ]
         },
         {
-            title: "Real-Time Vehicle Tracking & GPS Integration",
-            icon: "🚌",
+            title: "Academic Operations",
+            icon: "📚",
             bg: "bg-[#F4F6DE]",
             text: "text-[#1E3A8A]", // Dark blue text for light card
             points: [
-                "Monitor vehicle locations with live GPS tracking.",
-                "Get instant alerts on delays, deviations, and emergencies.",
-                "Set up geo-fencing for restricted areas."
+                "Curriculum planning and course management.",
+                "Automated timetable scheduling and attendance.",
+                "Examination management and result processing."
             ]
         },
         {
-            title: "Fleet & Vehicle Maintenance",
-            icon: "🛠️",
+            title: "Student Services & Campus Life",
+            icon: "🏟️",
             bg: "bg-[#2A3E5C]",
             text: "text-white",
             points: [
-                "Keep track of service schedules and maintenance history.",
-                "Receive automated alerts for repairs and fuel efficiency tracking.",
-                "Reduce breakdown risks with predictive maintenance analytics."
+                "Hostel accommodation and mess management.",
+                "Library access and digital resource tracking.",
+                "Grievance redressal and feedback mechanisms."
             ]
         },
         {
-            title: "Cost & Budget Management",
-            icon: "💰",
+            title: "Career & Alumni Success",
+            icon: "🎓",
             bg: "bg-[#F4F6DE]",
             text: "text-[#1E3A8A]",
             points: [
-                "Track fuel consumption and operational costs.",
-                "Analyze budget utilization and reduce wastage.",
-                "Generate detailed financial reports for administrative audits."
+                "Placement cell coordination and resume building.",
+                "Skill development and internship tracking.",
+                "Alumni networking and fundraising management."
             ]
         }
     ];
@@ -54,8 +54,8 @@ export default function TransportCoreFeatures() {
 
                 {/* Title */}
                 <h2 className="text-3xl md:text-4xl font-bold text-[#15803d] text-center mb-16 max-w-4xl mx-auto">
-                    Core Features of Our Transport &<br className="hidden md:block" />
-                    Vehicle Management System
+                    Core Stages of the Student Lifecycle<br className="hidden md:block" />
+                    Management System
                 </h2>
 
                 <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-8">

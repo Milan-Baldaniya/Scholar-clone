@@ -9,11 +9,10 @@ export default function SmartTools() {
                 {/* Section Header */}
                 <div className="text-center mb-16 max-w-3xl mx-auto">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#008f51] mb-6">
-                        Smart tools
+                        Smart Tools for Integrity & Speed
                     </h2>
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        Use our tools to create the perfect product for you. With these, it's easy to collaborate
-                        and go live in just a few clicks.
+                        Leverage advanced technology to conduct cheat-proof, scalable, and error-free examinations.
                     </p>
                 </div>
 
@@ -22,14 +21,14 @@ export default function SmartTools() {
 
                     {/* Card 1: Workflow Builder */}
                     <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
-                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Workflow Builder</h3>
+                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Exam Configurator</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
-                            Create structured processes to store, update, and manage alumni records effortlessly.
+                            Define exam patterns, grading logic, and eligibility criteria seamlessly.
                         </p>
                         <div className="relative w-full max-w-md aspect-[4/3]">
                             <Image
                                 src="/assets/WorkflowBuilder_alumni.png"
-                                alt="Workflow Builder Interface"
+                                alt="Exam Configuration Interface"
                                 fill
                                 className="object-contain"
                             />
@@ -38,14 +37,14 @@ export default function SmartTools() {
 
                     {/* Card 2: Smart Data Collection */}
                     <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
-                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Smart Data Collection</h3>
+                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Secure Question Bank</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
-                            Collect and update alumni information with user-friendly, custom-tailored forms.
+                            Manage thousands of questions with encryption and randomized paper sets.
                         </p>
                         <div className="relative w-full max-w-md aspect-[4/3]">
                             <Image
                                 src="/assets/Smart Data Collection.png"
-                                alt="Smart Data Collection Interface"
+                                alt="Question Bank Management"
                                 fill
                                 className="object-contain"
                             />
@@ -54,14 +53,14 @@ export default function SmartTools() {
 
                     {/* Card 3: Actionable Insights */}
                     <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center">
-                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Actionable Insights</h3>
+                        <h3 className="text-2xl font-bold text-slate-800 mb-4">Result Analytics</h3>
                         <p className="text-slate-600 mb-8 max-w-sm">
-                            Analyze alumni engagement and trends with detailed, secure reports.
+                            Generate detailed subject-wise, student-wise, and center-wise performance reports.
                         </p>
                         <div className="relative w-full max-w-md aspect-[4/3]">
                             <Image
                                 src="/assets/Actionable Insights.png"
-                                alt="Actionable Insights Dashboard"
+                                alt="Exam Result Analytics"
                                 fill
                                 className="object-contain"
                             />
@@ -71,37 +70,37 @@ export default function SmartTools() {
                     {/* Card 4: Key Features (Text Only) */}
                     <div className="bg-gradient-to-b from-[#F4F6DE] to-white rounded-3xl p-6 lg:p-8 flex flex-col items-center text-center justify-center">
                         <h3 className="text-2xl font-bold text-slate-800 mb-2">Key Features of Our</h3>
-                        <h3 className="text-2xl font-bold text-[#1E4584] mb-8">Alumni Management System</h3>
+                        <h3 className="text-2xl font-bold text-[#1E4584] mb-8">Examination System</h3>
 
                         <ul className="text-left space-y-4 max-w-lg">
                             <li className="flex gap-3 text-slate-700">
                                 <span className="font-bold text-slate-900 min-w-fit">•</span>
                                 <span>
-                                    <strong className="text-slate-900">Centralized Alumni Database</strong> – Securely store and access all records in one place.
+                                    <strong className="text-slate-900">QR-Coded Answer Scripts</strong> – Mask student identity for unbiased evaluation.
                                 </span>
                             </li>
                             <li className="flex gap-3 text-slate-700">
                                 <span className="font-bold text-slate-900 min-w-fit">•</span>
                                 <span>
-                                    <strong className="text-slate-900">Advanced Search & Filters</strong> – Quickly find alumni details with precision.
+                                    <strong className="text-slate-900">Question Paper Encryption</strong> – Prevent leakage with AES-256 secure delivery.
                                 </span>
                             </li>
                             <li className="flex gap-3 text-slate-700">
                                 <span className="font-bold text-slate-900 min-w-fit">•</span>
                                 <span>
-                                    <strong className="text-slate-900">Batch & Department Organization</strong> – Categorize alumni by year, course, or achievements.
+                                    <strong className="text-slate-900">Auto-Generated Grade Cards</strong> – Publish accurate results instantly.
                                 </span>
                             </li>
                             <li className="flex gap-3 text-slate-700">
                                 <span className="font-bold text-slate-900 min-w-fit">•</span>
                                 <span>
-                                    <strong className="text-slate-900">Top-Tier Security & Scalability</strong> – Cloud-based protection for sensitive data.
+                                    <strong className="text-slate-900">Digital Internal Assessment</strong> – Faculty upload marks securely online.
                                 </span>
                             </li>
                             <li className="flex gap-3 text-slate-700">
                                 <span className="font-bold text-slate-900 min-w-fit">•</span>
                                 <span>
-                                    <strong className="text-slate-900">Controlled Access Management</strong> – Set roles and permissions for secure staff access.
+                                    <strong className="text-slate-900">Revaluation Workflow</strong> – Streamlined online rechecking process.
                                 </span>
                             </li>
                         </ul>

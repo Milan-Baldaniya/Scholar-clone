@@ -5,24 +5,24 @@ import Image from 'next/image';
 
 const features = [
     {
-        title: "Real-Time Inventory Tracking",
-        description: "Monitor stock levels, automate replenishment, and reduce wastage."
+        title: "Seamless Mobile Learning",
+        description: "Access course materials, lectures, and assignments anytime, anywhere on any device."
     },
     {
-        title: "Smart Purchase Management",
-        description: "Automate approvals, compare supplier quotes, and ensure budget compliance."
+        title: "Automated Assessments",
+        description: "Conduct quizzes and exams with instant grading and detailed performance analytics."
     },
     {
-        title: "End-to-End Asset Management",
-        description: "Track asset allocation, schedule maintenance, and optimize utilization."
+        title: "Accreditation Readiness",
+        description: "Generate automated reports for NAAC, NBA, and NIRF with precise outcome mapping."
     },
     {
-        title: "Cloud-Based & Scalable",
-        description: "Access data anytime, anywhere, and scale effortlessly as your institution grows."
+        title: "Collaborative Learning",
+        description: "Foster engagement through discussion forums, group projects, and peer reviews."
     },
     {
-        title: "AI-Powered Reporting & Insights",
-        description: "Generate real-time reports to make informed financial and operational decisions."
+        title: "360° Student Insights",
+        description: "Visualize learning progress, attendance, and skill gaps with intuitive dashboards."
     }
 ];
 
@@ -34,7 +34,7 @@ export default function InventoryKeyFeatures() {
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2 px-6 py-16 lg:pl-24 lg:pr-12 text-[#F9F9E0] flex flex-col justify-center">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 leading-tight">
-                            Key Features That Drive Efficiency
+                            Key Features That Drive Excellence
                         </h2>
 
                         <ul className="space-y-8">

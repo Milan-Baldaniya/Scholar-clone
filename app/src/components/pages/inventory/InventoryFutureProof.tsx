@@ -9,7 +9,7 @@ export default function InventoryFutureProof() {
         <section className="bg-[#FCFDFF] py-20 px-4">
             <div className="container mx-auto max-w-7xl">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#059669] mb-16 whitespace-normal lg:whitespace-nowrap">
-                    Future-Proof Your Institution’s Resource Management
+                    Future-Proof Your Institution’s Education Delivery
                 </h2>
 
                 <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-8">
@@ -18,7 +18,7 @@ export default function InventoryFutureProof() {
                         <div className="relative w-full max-w-[500px] h-[300px] md:h-scaled-xl">
                             <Image
                                 src="/assets/Fututreproof_inventory.png"
-                                alt="Future Proof Inventory Management"
+                                alt="Future Proof Learning Management"
                                 fill
                                 className="object-contain"
                             />
@@ -28,7 +28,7 @@ export default function InventoryFutureProof() {
                     {/* Text & CTA Side */}
                     <div className="w-full md:w-1/2 text-center flex flex-col items-center md:items-center lg:-translate-x-32">
                         <p className="text-[#1E3A8A] text-2xl md:text-3xl font-medium leading-relaxed mb-8 max-w-4xl text-center whitespace-nowrap">
-                            Transform the way you manage institutional resources!
+                            Transform the way you deliver learning!
                             <br />
                             Contact us for a demo today.
                         </p>

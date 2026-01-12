@@ -10,19 +10,19 @@ export default function EffortlessManagement() {
                     {/* Left Column: Content */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-[#1E3A8A] mb-4">
-                            Effortless Timetable Management for Higher Education
+                            Optimizing Institutional Operations with Unified Finance & HR
                         </h2>
 
                         <p className="text-[#3B82F6] font-medium text-lg mb-6">
-                            No More Scheduling Chaos! Our smart scheduling system dynamically manages:
+                            Break down silos! Our integrated platform synchronizes financial and human resource data effortlessly:
                         </p>
 
                         <ul className="space-y-3 mb-10">
                             {[
-                                "Faculty-wise, course-wise, and batch-wise scheduling",
-                                "Automatic conflict resolution & real-time updates",
-                                "Elective courses, lab sessions, and internship programs",
-                                "Integration with academic calendars & LMS"
+                                "Centralized fee & payroll management",
+                                "Automated statutory compliance & reporting",
+                                "Seamless budget allocation & tracking",
+                                "Real-time visibility into institutional health"
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
                                     <svg className="w-6 h-6 text-slate-800 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,15 +34,15 @@ export default function EffortlessManagement() {
                         </ul>
 
                         <h3 className="text-xl md:text-2xl font-bold text-[#1E3A8A] mb-6">
-                            Advanced Features That Transform Your Institution
+                            Key Capabilities That Drive Efficiency
                         </h3>
 
                         <ul className="space-y-4">
                             {[
-                                { title: "Live Tracking & Alerts", desc: "Get real-time attendance updates for students & faculty." },
-                                { title: "Automated Reports", desc: "Export detailed analytics for compliance, accreditation, and audits." },
-                                { title: "Instant Notifications", desc: "Alerts for absenteeism, low attendance, and schedule changes." },
-                                { title: "Cloud-Based Access", desc: "Manage attendance & schedules from anywhere, anytime." }
+                                { title: "Automated Payroll", desc: "Sync attendance directly to payroll for error-free salary processing." },
+                                { title: "Digital Service Books", desc: "Maintain complete employment history and document records digitally." },
+                                { title: "Instant Fee Reconciliation", desc: "Real-time updates of varied fee collections across departments." },
+                                { title: "Role-Based Access", desc: "Secure data access ensuring privacy for sensitive financial & HR data." }
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
                                     <span className="mt-2 w-1.5 h-1.5 rounded-full bg-slate-800 flex-shrink-0" />

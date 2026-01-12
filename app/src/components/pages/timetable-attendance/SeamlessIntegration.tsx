@@ -22,18 +22,18 @@ export default function SeamlessIntegration() {
                     {/* Right Column: Content */}
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                            Seamless Integration with Your Existing Systems
+                            Seamless Integration for Total Financial Control
                         </h2>
 
                         <p className="text-[#E0E7FF] font-medium text-lg mb-8">
-                            Our Timetable & Attendance Module integrates effortlessly with:
+                            Our Finance & HR Module integrates effortlessly with:
                         </p>
 
                         <ul className="space-y-4 mb-10">
                             {[
-                                { title: "Learning Management System (LMS)", desc: "Sync attendance with online courses." },
-                                { title: "HR & Payroll Systems", desc: "Track faculty working hours & automate payroll." },
-                                { title: "Student Information System (SIS)", desc: "Centralized student records for efficient administration." }
+                                { title: "Payment Gateways & Banks", desc: "For automated fee collection & salary disbursement." },
+                                { title: "Biometric Devices", desc: "Sync attendance data directly to payroll processing." },
+                                { title: "Tally & Accounting Software", desc: "Export financial data for external auditing." }
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
                                     <div className="w-6 h-6 rounded bg-[#22C55E] flex items-center justify-center flex-shrink-0 mt-1">
@@ -49,12 +49,12 @@ export default function SeamlessIntegration() {
                         </ul>
 
                         <h3 className="text-xl md:text-2xl font-bold mb-6">
-                            Boost Institutional Efficiency & Compliance
+                            Ensure 100% Statutory Compliance
                         </h3>
 
                         <ul className="space-y-4">
                             {[
-                                "Higher education institutes face challenges in UGC, NAAC, NBA compliance regarding attendance tracking. Our module ensures full regulatory adherence while improving student engagement & faculty efficiency."
+                                "Stay ahead of regulatory changes. Our system ensures strict adherence to UGC, AICTE, and government financial/HR norms, automating tax deductions (TDS), PF/ESIC calculations, and mandatory reporting."
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
                                     <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0" />

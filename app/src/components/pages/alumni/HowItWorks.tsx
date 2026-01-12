@@ -8,7 +8,7 @@ export default function HowItWorks() {
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-12 lg:mb-20">
-                    How It Works: A Simple Yet Powerful System
+                    How It Works: Secure Examination Lifecycle
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -18,40 +18,40 @@ export default function HowItWorks() {
                         {/* Step 1 */}
                         <div>
                             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
-                                Step 1: Centralized Data Entry
+                                Step 1: Pre-Exam Configuration
                             </h3>
                             <p className="text-[#D0D3B6] text-lg leading-relaxed">
-                                Easily input alumni details, including name, contact info, graduation year, degree, and career updates.
+                                Define exam schedules, create digital question banks, and generate hall tickets automatically.
                             </p>
                         </div>
 
                         {/* Step 2 */}
                         <div>
                             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
-                                Step 2: Organized & Searchable Records
+                                Step 2: On-Exam Monitoring
                             </h3>
                             <p className="text-[#D0D3B6] text-lg leading-relaxed">
-                                Filter alumni based on different parameters—quickly retrieve specific graduates for outreach or verification.
+                                Manage center allocation, track attendance in real-time, and ensure secure question paper delivery.
                             </p>
                         </div>
 
                         {/* Step 3 */}
                         <div>
                             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
-                                Step 3: Secure & Controlled Access
+                                Step 3: On-Screen Marking (OSM)
                             </h3>
                             <p className="text-[#D0D3B6] text-lg leading-relaxed">
-                                Allow different departments to access alumni records without compromising data security.
+                                Evaluators grade answer scripts digitall securely from anywhere, with auto-totaling to prevent errors.
                             </p>
                         </div>
 
                         {/* Step 4 */}
                         <div>
                             <h3 className="text-xl lg:text-2xl font-bold text-white mb-2">
-                                Step 4: Future-Proof Your Institution’s Alumni Network
+                                Step 4: Result Processing & Declaration
                             </h3>
                             <p className="text-[#D0D3B6] text-lg leading-relaxed">
-                                Keep alumni data up to date, ensuring lifelong engagement opportunities.
+                                instantly generate grade cards and publish results online with complete audit trails.
                             </p>
                         </div>
                     </div>
@@ -59,8 +59,8 @@ export default function HowItWorks() {
                     {/* Right Column: Image */}
                     <div className="relative w-full h-full min-h-[400px] lg:min-h-auto rounded-3xl overflow-hidden shadow-2xl">
                         <Image
-                            src="/assets/Howitswork_alumni.png"
-                            alt="How Scholar Clone Alumni System Works"
+                            src="/assets/Seamless_timetable.png"
+                            alt="Examination Lifecycle Process"
                             fill
                             className="object-cover"
                         />

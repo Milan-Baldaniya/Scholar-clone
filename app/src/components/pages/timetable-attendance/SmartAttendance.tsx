@@ -7,12 +7,12 @@ export default function SmartAttendance() {
 
                 {/* Section Header */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#15803d] mb-12 lg:mb-16">
-                    Smart Attendance Technologies for Higher Education
+                    Empowering Financial & Human Capital
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full mx-auto">
 
-                    {/* Card 1: RFID Attendance */}
+                    {/* Card 1: Financial Integrity */}
                     <div className="bg-[#2A3E5C] rounded-3xl p-8 lg:p-12 relative overflow-hidden min-h-[350px] flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
@@ -34,19 +34,19 @@ export default function SmartAttendance() {
 
                         <div className="relative z-10">
                             <h3 className="text-3xl font-bold text-[#F4F6DE] mb-6">
-                                RFID Attendance
+                                Financial Integrity
                             </h3>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed mb-6 opacity-90">
-                                Students use RFID-enabled ID cards to tap at classroom or
-                                campus entry points, marking attendance instantly.
+                                Ensure transparency and accountability with automated fee collection,
+                                real-time reconciliation, and audit-ready financial reporting.
                             </p>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed opacity-90">
-                                Ideal for large campuses—fast, contactless, and highly reliable.
+                                Eliminate revenue leakage and ensure compliance.
                             </p>
                         </div>
                     </div>
 
-                    {/* Card 2: Biometric Attendance */}
+                    {/* Card 2: Workforce Excellence */}
                     <div className="bg-[#2A3E5C] rounded-3xl p-8 lg:p-12 relative overflow-hidden min-h-[350px] flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
@@ -68,19 +68,19 @@ export default function SmartAttendance() {
 
                         <div className="relative z-10">
                             <h3 className="text-3xl font-bold text-[#F4F6DE] mb-6">
-                                Biometric Attendance
+                                Workforce Excellence
                             </h3>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed mb-6 opacity-90">
-                                Ensure 100% accurate attendance with fingerprint
-                                & facial authentication at classroom entry points.
+                                Manage the entire employee lifecycle from recruitment to retirement,
+                                including performance appraisal, training, and seamless payroll.
                             </p>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed opacity-90">
-                                Eliminates proxy attendance and enhances security.
+                                Attract and retain top educational talent.
                             </p>
                         </div>
                     </div>
 
-                    {/* Card 3: QR-Based (Full Width) */}
+                    {/* Card 3: Governance (Full Width) */}
                     <div className="md:col-span-2 bg-[#2A3E5C] rounded-3xl p-8 lg:p-12 relative overflow-hidden min-h-[250px] flex flex-col justify-center">
                         {/* Vector Background */}
                         <div className="absolute inset-0 pointer-events-none">
@@ -102,13 +102,13 @@ export default function SmartAttendance() {
 
                         <div className="relative z-10 max-w-4xl">
                             <h3 className="text-3xl font-bold text-[#F4F6DE] mb-6">
-                                QR-Based Mobile Attendance
+                                Governance & Compliance
                             </h3>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed mb-4 opacity-90">
-                                Students scan unique QR codes generated for each session using a mobile app.
+                                Maintain a single source of truth for all institutional data, ensuring compliance with regulatory bodies.
                             </p>
                             <p className="text-[#F4F6DE] text-lg leading-relaxed opacity-90">
-                                Geo-fencing & location-based validation to ensure attendance is marked only in authorized areas.
+                                Automated tracking of statutory requirements, committee meetings, and policy adherence.
                             </p>
                         </div>
                     </div>

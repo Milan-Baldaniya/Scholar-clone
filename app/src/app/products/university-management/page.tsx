@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { UniversityHomePage } from '@/components/pages/products/university-management';
+import { UniversityHomePage } from '@/components/pages/university-management';
 
 export const metadata: Metadata = {
     title: 'University Management System - AI-Driven Higher Education ERP | Scholar Clone',

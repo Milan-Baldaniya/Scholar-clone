@@ -165,66 +165,141 @@ export const EMPLOYEE_BENEFITS_DATA = [
 
 export const PRODUCTS_DROPDOWN_DATA = [
     {
-        category: "Administrative Management Systems",
-        description: "Streamline campus operations with automated tools.",
-        icon: "LayoutDashboard", // Modern dashboard icon for admin systems
+        category: "Analytics & Reporting Tools",
+        description: "Turn data into actionable intelligence.",
+        icon: "BarChart3",
+        href: "/products/analytics-reporting",
         products: [
-            { name: "Transport & Vehicle Management System", href: "/products/transport-management", icon: "Truck" },
-            { name: "Inventory, Purchase & Asset Management", href: "/products/inventory-management", icon: "Boxes" },
-            { name: "Event & Guest House Booking Management", href: "#", icon: "CalendarHeart" },
-            { name: "Website Management System", href: "#", icon: "PanelsTopLeft" }
+            { name: "Institutional Analytics Platform", href: "#", icon: "LayoutDashboard", description: "Unified command center." },
+            { name: "Academic Reporting Software", href: "#", icon: "FileText", description: "Compliance and internal reports." },
+            { name: "AI Insights & Prediction", href: "#", icon: "Brain", description: "Forecast trends and risks." },
+            { name: "Performance Analytics", href: "#", icon: "LineChart", description: "Track institutional KPIs." },
+            { name: "Student Performance Analytics", href: "#", icon: "GraduationCap", description: "Monitor academic outcomes." },
+            { name: "Teacher Performance Analytics", href: "#", icon: "UserCheck", description: "Evaluate faculty effectiveness." },
+            { name: "Stakeholder Dashboards", href: "#", icon: "PieChart", description: "Role-specific views." },
+            { name: "Reports Engine", href: "#", icon: "FileBarChart", description: "Customizable reporting tool." },
+            { name: "Predictive Analytics", href: "#", icon: "TrendingUp", description: "Future trend forecasting." },
+            { name: "Admission Prediction", href: "#", icon: "UserPlus", description: "Enrollment forecasting models." }
+        ]
+    },
+    {
+        category: "Administrative Management Systems",
+        description: "Core institutional operations & compliance management.",
+        icon: "Building2",
+        href: "/products/university-management",
+        products: [
+            { name: "University & College Management", href: "#", icon: "LayoutDashboard", description: "Centralized digital platform." },
+            { name: "Alumni Management System", href: "#", icon: "UsersRound", description: "Alumni engagement & networking." },
+            { name: "Timetable & Attendance", href: "#", icon: "CalendarClock", description: "Automated scheduling & tracking." },
+            { name: "Transport & Vehicle Management", href: "#", icon: "Truck", description: "Fleet routing & safety." },
+            { name: "Inventory & Asset Management", href: "#", icon: "Boxes", description: "Procurement & lifecycle tracking." },
+            { name: "Accreditation & Compliance", href: "#", icon: "ShieldCheck", description: "NAAC, NBA, NIRF readiness." },
+            { name: "Affiliation & Licensing", href: "#", icon: "FileBadge", description: "Manage statutory approvals." },
+            { name: "Website Management System", href: "#", icon: "Globe", description: "CMS for institutional web." },
+            { name: "Lapses & Grievance Management", href: "#", icon: "MessageCircleWarning", description: "Redressal & tracking." },
+            { name: "360° Feedback System", href: "#", icon: "MessagesSquare", description: "Multi-stakeholder feedback." },
+            { name: "Doc Tracking & Journey", href: "#", icon: "FileSearch", description: "File movement monitoring." },
+            { name: "Guest House & Hall Booking", href: "#", icon: "Hotel", description: "Facility reservation system." },
+            { name: "Event Management Program", href: "#", icon: "CalendarHeart", description: "Plan & execute events." },
+            { name: "Convocation Management", href: "#", icon: "PartyPopper", description: "Degree award ceremonies." },
+            { name: "National & Int. Linkages", href: "#", icon: "Link", description: "Collaborations & MoUs." },
+            { name: "Communication System", href: "#", icon: "Megaphone", description: "Centralized alerts & msgs." },
+            { name: "Email/SMS/Chatbot", href: "#", icon: "MessageSquareText", description: "Multi-channel support." },
+            { name: "Workflow Management", href: "#", icon: "GitMerge", description: "Approval process automation." },
+            { name: "Campus Security (Visitor)", href: "#", icon: "ShieldAlert", description: "Entry & safety tracking." },
+            { name: "Impact Study Management", href: "#", icon: "Target", description: "Measure institutional outcomes." }
         ]
     },
     {
         category: "Student Lifecycle & Academic Management",
-        description: "Manage the entire student journey from admission to alumni.",
+        description: "From admission to graduation, complete student journey.",
         icon: "UserSquare2",
+        href: "/products/transport-management",
         products: [
-            { name: "University & College Management System", href: "/products/university-management", icon: "GraduationCap" },
-            { name: "Timetable & Attendance Management", href: "/products/timetable-attendance", icon: "CalendarClock" },
-            { name: "Student Lifecycle Management", href: "#", icon: "UserCog" }
+            { name: "Education CRM", href: "#", icon: "Megaphone", description: "Lead & inquiry management." },
+            { name: "Online Entrance Exam", href: "#", icon: "Laptop", description: "Secure entrance testing." },
+            { name: "Pre-Registration & Eligibility", href: "#", icon: "FileCheck", description: "Applicant verification." },
+            { name: "Student Information System", href: "#", icon: "Users", description: "Centralized student data." },
+            { name: "Admission & Migration", href: "#", icon: "UserPlus", description: "Enrollment workflows." },
+            { name: "Academic Data Configuration", href: "#", icon: "Settings", description: "Program & course setup." },
+            { name: "Attendance Tracking", href: "#", icon: "Clock", description: "Real-time monitoring." },
+            { name: "Hostel & Accommodation", href: "#", icon: "Home", description: "Room allocation billing." },
+            { name: "Extracurricular Management", href: "#", icon: "Trophy", description: "Sports & club activities." },
+            { name: "Career Counseling", href: "#", icon: "Briefcase", description: "Placement readiness." },
+            { name: "Student Portal", href: "#", icon: "Layout", description: "Self-service access." },
+            { name: "Mobile App", href: "#", icon: "Smartphone", description: "On-the-go access." },
+            { name: "Club Management", href: "#", icon: "Users", description: "Student organizations." },
+            { name: "Student Transfer/Migration", href: "#", icon: "ArrowRightLeft", description: "Inter-institute movement." }
         ]
     },
     {
         category: "Examination & Assessment Solutions",
-        description: "Secure and efficient exam management tools.",
+        description: "AI-driven, secure & digital exam processing.",
         icon: "FileCheck2",
+        href: "/products/alumni-management",
         products: [
-            { name: "Examination Management System", href: "#", icon: "ClipboardList" },
-            { name: "Lapses & Grievance Management", href: "#", icon: "MessageCircleWarning" },
-            { name: "Accreditation & Compliance Management", href: "#", icon: "Shield" }
+            { name: "Online Exam Form & Admit Card", href: "#", icon: "FileText", description: "Digital applications." },
+            { name: "Pre, On & Post Exam Auto", href: "#", icon: "Workflow", description: "Complete lifecycle." },
+            { name: "Exam Centre Management", href: "#", icon: "MapPin", description: "Logistics & seating." },
+            { name: "Digital Question Bank", href: "#", icon: "Database", description: "Secure paper generation." },
+            { name: "On-Screen Evaluation", href: "#", icon: "MonitorCheck", description: "Digital script marking." },
+            { name: "Internal Assessment Marks", href: "#", icon: "ClipboardList", description: "Continuous evaluation." },
+            { name: "Result Processing", href: "#", icon: "Calculator", description: "Grades & marksheets." },
+            { name: "Rechecking & Reassessment", href: "#", icon: "RefreshCw", description: "Grievance handling." }
         ]
     },
     {
         category: "Learning & Teaching Platforms",
-        description: "Empower educators and enhance student engagement.",
+        description: "Advanced education technology for smart learning.",
         icon: "Presentation",
+        href: "/products/inventory-management",
         products: [
-            { name: "Learning Management System (LMS)", href: "#", icon: "MonitorPlay" },
-            { name: "Library Management System", href: "#", icon: "Library" },
-            { name: "360° Feedback System", href: "#", icon: "MessagesSquare" }
-        ]
-    },
-    {
-        category: "Research & Institutional Growth",
-        description: "Foster collaboration and track institutional progress.",
-        icon: "Rocket",
-        products: [
-            { name: "Alumni Management System", href: "/products/alumni-management", icon: "UsersRound" },
-            { name: "Convocation Management System", href: "#", icon: "PartyPopper" },
-            { name: "National & International Linkages", href: "#", icon: "Globe" },
-            { name: "Affiliation & Licensing Module", href: "#", icon: "BadgeCheck" }
+            { name: "Learning Management System", href: "#", icon: "MonitorPlay", description: "LMS & eLearning." },
+            { name: "Academic & Lesson Planning", href: "#", icon: "Calendar", description: "Structured delivery." },
+            { name: "Course & Content Creation", href: "#", icon: "PenTool", description: "Digital resources." },
+            { name: "Assessment & Rubrics", href: "#", icon: "CheckSquare", description: "Standardized evaluation." },
+            { name: "Curriculum Management", href: "#", icon: "Book", description: "Syllabus governance." },
+            { name: "Outcome-Based Education", href: "#", icon: "Target", description: "OBE frameworks." },
+            { name: "Choice-Based Credit (CBCS)", href: "#", icon: "Layers", description: "Flexible academics." },
+            { name: "Personalized Adaptive Learning", href: "#", icon: "BrainCircuit", description: "AI-driven paths." },
+            { name: "Feedback Management", href: "#", icon: "MessageCircle", description: "Course & faculty feedback." },
+            { name: "Digital Library & KRC", href: "#", icon: "Library", description: "E-resources access." },
+            { name: "Internship & Placement", href: "#", icon: "Briefcase", description: "Industrial training." }
         ]
     },
     {
         category: "Finance & HR Solutions",
-        description: "Integrated financial and human resource management.",
+        description: "Seamless financial operations & workforce management.",
         icon: "Landmark",
+        href: "/products/timetable-attendance",
         products: [
-            { name: "Finance & Accounting", href: "#", icon: "Receipt" },
-            { name: "Human Resource Management (HRMS)", href: "#", icon: "Contact" },
-            { name: "Payroll Management", href: "#", icon: "HandCoins" },
-            { name: "Application/Document Tracking", href: "#", icon: "FolderSearch" }
+            { name: "Fee Management", href: "#", icon: "Receipt", description: "Collections & dues." },
+            { name: "Govt. Scholarship Mgmt", href: "#", icon: "Award", description: "Fund disbursement." },
+            { name: "Payroll & Salary", href: "#", icon: "Coins", description: "Automated processing." },
+            { name: "Employee Records & Info", href: "#", icon: "Contact", description: "Centralized database." },
+            { name: "Leave & Workflow", href: "#", icon: "CalendarX", description: "Approvals & tracking." },
+            { name: "Recruitment & Onboarding", href: "#", icon: "UserPlus", description: "Hiring lifecycle." },
+            { name: "Financial Accounting", href: "#", icon: "BookOpen", description: "Ledgers & balance sheets." },
+            { name: "Contingency Fund Mgmt", href: "#", icon: "PiggyBank", description: "Emergency reserves." },
+            { name: "Budget Module", href: "#", icon: "PieChart", description: "Planning & allocation." },
+            { name: "Appraisal & Performance", href: "#", icon: "TrendingUp", description: "Employee evaluation." },
+            { name: "Org Structure Mgmt", href: "#", icon: "Network", description: "Hierarchy definition." },
+            { name: "Compliance Management", href: "#", icon: "Shield", description: "Regulatory adherence." },
+            { name: "Committee Management", href: "#", icon: "Users", description: "Meetings & minutes." },
+            { name: "Institute Handbook", href: "#", icon: "Book", description: "Policy documentation." }
         ]
-    }
+    },
+    {
+        category: "Research, Collaboration & Institutional Growth",
+        description: "Data-driven decision-making & academic excellence.",
+        icon: "Rocket",
+        href: "/products/research-collaboration",
+        products: [
+            { name: "Ph.D. Lifecycle Module", href: "#", icon: "GraduationCap", description: "Registration to degree award." },
+            { name: "Research & Collaboration", href: "#", icon: "Network", description: "Grant and project tracking." },
+            { name: "Institutional Analytics", href: "#", icon: "BarChart3", description: "AI-driven strategic insights." },
+            { name: "App & Database Security", href: "#", icon: "Lock", description: "Cloud-based protection." }
+        ]
+    },
+
 ];

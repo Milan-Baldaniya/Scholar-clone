@@ -11,16 +11,14 @@ export default function TimetableHero() {
                     {/* Left Column: Text */}
                     <div className="w-full">
                         <h1 className="text-3xl md:text-5xl lg:text-[3.5rem] font-bold text-[#1E3A8A] leading-tight mb-6">
-                            Revolutionize Attendance & Timetable Management with Smart Automation
+                            Seamless Finance & HR Solutions for Higher Education
                         </h1>
                         <h2 className="text-xl md:text-2xl font-medium text-[#466EA9] mb-8">
-                            Effortless Attendance & Smart Scheduling for Higher Education
+                            Integrated Financial Operations & Workforce Management
                         </h2>
                         <p className="text-slate-600 text-lg leading-relaxed mb-10">
-                            Managing attendance and scheduling in higher education is complex. Traditional methods are
-                            time-consuming, prone to errors, and lack real-time insights. Our Timetable & Attendance
-                            Module leverages RFID, biometric authentication, and QR mobile technology to bring accuracy,
-                            automation, and efficiency to your institute.
+                            Empower your institution with a unified platform for Fee Management, Payroll, Budgeting, and HR compliance.
+                            Our integrated system ensures financial transparency, automated workflows, and complete workforce visibility, resulting in operational excellence.
                         </p>
 
                         <Link

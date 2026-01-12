@@ -5,11 +5,12 @@ import TransportBenefits from '@/components/pages/transport/TransportBenefits';
 import TransportCoreFeatures from '@/components/pages/transport/TransportCoreFeatures';
 import TransportWhyChooseUs from '@/components/pages/transport/TransportWhyChooseUs';
 import TransportCTA from '@/components/pages/transport/TransportCTA';
+import StudentLifecycleModules from '@/components/pages/transport/StudentLifecycleModules';
 
 export const metadata: Metadata = {
-    title: 'Transport & Vehicle Management - Fleet Solutions',
-    description: 'Complete fleet management and route optimization for educational institutions with GPS tracking and safety features.',
-    keywords: 'transport management, vehicle management, fleet management, GPS tracking, route optimization',
+    title: 'Student Lifecycle & Academic Management System',
+    description: 'A unified ecosystem managing the complete student journey from admission to alumni success.',
+    keywords: 'student lifecycle, academic management, SIS, education CRM, admission system',
 };
 
 export default function TransportManagementPage() {
@@ -18,18 +19,19 @@ export default function TransportManagementPage() {
             <div className="relative">
                 <TransportHero />
                 {/* Overlapping Hero Image */}
-                <div className="absolute right-0 bottom-0 translate-y-[35%] z-20 hidden lg:block w-[45%] max-w-[800px]">
+                <div className="absolute right-0 bottom-0 translate-y-[35%] z-20 hidden lg:block w-[50%] max-w-[900px] p-3 rounded-3xl bg-[linear-gradient(to_bottom,#ffffff_65%,#2A3E5C_65%)] shadow-2xl">
                     <Image
-                        src="/assets/hero_product.png"
-                        alt="Transport Management Dashboard"
-                        width={800}
-                        height={600}
-                        className="w-full h-auto object-contain"
+                        src="/assets/student_intro.png"
+                        alt="Student Lifecycle Dashboard"
+                        width={900}
+                        height={675}
+                        className="w-full h-auto object-contain rounded-2xl"
                         priority
                     />
                 </div>
             </div>
             <TransportBenefits />
+            <StudentLifecycleModules />
             <TransportCoreFeatures />
             <TransportWhyChooseUs />
             <TransportCTA />

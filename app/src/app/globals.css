@@ -87,8 +87,51 @@ body {
   }
 }
 
+
 /* Production Layout Safety */
 html {
   width: 100%;
   overflow-x: hidden;
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scan {
+  animation: scan 3s linear infinite;
+}
+
+/* Custom Scrollbar */
+/* Custom Scrollbar - Modern & Visible */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(42, 62, 92, 0.05);
+  /* Very subtle brand tint */
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #2A3E5C;
+  /* Brand Blue */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* Slight border for separation */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #1e2d42;
+  /* Darker on hover */
+  width: 8px;
+  /* Slight expansion effect perception */
 }

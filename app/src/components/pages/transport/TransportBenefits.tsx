@@ -6,9 +6,10 @@ export default function TransportBenefits() {
             <div className="max-w-[1440px] mx-auto px-6 lg:px-8">
 
                 {/* Section Title */}
+                {/* Section Title */}
                 <h2 className="text-3xl md:text-4xl font-bold text-[#2E8B57] text-left mb-16 max-w-4xl">
-                    Why Does Your Institution Need<br className="hidden lg:block" />
-                    a Smart Transport System?
+                    Why Institutions Need a Unified<br className="hidden lg:block" />
+                    Student Lifecycle System
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -23,8 +24,8 @@ export default function TransportBenefits() {
                             <li className="flex items-start gap-3">
                                 <span className="mt-2 w-2 h-2 rounded-full bg-[#1E488F] flex-shrink-0" />
                                 <div>
-                                    <span className="font-bold text-[#1E488F] block text-lg mb-1">Real-time GPS Tracking</span>
-                                    <span className="text-[#4b6a9c] font-medium"> Ensure student safety with live location updates.</span>
+                                    <span className="font-bold text-[#1E488F] block text-lg mb-1">Centralized Student Data</span>
+                                    <span className="text-[#4b6a9c] font-medium"> Single source of truth from admission to alumni.</span>
                                 </div>
                             </li>
 
@@ -32,24 +33,24 @@ export default function TransportBenefits() {
                             <li className="flex items-start gap-3 pl-8">
                                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-[#1E488F] flex-shrink-0" />
                                 <div>
-                                    <span className="font-bold text-[#1E488F]">Smart Route Optimization</span>
-                                    <span className="text-[#4b6a9c]"> – Reduce fuel costs and travel time.</span>
+                                    <span className="font-bold text-[#1E488F]">Seamless Enrollment</span>
+                                    <span className="text-[#4b6a9c]"> – 100% digital admission and fee processing.</span>
                                 </div>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className="mt-2 w-2 h-2 rounded-full bg-[#1E488F] flex-shrink-0" />
                                 <div>
-                                    <span className="font-bold text-[#1E488F]">Fleet Maintenance Alerts</span>
-                                    <span className="text-[#4b6a9c]"> – Prevent breakdowns with predictive servicing.</span>
+                                    <span className="font-bold text-[#1E488F]">Academic Continuity</span>
+                                    <span className="text-[#4b6a9c]"> – Integrated attendance, exams, and results.</span>
                                 </div>
                             </li>
 
                             <li className="flex items-start gap-3">
                                 <span className="mt-2 w-2 h-2 rounded-full bg-[#1E488F] flex-shrink-0" />
                                 <div>
-                                    <span className="font-bold text-[#1E488F]">Cost & Budget Analytics</span>
-                                    <span className="text-[#4b6a9c]"> – Monitor and reduce operational expenses.</span>
+                                    <span className="font-bold text-[#1E488F]">Holistic Development</span>
+                                    <span className="text-[#4b6a9c]"> – Track extracurriculars, skills, and placements.</span>
                                 </div>
                             </li>
                         </ul>
@@ -58,11 +59,7 @@ export default function TransportBenefits() {
                     {/* Right Column: Narrative Text */}
                     <div className="flex flex-col justify-center h-full pt-4">
                         <p className="text-slate-700 text-lg leading-loose font-medium">
-                            Managing transportation for a higher education institution is complex. Manual
-                            processes lead to inefficiencies, safety risks, and high operational costs. Our AI-
-                            powered <span className="font-bold text-slate-900">Transport & Vehicle Management System (TVMS)</span> provides real-time
-                            insights, automated scheduling, and seamless student-tracking, ensuring a
-                            safe, cost-effective, and hassle-free transport experience.
+                            Managing the student journey involves navigating complex, disconnected silos—admissions, academics, hostels, and placements often operate in isolation. Our <span className="font-bold text-slate-900">Student Lifecycle & Academic Management System</span> unifies these functions into a seamless flow, ensuring data flows effortlessly while providing a superior experience for students, faculty, and administrators alike.
                         </p>
                     </div>
 
