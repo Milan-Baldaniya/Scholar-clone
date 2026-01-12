@@ -35,22 +35,21 @@ export default function AdministrativeDigitalTransformation() {
 
                     <div className="relative z-10 flex flex-col justify-center items-center gap-6 lg:gap-8">
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-[#264653] font-['Mukta']">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-[#264653]">
                             Secure. Scalable. Compliant.
                         </h2>
 
-                        <h3 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-[#1a237e] font-['Mukta']">
+                        <h3 className="text-2xl sm:text-3xl lg:text-5xl font-bold leading-tight text-[#1a237e]">
                             Your Operational Backbone Begins Here!
                         </h3>
 
-                        <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-gray-600 max-w-4xl font-['Hind_Guntur']">
+                        <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-gray-600 max-w-4xl">
                             Scholar Clone's Administrative Management System ensures 100% data security, regulatory compliance, and seamless cloud integration. Stay ahead with a future-ready, AI-powered institutional ecosystem.
                         </p>
 
                         <Button
                             text="Get Your System Today!"
                             text_font_size="text-lg lg:text-xl"
-                            text_font_family="Mukta"
                             text_font_weight="font-bold"
                             text_color="text-white"
                             fill_background_color="bg-[#007f5f]"

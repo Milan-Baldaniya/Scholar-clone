@@ -188,9 +188,7 @@ export default function ProductsDropdown({
                                                         </p>
                                                     )}
 
-                                                    <span className="px-2 py-0.5 bg-white/20 backdrop-blur-md rounded-full text-[9px] font-bold text-white uppercase tracking-wider border border-white/10">
-                                                        Preview
-                                                    </span>
+
                                                 </div>
                                             </div>
                                         </motion.div>

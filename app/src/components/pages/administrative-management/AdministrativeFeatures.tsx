@@ -19,18 +19,19 @@ export default function AdministrativeFeatures({ featuredCards, loading }: Unive
                 <div className="flex flex-col gap-12 lg:gap-16 justify-start items-center">
 
                     {/* Section Header */}
-                    <div className="w-full lg:w-[60%] flex flex-col gap-4 lg:gap-6 justify-start items-center text-center">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-center font-['Corbel']">
-                            <span className="text-[#007f5f] block mb-2">Streamlined Operations &</span>
-                            <span className="text-[#007f5f] font-bold">Regulatory Compliance</span>
-                        </h2>
-
-                        <p className="text-base sm:text-lg lg:text-xl font-normal text-[#546e7a] font-['Hind_Guntur']">
-                            Core institutional modules working in perfect sync—from audit readiness to resource optimization.
-                        </p>
-                    </div>
-
-                    {/* Features Grid */}
+                    <div className="text-center mb-16 lg:mb-24">
+                        <div className="inline-block relative">
+                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-center">
+                                Core Capabilities at a Glance
+                            </h2>
+                            <div className="h-1.5 w-1/3 bg-[#fca311] mx-auto mt-4 rounded-full"></div>
+                        </div>
+                        <div className="mt-6 max-w-2xl mx-auto">
+                            <p className="text-base sm:text-lg lg:text-xl font-normal text-[#546e7a]">
+                                Experience the power of a fully integrated administrative ecosystem designed for modern educational institutions.
+                            </p>
+                        </div>
+                    </div>      {/* Features Grid */}
                     <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
 
                         {/* First Feature Card - Image + Text */}
@@ -51,22 +52,22 @@ export default function AdministrativeFeatures({ featuredCards, loading }: Unive
                                     </svg>
                                 </div>
                             </div>
-                            <div className="p-6 flex flex-col gap-3">
-                                <h3 className="text-xl font-bold text-[#1a237e] leading-tight font-['Mukta']">
-                                    Governance & Compliance
+                            <div className="mb-6">
+                                <h3 className="text-xl font-bold text-[#1a237e] leading-tight">
+                                    Real-time Analytics
                                 </h3>
-                                <p className="text-base text-[#37474f] leading-relaxed font-['Mukta']">
-                                    Automated readiness for NAAC, NBA, and NIRF with centralized data evidence, accreditation tracking, and committee workflows.
+                                <p className="text-base text-[#37474f] leading-relaxed">
+                                    Make data-driven decisions with instant access to comprehensive reports and dashboards.
                                 </p>
                             </div>
                         </div>
 
                         {/* Second Feature Card - Solid Grey Background */}
                         <div className="flex flex-col rounded-3xl p-8 bg-[#90a4ae] justify-center h-[380px] border border-gray-200 shadow-xl">
-                            <h3 className="text-xl font-bold text-[#1a237e] mb-4 leading-tight font-['Mukta']">
+                            <h3 className="text-xl font-bold text-[#1a237e] mb-4 leading-tight">
                                 Operations & <br />Logistics Management
                             </h3>
-                            <p className="text-base text-[#263238] leading-relaxed font-['Mukta']">
+                            <p className="text-base text-[#263238] leading-relaxed">
                                 Optimize transport routing, maintain inventory stock levels, handle guest bookings, and secure campus entry points with integrated visitor management.
                             </p>
                         </div>
@@ -83,10 +84,10 @@ export default function AdministrativeFeatures({ featuredCards, loading }: Unive
                                 />
                             )}
                             <div className="absolute inset-0 bg-white/60 p-8 flex flex-col justify-center backdrop-blur-[2px]">
-                                <h3 className="text-xl font-bold text-[#1a237e] mb-4 leading-tight font-['Mukta']">
+                                <h3 className="text-xl font-bold text-[#1a237e] mb-4 leading-tight">
                                     Stakeholder Engagement & Website
                                 </h3>
-                                <p className="text-base text-[#1a237e] leading-relaxed font-['Mukta']">
+                                <p className="text-base text-[#1a237e] leading-relaxed">
                                     Enhance community relations with 360° feedback systems, grievance redressal, alumni networking, and a centrally managed institutional website.
                                 </p>
                             </div>
@@ -94,10 +95,10 @@ export default function AdministrativeFeatures({ featuredCards, loading }: Unive
 
                         {/* Fourth Feature Card - Light Beige Background */}
                         <div className="flex flex-col rounded-3xl p-8 bg-[#f1f8e9] justify-center mt-0 lg:mt-24 h-[380px] border border-gray-200 shadow-xl">
-                            <h3 className="text-xl font-bold text-black mb-4 leading-tight font-['Mukta']">
+                            <h3 className="text-xl font-bold text-black mb-4 leading-tight">
                                 Academic Administration
                             </h3>
-                            <p className="text-base text-[#455a64] leading-relaxed font-['Mukta']">
+                            <p className="text-base text-[#455a64] leading-relaxed">
                                 Streamline timetables, attendance tracking, convocation management, and document journeys. Ensure zero lapses in crucial academic processes.
                             </p>
                         </div>

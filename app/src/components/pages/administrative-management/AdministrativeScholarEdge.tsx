@@ -1,5 +1,6 @@
 'use client';
 import Button from '@/components/ui/Button';
+import { ArrowRight } from 'lucide-react';
 
 export default function AdministrativeScholarEdge() {
     const handleGetStarted = (): void => {
@@ -21,27 +22,28 @@ export default function AdministrativeScholarEdge() {
 
                     <div className="w-full lg:w-[54%] flex flex-col gap-8 lg:gap-8 justify-start items-start">
 
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-left text-[#264653] w-full lg:w-[96%] font-['Mukta']">
-                            The Administrative Advantage<br />
-                            Streamline, Simplify & <br />
-                            Supercharge Your Institution!
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium leading-tight text-left text-[#264653] w-full lg:w-[96%]">
+                            Scholar Edge: <br />
+                            <span className="text-[#e26d5c]">
+                                Redefining Administrative Excellence
+                            </span>
                         </h2>
 
-                        <div className="flex flex-col gap-4">
-                            {features.map((feature, index) => (
-                                <div key={index} className="flex items-start gap-3">
-                                    <span className="text-[#0070f3] text-lg mt-1">◆</span>
-                                    <p className="text-base sm:text-lg text-gray-700 font-['Mukta'] font-medium">
-                                        {feature.replace('🔹 ', '')}
-                                    </p>
-                                </div>
-                            ))}
+                        {/* This section was replaced by the new structure from the provided edit */}
+                        <div className="flex gap-6 items-start">
+                            <div className="w-12 h-12 rounded-full flex items-center justify-center bg-[#e9c46a] shrink-0">
+                                <ArrowRight className="w-6 h-6 text-[#264653]" />
+                            </div>
+                            <div>
+                                <p className="text-base sm:text-lg text-gray-700 font-medium">
+                                    Embrace the future of education management with Scholar Clone. Our comprehensive suite of administrative tools is designed to simplify complexities, enhance decision-making, and drive institutional growth.
+                                </p>
+                            </div>
                         </div>
 
                         <Button
                             text="Get Started Free"
                             text_font_size="text-lg lg:text-xl"
-                            text_font_family="Mukta"
                             text_font_weight="font-bold"
                             text_color="text-white"
                             fill_background_color="bg-[#007f5f]"

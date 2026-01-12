@@ -29,21 +29,21 @@ export default function AdministrativeHero() {
                         <div className="flex flex-wrap gap-4 sm:gap-6">
                             <ChipView
                                 text="Unified"
-                                className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-white border-2 border-white/40 bg-transparent rounded-3xl px-5 lg:px-7 py-2 lg:py-3 font-['Rubik']"
+                                className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-white border-2 border-white/40 bg-transparent rounded-3xl px-5 lg:px-7 py-2 lg:py-3"
                             />
                             <ChipView
                                 text="Administration"
-                                className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-primary-background border-2 border-white bg-white rounded-3xl px-6 lg:px-8 py-2 lg:py-3 font-['Corbel']"
+                                className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-primary-background border-2 border-white bg-white rounded-3xl px-6 lg:px-8 py-2 lg:py-3"
                             />
                         </div>
 
                         {/* Headline */}
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-white font-['Nunito_Sans']">
+                        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-white">
                             Administrative Management Systems & Core Operations
                         </h1>
 
                         {/* Description */}
-                        <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-success-muted max-w-xl font-['Rubik']">
+                        <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-success-muted max-w-xl">
                             A centralized enterprise ecosystem integrating every aspect of institutional operations—from governance and compliance to resource management, transport, and stakeholder engagement.
                         </p>
 
@@ -52,7 +52,6 @@ export default function AdministrativeHero() {
                             <Button
                                 text={demoRequested ? "Demo Requested!" : "Get Your Free Demo"}
                                 text_font_size="text-base sm:text-lg lg:text-xl"
-                                text_font_family="Nunito"
                                 text_font_weight="font-medium"
                                 text_color="text-success-background"
                                 fill_background_color="bg-success-light"
@@ -74,7 +73,7 @@ export default function AdministrativeHero() {
 
                             {/* "Future Proof solution" annotation with arrow */}
                             <div className="absolute left-[280px] -top-4 flex-col items-start hidden lg:flex z-30">
-                                <p className="text-lg font-normal whitespace-nowrap font-['Hind_Guntur'] rotate-[20deg] ml-20 mt-4">
+                                <p className="text-lg font-normal whitespace-nowrap rotate-[20deg] ml-20 mt-4">
                                     <span className="text-[#5DDBD3] italic">Master </span>
                                     <span className="text-white">your core</span>
                                     <br />

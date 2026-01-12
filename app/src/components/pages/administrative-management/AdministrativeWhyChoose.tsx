@@ -12,12 +12,12 @@ export default function AdministrativeWhyChoose() {
 
                     {/* Left Content Column */}
                     <div className="w-full lg:w-1/2 flex flex-col items-start gap-8">
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-[#1a237e] font-['Nunito']">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-[#1a237e]">
                             Why Centralized<br />
                             <span className="font-bold text-[#1a3e59]">Administrative<br />Management?</span>
                         </h2>
 
-                        <p className="text-base sm:text-lg lg:text-xl text-[#37474f] leading-relaxed font-['Hind_Guntur']">
+                        <p className="text-base sm:text-lg lg:text-xl text-[#37474f] leading-relaxed">
                             Fragmented tools lead to operational silos and compliance lapses. This unified suite orchestrates all administrative functions—from accreditation and inventory to alumni relations and file tracking—ensuring total visibility, regulatory readiness, and seamless execution across the institution.
                         </p>
 

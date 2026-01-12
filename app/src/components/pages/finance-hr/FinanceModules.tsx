@@ -252,7 +252,7 @@ export default function FinanceModules() {
         <section className="w-full py-16 lg:py-24 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A3E5C] mb-4 font-['Nunito']">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A3E5C] mb-4">
                         Finance & HR Solutions
                     </h2>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -271,14 +271,14 @@ export default function FinanceModules() {
                                 <div className="p-4 bg-[#2A3E5C]/10 rounded-full text-[#2A3E5C] mb-6 group-hover:scale-110 transition-transform duration-300">
                                     {module.icon}
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-800 leading-tight font-['Mukta']">
+                                <h3 className="text-xl font-bold text-gray-800 leading-tight">
                                     {module.title}
                                 </h3>
                             </div>
 
                             {/* Hover Overlay (Slide Up with Action) */}
                             <div className="absolute inset-x-0 bottom-0 h-full bg-gradient-to-t from-[#2A3E5C] via-[#2A3E5C] to-[#395173] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out flex flex-col items-center justify-center p-8 text-center">
-                                <h3 className="text-xl font-bold text-white mb-4 font-['Mukta']">
+                                <h3 className="text-xl font-bold text-white mb-4">
                                     {module.title}
                                 </h3>
 
@@ -312,7 +312,7 @@ export default function FinanceModules() {
                                 <div className="p-3 bg-white/10 rounded-xl backdrop-blur-md">
                                     {selectedModule.icon}
                                 </div>
-                                <h3 className="text-2xl sm:text-3xl font-bold font-['Mukta']">
+                                <h3 className="text-2xl sm:text-3xl font-bold">
                                     {selectedModule.title}
                                 </h3>
                             </div>
@@ -330,7 +330,7 @@ export default function FinanceModules() {
                             {/* Description */}
                             <div className="mb-8">
                                 <h4 className="text-lg font-bold text-[#2A3E5C] mb-3 uppercase tracking-wide opacity-80">Overview</h4>
-                                <p className="text-lg text-gray-700 leading-relaxed font-['Hind_Guntur']">
+                                <p className="text-lg text-gray-700 leading-relaxed">
                                     {selectedModule.description}
                                 </p>
                             </div>
@@ -345,7 +345,7 @@ export default function FinanceModules() {
                                         {selectedModule.benefits.map((benefit, idx) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className="w-1.5 h-1.5 rounded-full bg-[#00804c] mt-2 shrink-0"></div>
-                                                <span className="text-gray-700 font-['Hind_Guntur']">{benefit}</span>
+                                                <span className="text-gray-700">{benefit}</span>
                                             </li>
                                         ))}
                                     </ul>
@@ -360,7 +360,7 @@ export default function FinanceModules() {
                                         {selectedModule.whyChooseUs.map((reason, idx) => (
                                             <li key={idx} className="flex items-start gap-3">
                                                 <div className="w-1.5 h-1.5 rounded-full bg-[#2A3E5C] mt-2 shrink-0"></div>
-                                                <span className="text-gray-700 font-medium font-['Mukta']">{reason}</span>
+                                                <span className="text-gray-700 font-medium">{reason}</span>
                                             </li>
                                         ))}
                                     </ul>
