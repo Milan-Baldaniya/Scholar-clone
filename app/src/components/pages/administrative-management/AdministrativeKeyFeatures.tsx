@@ -1,5 +1,7 @@
 'use client';
 
+import ScrollAnimation from "@/components/ui/ScrollAnimation";
+
 interface KeyFeature {
     id: number;
     number: string;
@@ -20,9 +22,11 @@ export default function AdministrativeKeyFeatures({ keyFeatures, loading }: KeyF
             <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-12 lg:gap-16 justify-start items-center">
 
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-center text-[#007f5f] w-full lg:w-[70%]">
-                        Operational Modules for<br />Every Institutional Need
-                    </h2>
+                    <ScrollAnimation direction="up" className="w-full lg:w-[70%] text-center">
+                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal leading-tight text-[#007f5f]">
+                            Operational Modules for<br />Every Institutional Need
+                        </h2>
+                    </ScrollAnimation>
 
                     <div className="w-full flex flex-col gap-8 lg:gap-12">
 
@@ -34,24 +38,26 @@ export default function AdministrativeKeyFeatures({ keyFeatures, loading }: KeyF
                                 ))
                             ) : (
                                 allFeatures.slice(0, 3).map((feature, index) => (
-                                    <div key={`${feature.id}-${index}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <ScrollAnimation key={`${feature.id}-${index}`} variant="scaleUp" delay={index * 0.1}>
+                                        <div className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
 
-                                        <div className="flex justify-start items-center gap-5">
-                                            <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
-                                                <span className="text-3xl font-bold text-[#1a237e]">
-                                                    {feature.number}
-                                                </span>
+                                            <div className="flex justify-start items-center gap-5">
+                                                <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
+                                                    <span className="text-3xl font-bold text-[#1a237e]">
+                                                        {feature.number}
+                                                    </span>
+                                                </div>
+
+                                                <h3 className="text-3xl font-bold leading-tight text-white">
+                                                    {feature.title}
+                                                </h3>
                                             </div>
 
-                                            <h3 className="text-3xl font-bold leading-tight text-white">
-                                                {feature.title}
-                                            </h3>
+                                            <p className="text-xl font-normal leading-relaxed text-gray-200">
+                                                {feature.description}
+                                            </p>
                                         </div>
-
-                                        <p className="text-xl font-normal leading-relaxed text-gray-200">
-                                            {feature.description}
-                                        </p>
-                                    </div>
+                                    </ScrollAnimation>
                                 ))
                             )}
                         </div>
@@ -64,23 +70,25 @@ export default function AdministrativeKeyFeatures({ keyFeatures, loading }: KeyF
                                 ))
                             ) : (
                                 allFeatures.length > 0 && Array.from({ length: 3 }).map((_, i) => (
-                                    <div key={`static-copy-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                        <div className="flex justify-start items-center gap-5">
-                                            <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
-                                                <span className="text-3xl font-bold text-[#1a237e]">
-                                                    {allFeatures[i % allFeatures.length].number}
-                                                </span>
+                                    <ScrollAnimation key={`static-copy-${i}`} variant="scaleUp" delay={i * 0.15}>
+                                        <div className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                            <div className="flex justify-start items-center gap-5">
+                                                <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
+                                                    <span className="text-3xl font-bold text-[#1a237e]">
+                                                        {allFeatures[i % allFeatures.length].number}
+                                                    </span>
+                                                </div>
+
+                                                <h3 className="text-3xl font-bold leading-tight text-white">
+                                                    {allFeatures[i % allFeatures.length].title}
+                                                </h3>
                                             </div>
 
-                                            <h3 className="text-3xl font-bold leading-tight text-white">
-                                                {allFeatures[i % allFeatures.length].title}
-                                            </h3>
+                                            <p className="text-xl font-normal leading-relaxed text-gray-200">
+                                                {allFeatures[i % allFeatures.length].description}
+                                            </p>
                                         </div>
-
-                                        <p className="text-xl font-normal leading-relaxed text-gray-200">
-                                            {allFeatures[i % allFeatures.length].description}
-                                        </p>
-                                    </div>
+                                    </ScrollAnimation>
                                 ))
                             )}
                         </div>
@@ -93,23 +101,25 @@ export default function AdministrativeKeyFeatures({ keyFeatures, loading }: KeyF
                                 ))
                             ) : (
                                 allFeatures.length > 0 && Array.from({ length: 3 }).map((_, i) => (
-                                    <div key={`static-copy-2-${i}`} className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                        <div className="flex justify-start items-center gap-5">
-                                            <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
-                                                <span className="text-3xl font-bold text-[#1a237e]">
-                                                    {allFeatures[i % allFeatures.length].number}
-                                                </span>
+                                    <ScrollAnimation key={`static-copy-2-${i}`} variant="scaleUp" delay={i * 0.1}>
+                                        <div className="group w-full bg-[#2c3e50] rounded-xl p-8 flex flex-col gap-6 min-h-[280px] shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                            <div className="flex justify-start items-center gap-5">
+                                                <div className="w-16 h-16 bg-[#fcfbf9] rounded-lg flex justify-center items-center flex-shrink-0 shadow-md">
+                                                    <span className="text-3xl font-bold text-[#1a237e]">
+                                                        {allFeatures[i % allFeatures.length].number}
+                                                    </span>
+                                                </div>
+
+                                                <h3 className="text-3xl font-bold leading-tight text-white">
+                                                    {allFeatures[i % allFeatures.length].title}
+                                                </h3>
                                             </div>
 
-                                            <h3 className="text-3xl font-bold leading-tight text-white">
-                                                {allFeatures[i % allFeatures.length].title}
-                                            </h3>
+                                            <p className="text-xl font-normal leading-relaxed text-gray-200">
+                                                {allFeatures[i % allFeatures.length].description}
+                                            </p>
                                         </div>
-
-                                        <p className="text-xl font-normal leading-relaxed text-gray-200">
-                                            {allFeatures[i % allFeatures.length].description}
-                                        </p>
-                                    </div>
+                                    </ScrollAnimation>
                                 ))
                             )}
                         </div>
@@ -118,5 +128,5 @@ export default function AdministrativeKeyFeatures({ keyFeatures, loading }: KeyF
                 </div>
             </div>
         </section>
-    )
+    );
 }

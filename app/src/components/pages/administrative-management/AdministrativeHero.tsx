@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/Button';
 import ChipView from '@/components/ui/ChipView';
+import TypewriterEffect from '@/components/ui/TypewriterEffect';
+import ScrollAnimation from '@/components/ui/ScrollAnimation';
 
 export default function AdministrativeHero() {
     const router = useRouter();
@@ -43,9 +45,13 @@ export default function AdministrativeHero() {
                         </div>
 
                         {/* Headline */}
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-white">
-                            Administrative Management Systems & Core Operations
-                        </h1>
+                        <div className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-normal leading-tight text-white">
+                            <TypewriterEffect
+                                text="Administrative Management Systems & Core Operations"
+                                speed={0.03}
+                                cursor={false}
+                            />
+                        </div>
 
                         {/* Description */}
                         <p className="text-base sm:text-lg lg:text-xl font-normal leading-relaxed text-success-muted max-w-xl">
@@ -98,22 +104,32 @@ export default function AdministrativeHero() {
                         <div className="relative w-full h-[450px] sm:h-[550px] lg:h-[620px]">
 
                             {/* Large Image - Top Right (University Campus) */}
-                            <div className="absolute top-0 right-0 w-[72%] h-[62%] rounded-[24px] overflow-hidden shadow-2xl z-10">
+                            <ScrollAnimation
+                                direction="none"
+                                variant="zoomIn"
+                                className="absolute top-0 right-0 w-[72%] h-[62%] rounded-[24px] overflow-hidden shadow-2xl z-10"
+                                delay={0.2}
+                            >
                                 <img
                                     src="/assets/University Campus Technology.png"
                                     alt="Higher Education Campus Technology"
                                     className="w-full h-full object-cover"
                                 />
-                            </div>
+                            </ScrollAnimation>
 
                             {/* Small Image - Bottom Left (Smart Learning) */}
-                            <div className="absolute bottom-0 left-0 w-[50%] h-[58%] rounded-[24px] overflow-hidden shadow-2xl z-20">
+                            <ScrollAnimation
+                                direction="none"
+                                variant="scaleUp"
+                                className="absolute bottom-0 left-0 w-[50%] h-[58%] rounded-[24px] overflow-hidden shadow-2xl z-20"
+                                delay={0.4}
+                            >
                                 <img
                                     src="/assets/Smart Learning Environment.png"
                                     alt="Smart Learning Environment"
                                     className="w-full h-full object-cover"
                                 />
-                            </div>
+                            </ScrollAnimation>
 
                             {/* U-Shape Decorative Frame */}
                             <svg

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import TypewriterEffect from "../../ui/TypewriterEffect";
 
 export function HomeHero() {
     const [isVisible, setIsVisible] = useState(false);
@@ -42,7 +43,11 @@ export function HomeHero() {
                         className="text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900"
                         style={{ lineHeight: '1.4' }}
                     >
-                        Future-Ready Solutions that Empower Your Campus
+                        <TypewriterEffect
+                            text="Future-Ready Solutions that Empower Your Campus"
+                            speed={0.03}
+                            delay={0.5}
+                        />
                     </h1>
 
                     {/* First paragraph */}

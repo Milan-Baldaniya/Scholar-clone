@@ -1,106 +1,55 @@
-import Link from "next/link";
+'use client';
+
+import TypewriterEffect from '@/components/ui/TypewriterEffect';
+import ScrollAnimation from '@/components/ui/ScrollAnimation';
 
 export default function AboutHero() {
     return (
-        <>
-            {/* --- HERO IMAGE SECTION --- */}
-            <div className="relative w-full">
-                {/* Image */}
-                <div className="relative h-[300px] md:h-[450px] lg:h-[600px] overflow-hidden">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                        src="/assets/hero_aboutus.jpg"
-                        alt="About Us Hero"
-                        className="object-cover w-full h-full"
-                    />
-                    {/* Overlay Layer */}
-                    <div
-                        className="absolute inset-0 z-10 opacity-50"
-                        style={{ backgroundColor: '#6097d5ff' }}
-                    ></div>
-                </div>
+        <section className="relative w-full py-20 lg:py-32 bg-secondary-background overflow-hidden">
+            {/* Background Vector */}
+            <img
+                src="/assets/VectorProduct1.png"
+                alt="Background Vector Pattern"
+                className="absolute left-[-2%] bottom-0 w-full h-full object-cover opacity-70 pointer-events-none"
+            />
 
-                {/* Bottom Section */}
-                <div className="bg-[#AFC1D6] py-10 text-center relative z-20">
-                    <h1 className="text-4xl md:text-5xl font-semibold text-blue-600">
-                        Our Company
-                    </h1>
-                </div>
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 text-center">
+                <ScrollAnimation direction="up" variant="fade">
+                    <div className="flex flex-col items-center gap-6">
+                        {/* Heading */}
+                        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-white mb-6">
+                            <TypewriterEffect
+                                text="Revolutionizing Education Management"
+                                speed={0.03}
+                                cursor={false}
+                            />
+                        </h1>
 
-                {/* Angled Cut */}
-                <div
-                    className="
-                        absolute
-                        // Change bottom-[110px] to move Up/Down (Y-axis)
-                        bottom-[110px]
-                        // Change right-[-20px] to move Left/Right (X-axis). e.g. right-[10px]
-                        right-[-20px]
-                        w-[50%]
-                        h-[45px]
-                        bg-white/90
-                        skew-x-[-20deg]
-                        origin-bottom-right
-                        z-30
-                        shadow-[-10px_-10px_30px_rgba(0,0,0,0.25)]
-                    "
-                ></div>
-            </div>
-
-            {/* --- COMPANY DESCRIPTION & LOGO SECTION --- */}
-            <section className="bg-white py-16 px-4 md:px-16 relative z-40">
-                <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-stretch gap-12">
-
-                    {/* Left Side: Description Text */}
-                    <div className="md:w-2/3 text-left flex items-center">
-                        <p className="
-                            text-gray-700 
-                            text-base md:text-lg 
-                            leading-normal
-                            relative
-                            top-0 lg:top-[-100px]
-                            left-0 lg:left-[-70px]
-                        ">
-                            Founded in 2010, Scholar Clone has been a pioneering force in transforming technology for
-                            education and corporate sectors. Specializes in software solutions for the education and
-                            training sectors. It provides next-generation education solutions for schools, higher education institutes,
-                            SMEs, and corporate clients, both in India and globally. Our advanced solutions,
-                            including automated Learning Management Systems (LMS), cover everything from lesion
-                            creation to performance management, enhancing learning experiences and optimizing
-                            operational efficiency. Committed to driving growth and innovation, we deliver technology that
-                            accelerates success.
+                        {/* Subheading */}
+                        <p className="text-lg sm:text-xl text-success-muted max-w-3xl mx-auto leading-relaxed">
+                            Empowering institutions with future-ready ERP solutions that streamline operations, enhance learning, and drive success.
                         </p>
                     </div>
+                </ScrollAnimation>
+            </div>
 
-                    {/* Right Side: Logo Block */}
-                    <div className="md:w-1/3 flex justify-center md:justify-end">
-                        <div className="
-                            bg-[#F5F5F5] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-xl w-full h-full min-h-[200px] md:min-h-[300px] p-6 md:p-8 flex items-center justify-center gap-6
-                            relative
-                            top-0 lg:top-[-100px]
-                            right-0 lg:right-[-60px]
-                        ">
-                            {/* Logo */}
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="/assets/Logo.png"
-                                alt="Scholar Clone Logo"
-                                className="h-16 md:h-24 w-auto"
-                            />
-
-                            {/* Brand Text */}
-                            <div className="flex flex-col">
-                                <span className="text-2xl md:text-4xl font-bold leading-none text-gray-900">
-                                    Scholar
-                                </span>
-                                <span className="text-2xl md:text-4xl font-bold leading-none text-gray-900">
-                                    Clone
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-        </>
+            {/* Decorative Elements */}
+            <ScrollAnimation
+                direction="none"
+                variant="scaleUp"
+                delay={0.3}
+                className="absolute -right-20 top-20 w-64 h-64 bg-success-light/10 rounded-full blur-3xl pointer-events-none"
+            >
+                <div className="w-full h-full" />
+            </ScrollAnimation>
+            <ScrollAnimation
+                direction="none"
+                variant="scaleUp"
+                delay={0.5}
+                className="absolute -left-20 bottom-20 w-64 h-64 bg-primary-light/10 rounded-full blur-3xl pointer-events-none"
+            >
+                <div className="w-full h-full" />
+            </ScrollAnimation>
+        </section>
     );
 }
