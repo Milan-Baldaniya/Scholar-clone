@@ -199,6 +199,7 @@ const NavPill = ({ label, href, onClick, isActive, children, className, dropdown
             className={baseClasses}
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
+            suppressHydrationWarning={true}
         >
             {content}
         </button>

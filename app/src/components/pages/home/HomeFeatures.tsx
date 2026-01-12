@@ -1,5 +1,3 @@
-import ScrollAnimation from "@/components/ui/ScrollAnimation";
-
 export function HomeFeatures() {
     const leftFeatures = [
         "Admissions & Enrollment",
@@ -19,7 +17,7 @@ export function HomeFeatures() {
                 <h2 id="features-heading" className="sr-only">Features and Benefits</h2>
                 <div className="grid lg:grid-cols-2 gap-16">
                     {/* Left: Component Image */}
-                    <ScrollAnimation direction="none" variant="zoomIn" className="relative ml-0 lg:-ml-24">
+                    <div className="relative ml-0 lg:-ml-24">
                         <div className="w-full rounded-2xl overflow-hidden flex items-center justify-center bg-[#E8E8E8]/[.22]">
                             <div className="relative w-full h-full">
                                 <img
@@ -29,10 +27,10 @@ export function HomeFeatures() {
                                 />
                             </div>
                         </div>
-                    </ScrollAnimation>
+                    </div>
 
                     {/* Right: Content */}
-                    <ScrollAnimation direction="left" className="flex flex-col justify-between h-full py-2">
+                    <div className="flex flex-col justify-between h-full py-2">
                         <div>
                             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mb-6">
                                 Comprehensive Features for Every Need
@@ -58,7 +56,7 @@ export function HomeFeatures() {
                                 ))}
                             </ul>
                         </div>
-                    </ScrollAnimation>
+                    </div>
                 </div>
             </div>
         </section>
