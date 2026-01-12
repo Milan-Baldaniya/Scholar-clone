@@ -1,11 +1,40 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export function HomeHero() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleLoaderComplete = () => setIsVisible(true);
+
+        // Listen for loader completion
+        window.addEventListener('hero-loader-complete', handleLoaderComplete);
+
+        // Fallback: If event missed (e.g. fast load or nav back), trigger anyway after 2s
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 2000);
+
+        return () => {
+            window.removeEventListener('hero-loader-complete', handleLoaderComplete);
+            clearTimeout(timer);
+        };
+    }, []);
+
     return (
-        <div className="relative bg-[#F6F7ED] shadow-[0_4px_8px_0px_rgba(42,62,92,0.25)] z-10">
+        <div className="relative bg-[#F6F7ED] shadow-[0_4px_8px_0px_rgba(42,62,92,0.25)] z-20">
 
             {/* ================= HERO CONTENT ================= */}
-            <article className="mx-auto w-full px-6 lg:px-8 pt-12 lg:pt-20 pb-16 lg:pb-28 relative z-10" aria-label="Hero Section">
+            <motion.article
+                initial={{ opacity: 0, y: 50 }}
+                animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mx-auto w-full px-6 lg:px-8 pt-12 lg:pt-20 pb-16 lg:pb-28 relative z-10"
+                aria-label="Hero Section"
+            >
                 <div className="max-w-2xl space-y-6 lg:space-y-8">
 
                     {/* H1 */}
@@ -46,10 +75,15 @@ export function HomeHero() {
                     </div>
 
                 </div>
-            </article>
+            </motion.article>
 
             {/* ================= RIGHT IMAGE ================= */}
-            <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[45%] z-0 rounded-l-[80px] overflow-hidden">
+            <motion.div
+                initial={{ opacity: 0, x: 300 }}
+                animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 300 }}
+                transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
+                className="hidden lg:block absolute top-0 right-0 bottom-0 w-[45%] z-0 rounded-l-[80px] overflow-hidden"
+            >
                 <div className="relative w-full h-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -59,10 +93,15 @@ export function HomeHero() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#F6F7ED]/20"></div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* ================= FEATURE CARDS ================= */}
-            <div className="mx-auto w-full px-6 lg:px-8 relative z-20 -mb-20">
+            <motion.div
+                initial={{ opacity: 0, x: -300 }}
+                animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -300 }}
+                transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+                className="mx-auto w-full px-6 lg:px-8 relative z-20 -mb-20"
+            >
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-4xl lg:ml-12">
 
                     {/* Card 1 */}
@@ -96,7 +135,7 @@ export function HomeHero() {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
 
         </div >
     );

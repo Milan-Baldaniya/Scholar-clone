@@ -17,6 +17,9 @@ export default function GlobalLoader() {
         // For standard navigation, we give a minimum transition time to feel smooth
         const timer = setTimeout(() => {
             setIsLoading(false);
+            if (typeof window !== 'undefined') {
+                window.dispatchEvent(new Event('hero-loader-complete'));
+            }
         }, 1500); // 1.5s transition
 
         return () => clearTimeout(timer);

@@ -2,6 +2,7 @@ import { HomeHero } from "@/components/pages/home/HomeHero";
 import { HomeFeatures } from "@/components/pages/home/HomeFeatures";
 import { HomeStudentLifecycle } from "@/components/pages/home/HomeStudentLifecycle";
 import { HomeWhyChoose } from "@/components/pages/home/HomeWhyChoose";
+import ScrollAnimation from "@/components/ui/ScrollAnimation"; // Import Animation
 import type { Metadata } from "next";
 
 
@@ -84,11 +85,24 @@ export default function Home() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
 
-            <main className="min-h-screen bg-background flex flex-col">
+            <main className="min-h-screen bg-background flex flex-col overflow-x-hidden">
+                {/* Hero Section - Internal Animations */}
                 <HomeHero />
-                <HomeFeatures />
-                <HomeStudentLifecycle />
-                <HomeWhyChoose />
+
+                {/* Features Section - Fade Up */}
+                <ScrollAnimation direction="up" delay={0.2} className="relative z-10 w-full">
+                    <HomeFeatures />
+                </ScrollAnimation>
+
+                {/* Student Lifecycle - Slide Left */}
+                <ScrollAnimation direction="left" delay={0.2} className="w-full">
+                    <HomeStudentLifecycle />
+                </ScrollAnimation>
+
+                {/* Why Choose - Slide Right */}
+                <ScrollAnimation direction="right" delay={0.2} className="w-full">
+                    <HomeWhyChoose />
+                </ScrollAnimation>
             </main>
         </>
     );

@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import GlobalLoader from "@/components/ui/GlobalLoader";
 import ScrollToTop from "@/components/utils/ScrollToTop";
 
+import SmoothScroller from "@/components/utils/SmoothScroller";
 import BackToTopButton from "@/components/ui/BackToTopButton";
 
 const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
@@ -108,6 +109,7 @@ export default function RootLayout({
                 <Suspense fallback={null}>
                     <GlobalLoader />
                 </Suspense>
+                <SmoothScroller />
                 <ScrollToTop />
                 <BackToTopButton />
                 <Navbar />
