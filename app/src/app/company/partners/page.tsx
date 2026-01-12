@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Partners",
-    description: "Partner with Scholar Clone to expand your reach in the education sector. Explore our partnership programs for schools, universities, and corporations.",
+    description: "Partner with Scholar Clone to expand your reach in the education sector. Explore our partnership programs for schools, higher education institutes, and corporations.",
     openGraph: {
         title: "Become a Partner - Scholar Clone",
         description: "Join our partner network and grow your education business.",

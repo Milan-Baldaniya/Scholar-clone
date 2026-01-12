@@ -9,7 +9,7 @@ export default function ServicesHero() {
                     {/* Left Column: Content */}
                     <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8">
                         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-[#0F3B77] leading-[1.15]">
-                            Complete Attendance & Tracking Solution for Schools & Colleges
+                            Complete Attendance & Tracking Solution for Schools & Higher Education Institutes
                         </h1>
                         <p className="text-lg lg:text-xl text-[#333333] leading-relaxed max-w-xl">
                             The Scholar Clone Attendance & Tracking System automates attendance and vehicle tracking with seamless ERP integration for security and accuracy.

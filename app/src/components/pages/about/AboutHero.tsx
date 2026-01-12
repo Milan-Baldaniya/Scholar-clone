@@ -62,8 +62,8 @@ export default function AboutHero() {
                         ">
                             Founded in 2010, Scholar Clone has been a pioneering force in transforming technology for
                             education and corporate sectors. Specializes in software solutions for the education and
-                            training sectors. It provides next-generation education solutions for schools, colleges,
-                            universities, SMEs, and corporate clients, both in India and globally. Our advanced solutions,
+                            training sectors. It provides next-generation education solutions for schools, higher education institutes,
+                            SMEs, and corporate clients, both in India and globally. Our advanced solutions,
                             including automated Learning Management Systems (LMS), cover everything from lesion
                             creation to performance management, enhancing learning experiences and optimizing
                             operational efficiency. Committed to driving growth and innovation, we deliver technology that

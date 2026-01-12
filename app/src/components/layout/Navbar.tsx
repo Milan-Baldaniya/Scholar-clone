@@ -236,7 +236,7 @@ export function Navbar() {
                                         <div className="pl-4 pr-2 py-2 space-y-1">
                                             {[
                                                 { name: "Analytics & Reporting Tools", href: "/products/analytics-reporting" },
-                                                { name: "University & College Management System", href: "/products/university-management" },
+                                                { name: "Higher Education Institute Management System", href: "/products/administrative-management" },
                                                 { name: "Alumni & Exam Management", href: "/products/alumni-management" },
                                                 { name: "Research & Collaboration Platform", href: "/products/research-collaboration" },
                                                 { name: "Timetable & Attendance Management", href: "/products/timetable-attendance" },

@@ -54,7 +54,7 @@ export function HomeHero() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         src="/assets/HeroImage.png"
-                        alt="University Campus"
+                        alt="Higher Education Campus"
                         className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#F6F7ED]/20"></div>

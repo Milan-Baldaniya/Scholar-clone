@@ -27,7 +27,7 @@ export const mainNavigation: NavItem[] = [
         href: ROUTES.PRODUCTS.ROOT,
         children: [
             {
-                name: 'University & College Management System',
+                name: 'Higher Education Institute Management System',
                 href: ROUTES.PRODUCTS.UNIVERSITY_MANAGEMENT,
                 icon: '🏛️',
                 description: 'AI-driven higher education ERP system'

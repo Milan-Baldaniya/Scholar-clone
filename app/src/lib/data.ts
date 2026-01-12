@@ -57,7 +57,7 @@ export const PARTNERS_DATA = [
         id: 2,
         category: "Product",
         title: "Higher Education Partners",
-        description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
+        description: "Streamlining operations and enhancing learning experiences for Higher Education Institutes.",
         image: "/assets/partner_university.png"
     },
     {
@@ -86,7 +86,7 @@ export const PARTNERS_DATA = [
         id: 6,
         category: "Product",
         title: "Higher Education Partners",
-        description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
+        description: "Streamlining operations and enhancing learning experiences for Higher Education Institutes.",
         image: "/assets/partner_university.png"
     },
     {
@@ -114,7 +114,7 @@ export const PARTNERS_DATA = [
         id: 10,
         category: "Product",
         title: "Higher Education Partners",
-        description: "Streamlining operations and enhancing learning experiences for colleges and universities.",
+        description: "Streamlining operations and enhancing learning experiences for Higher Education Institutes.",
         image: "/assets/partner_university.png"
     },
     {
@@ -186,9 +186,9 @@ export const PRODUCTS_DROPDOWN_DATA = [
         category: "Administrative Management Systems",
         description: "Core institutional operations & compliance management.",
         icon: "Building2",
-        href: "/products/university-management",
+        href: "/products/administrative-management",
         products: [
-            { name: "University & College Management", href: "#", icon: "LayoutDashboard", description: "Centralized digital platform." },
+            { name: "Higher Education Institute Management", href: "#", icon: "LayoutDashboard", description: "Centralized digital platform." },
             { name: "Alumni Management System", href: "#", icon: "UsersRound", description: "Alumni engagement & networking." },
             { name: "Timetable & Attendance", href: "#", icon: "CalendarClock", description: "Automated scheduling & tracking." },
             { name: "Transport & Vehicle Management", href: "#", icon: "Truck", description: "Fleet routing & safety." },
@@ -214,7 +214,7 @@ export const PRODUCTS_DROPDOWN_DATA = [
         category: "Student Lifecycle & Academic Management",
         description: "From admission to graduation, complete student journey.",
         icon: "UserSquare2",
-        href: "/products/transport-management",
+        href: "/products/student-lifecycle",
         products: [
             { name: "Education CRM", href: "#", icon: "Megaphone", description: "Lead & inquiry management." },
             { name: "Online Entrance Exam", href: "#", icon: "Laptop", description: "Secure entrance testing." },
@@ -236,7 +236,7 @@ export const PRODUCTS_DROPDOWN_DATA = [
         category: "Examination & Assessment Solutions",
         description: "AI-driven, secure & digital exam processing.",
         icon: "FileCheck2",
-        href: "/products/alumni-management",
+        href: "/products/examination-assessment",
         products: [
             { name: "Online Exam Form & Admit Card", href: "#", icon: "FileText", description: "Digital applications." },
             { name: "Pre, On & Post Exam Auto", href: "#", icon: "Workflow", description: "Complete lifecycle." },
@@ -252,7 +252,7 @@ export const PRODUCTS_DROPDOWN_DATA = [
         category: "Learning & Teaching Platforms",
         description: "Advanced education technology for smart learning.",
         icon: "Presentation",
-        href: "/products/inventory-management",
+        href: "/products/learning-teaching",
         products: [
             { name: "Learning Management System", href: "#", icon: "MonitorPlay", description: "LMS & eLearning." },
             { name: "Academic & Lesson Planning", href: "#", icon: "Calendar", description: "Structured delivery." },
@@ -271,7 +271,7 @@ export const PRODUCTS_DROPDOWN_DATA = [
         category: "Finance & HR Solutions",
         description: "Seamless financial operations & workforce management.",
         icon: "Landmark",
-        href: "/products/timetable-attendance",
+        href: "/products/finance-hr",
         products: [
             { name: "Fee Management", href: "#", icon: "Receipt", description: "Collections & dues." },
             { name: "Govt. Scholarship Mgmt", href: "#", icon: "Award", description: "Fund disbursement." },

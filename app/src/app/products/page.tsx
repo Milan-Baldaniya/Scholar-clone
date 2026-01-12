@@ -4,8 +4,8 @@ import { allProducts } from '@/config/navigation';
 
 export const metadata: Metadata = {
     title: 'Products - Education Management Solutions',
-    description: 'Explore Scholar Clone\'s comprehensive suite of education management solutions. From University Management to Alumni Systems, find the perfect solution for your institution.',
-    keywords: 'education products, university management, alumni system, timetable management, transport management, inventory management, accreditation compliance',
+    description: 'Explore Scholar Clone\'s comprehensive suite of education management solutions. From Higher Education Institute Management to Alumni Systems, find the perfect solution for your institution.',
+    keywords: 'education products, higher education institute management, alumni system, timetable management, transport management, inventory management, accreditation compliance',
     openGraph: {
         title: 'Scholar Clone Products - Education Management Solutions',
         description: 'Comprehensive suite of education management solutions for modern institutions.',

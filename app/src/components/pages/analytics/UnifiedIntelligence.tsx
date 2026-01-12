@@ -21,7 +21,7 @@ export default function UnifiedIntelligence() {
                         </h2>
                         <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                             Stop wrestling with spreadsheets and disjointed software. Our platform ingests data
-                            from every corner of your university—admissions, academics, finance, and HR—to
+                            from every corner of your higher education institute—admissions, academics, finance, and HR—to
                             provide a single, crystal-clear view of performance.
                         </p>
 

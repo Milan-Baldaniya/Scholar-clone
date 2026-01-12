@@ -75,7 +75,7 @@ export default function ResearchHero() {
                             <Quote size={16} className="rotate-180" />
                         </div>
                         <p className="text-sm font-medium text-slate-700 italic">
-                            "Transforming how our university manages Ph.D. scholars and research grants."
+                            "Transforming how our higher education institute manages Ph.D. scholars and research grants."
                         </p>
                     </div>
                 </motion.div>

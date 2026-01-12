@@ -29,8 +29,8 @@ export const metadata: Metadata = {
         "student information system",
         "campus management software",
         "academic administration",
-        "university ERP",
-        "college management system",
+        "higher education institute ERP",
+        "higher education institute management system",
         "student lifecycle management",
         "education technology",
         "institutional management"
