@@ -1,14 +1,19 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/Button';
 import ChipView from '@/components/ui/ChipView';
 
 export default function AdministrativeHero() {
+    const router = useRouter();
     const [demoRequested, setDemoRequested] = useState<boolean>(false)
 
     const handleGetDemo = (): void => {
-        setDemoRequested(true)
-        setTimeout(() => setDemoRequested(false), 3000)
+        setDemoRequested(true);
+        // Simulate a brief loading state before redirecting
+        setTimeout(() => {
+            router.push('/contact');
+        }, 500);
     }
 
     return (

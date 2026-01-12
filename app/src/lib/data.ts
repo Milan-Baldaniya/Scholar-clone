@@ -307,7 +307,13 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
             { name: "Ph.D. Lifecycle Module", href: "#", icon: "GraduationCap", description: "Registration to degree award." },
             { name: "Research & Collaboration", href: "#", icon: "Network", description: "Grant and project tracking." },
             { name: "Institutional Analytics", href: "#", icon: "BarChart3", description: "AI-driven strategic insights." },
-            { name: "App & Database Security", href: "#", icon: "Lock", description: "Cloud-based protection." }
+            { name: "App & Database Security", href: "#", icon: "Lock", description: "Cloud-based protection." },
+            { name: "Neo4j - Knowledge Graph", href: "#", icon: "Share2", description: "Complex relationship mapping." },
+            { name: "Report Engine", href: "#", icon: "FileBarChart", description: "Customizable reporting tool." },
+            { name: "Template Engine", href: "#", icon: "LayoutTemplate", description: "Dynamic document generation." },
+            { name: "Recommendation Engine", href: "#", icon: "Sparkles", description: "AI-driven suggestions." },
+            { name: "Security TLS Maintaining", href: "#", icon: "Shield", description: "Encrypted data transmission." },
+            { name: "Quality Assurance", href: "#", icon: "ClipboardCheck", description: "Automated testing & compliance." }
         ]
     },
 ];

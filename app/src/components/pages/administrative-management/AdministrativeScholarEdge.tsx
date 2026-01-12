@@ -1,10 +1,12 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/Button';
 import { ArrowRight } from 'lucide-react';
 
 export default function AdministrativeScholarEdge() {
+    const router = useRouter();
     const handleGetStarted = (): void => {
-        console.log('Get Started clicked')
+        router.push('/contact');
     }
 
     const features = [

@@ -1,9 +1,8 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function AdministrativeWhyChoose() {
-    const handleGetStarted = (): void => {
-        console.log('Get Started clicked')
-    }
 
     return (
         <section className="w-full py-16 lg:py-24 bg-[#f5f9eb]">
@@ -21,7 +20,8 @@ export default function AdministrativeWhyChoose() {
                             Fragmented tools lead to operational silos and compliance lapses. This unified suite orchestrates all administrative functions—from accreditation and inventory to alumni relations and file tracking—ensuring total visibility, regulatory readiness, and seamless execution across the institution.
                         </p>
 
-                        <button
+                        <Link
+                            href="/contact"
                             suppressHydrationWarning
                             className="bg-[#007f5f] hover:bg-[#006048] text-white text-lg font-medium py-3 px-8 rounded-full flex items-center gap-2 transition-colors duration-200"
                         >
@@ -29,7 +29,7 @@ export default function AdministrativeWhyChoose() {
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Right Image Section */}

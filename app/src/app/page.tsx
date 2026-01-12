@@ -33,9 +33,10 @@ export default function Home() {
             "addressCountry": "IN"
         },
         "sameAs": [
-            "https://www.facebook.com/scholarclone",
-            "https://www.linkedin.com/company/scholarclone",
-            "https://twitter.com/scholarclone"
+            "https://www.facebook.com/LMS.ScholarClone/",
+            "https://www.linkedin.com/company/scholar-clone-pvt-ltd/",
+            "https://x.com/ScholarClone",
+            "https://www.instagram.com/scholarclone/"
         ]
     };
 

@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import {
     GraduationCap, Network, BrainCircuit, RefreshCcw, ShieldCheck,
-    ChevronRight, X, CheckCircle2, Search, Share2, Award,
-    FileText, Lock, Users, BarChart3, Globe
+    Share2, FileBarChart, LayoutTemplate, Sparkles, Shield, ClipboardCheck,
+    ChevronRight, X, CheckCircle2
 } from 'lucide-react';
 
 interface ModuleData {
@@ -89,6 +89,96 @@ const modules: ModuleData[] = [
         whyChooseUs: [
             "Data trust involves significantly.",
             "Cyber resilience is strengthened."
+        ]
+    },
+    {
+        icon: <Share2 className="w-8 h-8" />,
+        title: "Neo4j - Knowledge Graph",
+        description: "Utilizes graph database technology to map complex relationships between research entities, funding bodies, and citations.",
+        benefits: [
+            "Visualizes complex academic relationships.",
+            "Discovers hidden collaboration opportunities.",
+            "Optimizes citation and impact analysis.",
+            "Enhances data retrieval speed for connected data."
+        ],
+        whyChooseUs: [
+            "Data connectivity is visualized.",
+            "Insights are faster and deeper."
+        ]
+    },
+    {
+        icon: <FileBarChart className="w-8 h-8" />,
+        title: "Report Engine",
+        description: "A powerful, drag-and-drop reporting tool allowing customized report generation for any metric within the university system.",
+        benefits: [
+            "Custom reports created without coding.",
+            "Automated scheduling and delivery via email.",
+            "Supports various formats (PDF, Excel, HTML).",
+            "Real-time data visualization integration."
+        ],
+        whyChooseUs: [
+            "Reporting becomes self-service.",
+            "Decision latency is reduced."
+        ]
+    },
+    {
+        icon: <LayoutTemplate className="w-8 h-8" />,
+        title: "Template Engine",
+        description: "Dynamic document generation system for certificates, transcripts, and official letters with customizable placeholders.",
+        benefits: [
+            "Standardizes official document formats.",
+            "Automates bulk generation of certificates.",
+            "Reduces manual entry errors.",
+            "supports digital signatures & QR codes."
+        ],
+        whyChooseUs: [
+            "Documentation efficiency improves.",
+            "Brand consistency is maintained."
+        ]
+    },
+    {
+        icon: <Sparkles className="w-8 h-8" />,
+        title: "Recommendation Engine",
+        description: "AI-driven system suggesting courses, research topics, and library resources based on user behavior and academic profile.",
+        benefits: [
+            "Personalizes student learning paths.",
+            "Suggests relevant research grants to faculty.",
+            "Improves library resource utilization.",
+            "Enhances student engagement & retention."
+        ],
+        whyChooseUs: [
+            "Experience becomes hyper-personalized.",
+            "Resource discovery is automated."
+        ]
+    },
+    {
+        icon: <Shield className="w-8 h-8" />,
+        title: "Security TLS Maintaining",
+        description: "Ensures all data transmission is encrypted using latest Transport Layer Security (TLS) protocols, guaranteeing privacy.",
+        benefits: [
+            "End-to-end encryption for all data transit.",
+            "Protects against man-in-the-middle attacks.",
+            "Complies with global data privacy standards.",
+            "Regular certificate updates & management."
+        ],
+        whyChooseUs: [
+            "Data privacy is non-negotiable.",
+            "Trust is built through security."
+        ]
+    },
+    {
+        icon: <ClipboardCheck className="w-8 h-8" />,
+        title: "Quality Assurance",
+        description: "Integrated automated testing and monitoring to ensure high system availability, performance, and bug-free operations.",
+        benefits: [
+            "Automated regression testing for stable updates.",
+            "Real-time performance monitoring.",
+            "Instant bug reporting and tracking.",
+            "Ensures 99.9% system uptime."
+        ],
+        whyChooseUs: [
+            "Reliability is guaranteed.",
+            "User experience remains flawless."
         ]
     }
 ];

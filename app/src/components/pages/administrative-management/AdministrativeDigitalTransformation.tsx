@@ -1,9 +1,11 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import Button from '@/components/ui/Button';
 
 export default function AdministrativeDigitalTransformation() {
+    const router = useRouter();
     const handleGetSystem = (): void => {
-        console.log('Get System clicked')
+        router.push('/contact');
     }
 
     return (

@@ -31,14 +31,14 @@ export function HomeHero() {
                     {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 lg:ml-12 mt-16">
                         <Link
-                            href="#"
+                            href="/contact"
                             className="rounded-[20px] bg-[#76B900] px-10 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#67a300] transition-all"
                         >
                             Get Started
                         </Link>
 
                         <Link
-                            href="#"
+                            href="/about"
                             className="rounded-[20px] bg-white px-10 py-4 text-lg font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 hover:bg-slate-50 transition-all"
                         >
                             Learn More
