@@ -10,9 +10,19 @@ import {
 } from '@/components/pages/student-lifecycle';
 
 export const metadata: Metadata = {
-    title: 'Student Lifecycle & Academic Management System',
-    description: 'A unified ecosystem managing the complete student journey from admission to alumni success.',
-    keywords: 'student lifecycle, academic management, SIS, education CRM, admission system',
+    title: 'Student Lifecycle Management System (SLCM) | Scholar Clone',
+    description: 'A unified Student Lifecycle Management System (SLCM) managing the complete journey from admission to alumni success. specialized for universities and colleges.',
+    keywords: 'student lifecycle management, slcm software, student information system, higher education crm, admission management system, student success platform, alumni management, university student portal',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/student-lifecycle',
+    },
+    openGraph: {
+        title: 'Student Lifecycle Management System (SLCM) | Scholar Clone',
+        description: 'A unified ecosystem managing the complete student journey from admission to alumni success.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/student-lifecycle',
+        type: 'website',
+    },
 };
 
 export default function TransportManagementPage() {

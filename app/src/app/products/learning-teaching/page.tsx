@@ -10,9 +10,19 @@ import {
 } from '@/components/pages/learning-teaching';
 
 export const metadata: Metadata = {
-    title: 'Learning & Teaching Platforms - LMS & OBE Solutions',
-    description: 'Comprehensive digital learning platforms including LMS, OBE, CBCS, and Academic Planning for modern institutions.',
-    keywords: 'LMS, learning management system, OBE, outcome based education, digital learning, academic planning',
+    title: 'Learning & Teaching Platforms - LMS, OBE & CBCS Solutions',
+    description: 'Empower academic excellence with Scholar Clone\'s digital learning platforms. Integrated LMS, Outcome Based Education (OBE), CBCS, and AI-driven personalized learning.',
+    keywords: 'learning management system, lms for higher education, outcome based education software, obe system, cbcs management, academic planning tool, digital learning platform, personalized adaptive learning',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/learning-teaching',
+    },
+    openGraph: {
+        title: 'Learning & Teaching Platforms - LMS, OBE & CBCS Solutions',
+        description: 'Transform education with our advanced LMS and Outcome Based Education (OBE) platforms.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/learning-teaching',
+        type: 'website',
+    },
 };
 
 export default function InventoryManagementPage() {

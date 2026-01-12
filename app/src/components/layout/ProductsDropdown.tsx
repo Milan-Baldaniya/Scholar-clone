@@ -24,9 +24,9 @@ export default function ProductsDropdown({
 
     // Helper to dynamically get icon component
     const getIcon = (iconName: string, className?: string) => {
-        // @ts-ignore
-        const IconComponent = Icons[iconName];
-        return IconComponent ? <IconComponent className={className} strokeWidth={1.5} /> : null;
+        const IconComponent = Icons[iconName as keyof typeof Icons] as React.ElementType;
+        if (!IconComponent) return null;
+        return <IconComponent className={className} strokeWidth={1.5} />;
     };
 
     const activeCategory = activeCategoryIndex !== null ? PRODUCTS_DROPDOWN_DATA[activeCategoryIndex] : null;
@@ -37,8 +37,7 @@ export default function ProductsDropdown({
             onMouseLeave={onMouseLeave}
             onMouseEnter={onMouseEnter}
         >
-            {/* Backdrop for click-outside closing */}
-            <div className="fixed inset-0 h-screen w-screen bg-transparent z-40" onClick={onClose} />
+
 
             <motion.div
                 initial={{ opacity: 0, y: -10, scale: 0.98 }}
@@ -170,7 +169,7 @@ export default function ProductsDropdown({
                                                 {/* Card Content (Default State) */}
                                                 <div className="absolute inset-0 p-4 flex flex-col items-center justify-center text-center transition-transform duration-300 group-hover:-translate-y-2">
                                                     <div className="p-2.5 bg-[#2A3E5C]/5 rounded-full text-[#2A3E5C] mb-2 group-hover:scale-110 transition-transform duration-300">
-                                                        {getIcon(product.icon, "w-7 h-7")}
+                                                        {getIcon(product.icon || "Circle", "w-7 h-7")}
                                                     </div>
                                                     <h4 className="font-bold text-xs text-slate-800 leading-tight">
                                                         {product.name}

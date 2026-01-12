@@ -2,9 +2,19 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Accreditation & Compliance Management',
-    description: 'Streamline NAAC, NBA, and regulatory compliance processes with Scholar Clone\'s comprehensive accreditation management system.',
-    keywords: 'accreditation management, NAAC, NBA, compliance management, regulatory compliance',
+    title: 'Accreditation & Compliance Management Software (NAAC/NBA/NIRF)',
+    description: 'Simplify NAAC, NBA, and NIRF compliance with Scholar Clone. Centralized document management, self-assessment reports, and audit trails for higher education accreditation.',
+    keywords: 'accreditation management software, NAAC compliance tool, NBA accreditation system, NIRF ranking software, higher education compliance, audit trail system, self assessment report generator',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/accreditation-compliance',
+    },
+    openGraph: {
+        title: 'Accreditation & Compliance Management Software (NAAC/NBA)',
+        description: 'Simplify NAAC, NBA, and NIRF compliance with Scholar Clone. Centralized document management and audit trails.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/accreditation-compliance',
+        type: 'website',
+    },
 };
 
 export default function AccreditationCompliancePage() {

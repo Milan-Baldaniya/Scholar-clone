@@ -3,13 +3,17 @@ import Link from 'next/link';
 import { allProducts } from '@/config/navigation';
 
 export const metadata: Metadata = {
-    title: 'Products - Education Management Solutions',
-    description: 'Explore Scholar Clone\'s comprehensive suite of education management solutions. From Higher Education Institute Management to Alumni Systems, find the perfect solution for your institution.',
-    keywords: 'education products, higher education institute management, alumni system, timetable management, transport management, inventory management, accreditation compliance',
+    title: 'Education Management Solutions - Comprehensive ERP Modules',
+    description: 'Explore Scholar Clone\'s complete suite of education management modules. From Student Lifecycle and Finance to Examination and Accreditation, find the perfect solution for your campus.',
+    keywords: 'education management products, higher education ERP modules, student information system features, university management tools, college administration software, accreditation management, timetable software, alumni management',
+    alternates: {
+        canonical: 'https://scholarclone.com/products',
+    },
     openGraph: {
-        title: 'Scholar Clone Products - Education Management Solutions',
-        description: 'Comprehensive suite of education management solutions for modern institutions.',
-        images: ['/Images/Logo.png'],
+        title: 'Education Management Solutions - Comprehensive ERP Modules',
+        description: 'Comprehensive suite of education management solutions for modern institutions. Streamline every aspect of campus life.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products',
         type: 'website',
     },
 };
@@ -48,7 +52,7 @@ export default function ProductsPage() {
                                     {product.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
-                                    {product.features.map((feature) => (
+                                    {(product.features || []).map((feature) => (
                                         <span
                                             key={feature}
                                             className="bg-[#F6F7ED] text-slate-700 px-3 py-1 rounded-full text-sm"

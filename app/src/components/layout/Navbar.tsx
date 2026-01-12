@@ -2,13 +2,188 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { Menu, X, Users, Briefcase, Handshake } from "lucide-react";
+import { Menu, X, Briefcase, Handshake } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ProductsDropdown from "./ProductsDropdown";
+import CompanyDropdown from "./CompanyDropdown";
+import { gsap } from "gsap";
 
 import { MAIN_NAVIGATION } from "@/lib/data";
 
 const navigation = MAIN_NAVIGATION;
+
+interface NavPillProps {
+    label: string;
+    href?: string;
+    onClick?: () => void;
+    isActive?: boolean;
+    children?: React.ReactNode;
+    className?: string;
+    dropdownOpen?: boolean;
+}
+
+const NavPill = ({ label, href, onClick, isActive, children, className, dropdownOpen }: NavPillProps) => {
+    const circleRef = useRef<HTMLSpanElement>(null);
+    const labelRef = useRef<HTMLSpanElement>(null);
+    const labelHoverRef = useRef<HTMLSpanElement>(null);
+    const tlRef = useRef<gsap.core.Timeline | null>(null);
+    const activeTweenRef = useRef<gsap.core.Tween | null>(null);
+
+    useEffect(() => {
+        if (!circleRef.current || !labelRef.current || !labelHoverRef.current) return;
+
+        const circle = circleRef.current;
+        const labelEl = labelRef.current;
+        const hoverEl = labelHoverRef.current;
+        const pill = circle.parentElement as HTMLElement;
+
+        // Wait for fonts to load for accurate measurement
+        const layout = () => {
+            if (!pill) return;
+            const rect = pill.getBoundingClientRect();
+            const { width: w, height: h } = rect;
+
+            // Calculate geometry for the circle expansion
+            const R = ((w * w) / 4 + h * h) / (2 * h);
+            const D = Math.ceil(2 * R) + 2;
+            const delta = Math.ceil(R - Math.sqrt(Math.max(0, R * R - (w * w) / 4))) + 1;
+            const originY = D - delta;
+
+            circle.style.width = `${D}px`;
+            circle.style.height = `${D}px`;
+            circle.style.bottom = `-${delta}px`;
+
+            gsap.set(circle, {
+                xPercent: -50,
+                scale: 0,
+                transformOrigin: `50% ${originY}px`
+            });
+
+            gsap.set(labelEl, { y: 0 });
+            gsap.set(hoverEl, { y: h + 12, opacity: 0 });
+
+            // Create Timeline
+            const tl = gsap.timeline({ paused: true });
+
+            tl.to(circle, { scale: 1.2, xPercent: -50, duration: 0.6, ease: "power3.out" }, 0);
+            tl.to(labelEl, { y: -(h + 8), duration: 0.6, ease: "power3.out" }, 0);
+
+            gsap.set(hoverEl, { y: Math.ceil(h + 20), opacity: 0 });
+            tl.to(hoverEl, { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }, 0);
+
+            tlRef.current = tl;
+        };
+
+        layout();
+        window.addEventListener('resize', layout);
+        return () => window.removeEventListener('resize', layout);
+    }, [label]);
+
+
+    const handleEnter = () => {
+        if (!tlRef.current) return;
+        activeTweenRef.current?.kill();
+        activeTweenRef.current = tlRef.current.tweenTo(tlRef.current.duration(), {
+            duration: 0.4,
+            ease: "power3.out",
+            overwrite: "auto"
+        });
+    };
+
+    const handleLeave = () => {
+        if (!tlRef.current) return;
+        // Keep active if dropdown is open
+        if (dropdownOpen) return;
+
+        activeTweenRef.current?.kill();
+        activeTweenRef.current = tlRef.current.tweenTo(0, {
+            duration: 0.3,
+            ease: "power3.out",
+            overwrite: "auto"
+        });
+    };
+
+    // Force open state if dropdown is open
+    useEffect(() => {
+        if (dropdownOpen) {
+            handleEnter();
+        } else {
+            // Only close if we are not hovering (difficult to detect here, strict mode: close)
+            if (!tlRef.current) return;
+            // We rely on mouseLeave to close, but if state changes externally:
+            activeTweenRef.current = tlRef.current.tweenTo(0, {
+                duration: 0.3,
+                ease: "power3.out",
+                overwrite: "auto"
+            });
+        }
+    }, [dropdownOpen]);
+
+
+    const content = (
+        <>
+            {/* The expanding circle */}
+            <span
+                ref={circleRef}
+                className="absolute left-1/2 bottom-0 rounded-full z-[1] block pointer-events-none bg-white"
+                aria-hidden="true"
+            />
+
+            {/* Label Stack */}
+            <span className="relative inline-block leading-[1] z-[2] overflow-hidden">
+                <span
+                    ref={labelRef}
+                    className="relative z-[2] inline-block font-medium text-slate-200"
+                >
+                    {label}
+                </span>
+                <span
+                    ref={labelHoverRef}
+                    className="absolute left-0 top-0 z-[3] inline-block font-medium text-[#2A3E5C]" // Inverse color text
+                    aria-hidden="true"
+                >
+                    {label}
+                </span>
+            </span>
+
+            {/* Dropdown Chevron (if any) */}
+            {children && (
+                <span className="relative z-[10] ml-1">
+                    {children}
+                </span>
+            )}
+        </>
+    );
+
+    const baseClasses = cn(
+        "relative overflow-hidden inline-flex items-center justify-center rounded-full px-5 py-2 transition-colors",
+        className
+    );
+
+    if (href) {
+        return (
+            <Link
+                href={href}
+                className={baseClasses}
+                onMouseEnter={handleEnter}
+                onMouseLeave={handleLeave}
+            >
+                {content}
+            </Link>
+        );
+    }
+
+    return (
+        <button
+            onClick={onClick}
+            className={baseClasses}
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+        >
+            {content}
+        </button>
+    );
+};
 
 export function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -61,11 +236,12 @@ export function Navbar() {
             <nav className="mx-auto w-full flex h-20 items-center justify-between px-4 lg:px-8" aria-label="Global">
                 {/* Left: Logo */}
                 <div className="flex flex-none">
-                    <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+                    <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3 group">
+                        {/* Logo Rotation Animation */}
                         <img
                             src="/assets/Logo.png"
                             alt="Scholar Clone Logo"
-                            className="h-12 w-auto"
+                            className="h-12 w-auto transition-transform duration-500 group-hover:rotate-[360deg]"
                         />
                         <div className="flex flex-col">
                             <span className="text-xl font-bold leading-none text-white">
@@ -95,7 +271,7 @@ export function Navbar() {
                 </div>
 
                 {/* Center: Navigation Items */}
-                <div className="hidden lg:flex flex-1 items-center justify-end gap-x-8">
+                <div className="hidden lg:flex flex-1 items-center justify-end gap-x-4">
                     {navigation.map((item) => {
                         if (item.name === "PRODUCTS") {
                             return (
@@ -106,21 +282,21 @@ export function Navbar() {
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}
                                 >
-                                    <button
-                                        className="text-sm font-medium leading-6 text-slate-200 hover:text-white transition-colors uppercase tracking-wide flex items-center gap-1 h-full py-2"
+                                    <NavPill
+                                        label={item.name}
                                         onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}
-                                        suppressHydrationWarning
+                                        dropdownOpen={productsDropdownOpen}
                                     >
-                                        {item.name}
                                         <svg
                                             className={`w-4 h-4 transition-transform duration-200 ${productsDropdownOpen ? 'rotate-180' : ''}`}
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
+                                            style={{ zIndex: 20 }} // Ensure on top
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                         </svg>
-                                    </button>
+                                    </NavPill>
 
                                     {/* Products Mega Menu Dropdown */}
                                     <ProductsDropdown
@@ -140,65 +316,47 @@ export function Navbar() {
                                     onMouseEnter={() => setCompanyDropdownOpen(true)}
                                     onMouseLeave={() => setCompanyDropdownOpen(false)}
                                 >
-                                    <button
-                                        className="text-sm font-medium leading-6 text-slate-200 hover:text-white transition-colors uppercase tracking-wide flex items-center gap-1 h-full py-2"
+                                    <NavPill
+                                        label={item.name}
                                         onClick={() => setCompanyDropdownOpen(!companyDropdownOpen)}
-                                        suppressHydrationWarning
+                                        dropdownOpen={companyDropdownOpen}
                                     >
-                                        {item.name}
                                         <svg
                                             className={`w-4 h-4 transition-transform duration-200 ${companyDropdownOpen ? 'rotate-180' : ''}`}
                                             fill="none"
                                             stroke="currentColor"
                                             viewBox="0 0 24 24"
+                                            style={{ zIndex: 20 }}
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                         </svg>
-                                    </button>
+                                    </NavPill>
 
-                                    {/* Company Dropdown */}
-                                    <div
-                                        className={`absolute right-0 top-16 w-60 transition-all duration-200 z-50 pt-2 ${companyDropdownOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
-                                    >
-                                        <div className="bg-white rounded-lg shadow-xl border border-slate-200 py-2 overflow-hidden">
-                                            <Link
-                                                href="/company/careers"
-                                                className="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors group/item"
-                                                onClick={() => setCompanyDropdownOpen(false)}
-                                            >
-                                                <Briefcase className="w-5 h-5 text-slate-500 group-hover/item:text-blue-600 transition-colors" />
-                                                <span className="text-sm font-medium text-slate-700 group-hover/item:text-slate-900">Careers</span>
-                                            </Link>
-                                            <Link
-                                                href="/company/partners"
-                                                className="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors group/item"
-                                                onClick={() => setCompanyDropdownOpen(false)}
-                                            >
-                                                <Handshake className="w-5 h-5 text-slate-500 group-hover/item:text-blue-600 transition-colors" />
-                                                <span className="text-sm font-medium text-slate-700 group-hover/item:text-slate-900">Partners</span>
-                                            </Link>
-                                        </div>
-                                    </div>
+                                    {/* Company Dropdown Component */}
+                                    <CompanyDropdown
+                                        isOpen={companyDropdownOpen}
+                                        onClose={() => setCompanyDropdownOpen(false)}
+                                        onMouseEnter={() => setCompanyDropdownOpen(true)}
+                                        onMouseLeave={() => setCompanyDropdownOpen(false)}
+                                    />
                                 </div>
                             );
                         } else {
                             return (
-                                <Link
+                                <NavPill
                                     key={item.name}
+                                    label={item.name}
                                     href={item.href}
-                                    className="text-sm font-medium leading-6 text-slate-200 hover:text-white transition-colors uppercase tracking-wide"
-                                >
-                                    {item.name}
-                                </Link>
+                                />
                             );
                         }
                     })}
-                    <Link
+                    <NavPill
+                        label="Contact Us"
                         href="/contact"
-                        className="rounded-[20px] bg-[#0066CC] px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#005bb5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0066CC] transition-colors ml-4"
-                    >
-                        Contact Us
-                    </Link>
+                        variant="solid"
+                        className="ml-4 z-20"
+                    />
                 </div>
             </nav>
             {/* Mobile Menu */}

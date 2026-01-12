@@ -9,9 +9,19 @@ import {
 } from '@/components/pages/finance-hr';
 
 export const metadata: Metadata = {
-    title: 'Finance & HR Solutions - Unified Financial Operations',
-    description: 'Comprehensive financial and HR management including fee collection, payroll, budgeting, and compliance for educational institutions.',
-    keywords: 'finance management, HR solutions, payroll processing, fee collection, educational erp',
+    title: 'Finance & HR Management Software for Educational Institutions',
+    description: 'Simplify financial operations and workforce management with Scholar Clone. Features include fee management, payroll automation, budgeting, and compliance.',
+    keywords: 'finance management software, hr management for schools, payroll automation education, fee collection system, budget management tool, institutional accounting software, employee records management',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/finance-hr',
+    },
+    openGraph: {
+        title: 'Finance & HR Management Software for Educational Institutions',
+        description: 'Unified financial operations and workforce management for automated institutional growth.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/finance-hr',
+        type: 'website',
+    },
 };
 
 export default function TimetableAttendancePage() {

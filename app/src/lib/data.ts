@@ -1,4 +1,6 @@
-export const MAIN_NAVIGATION = [
+import { NavItem, FooterSection, Partner, CareerRole, ProductCategory } from "@/types";
+
+export const MAIN_NAVIGATION: NavItem[] = [
     { name: "HOME", href: "/" },
     { name: "PRODUCTS", href: "#products", hasDropdown: true },
     { name: "SERVICES", href: "/services" },
@@ -6,7 +8,7 @@ export const MAIN_NAVIGATION = [
     { name: "COMPANY", href: "#company", hasDropdown: true },
 ];
 
-export const FOOTER_LINKS = {
+export const FOOTER_LINKS: FooterSection = {
     home: [
         { name: "Home", href: "#" },
         { name: "About Us", href: "#" },
@@ -45,7 +47,7 @@ export const FOOTER_LINKS = {
     ],
 };
 
-export const PARTNERS_DATA = [
+export const PARTNERS_DATA: Partner[] = [
     {
         id: 1,
         category: "School",
@@ -133,7 +135,7 @@ export const PARTNERS_DATA = [
     }
 ];
 
-export const CAREER_ROLES_DATA = [
+export const CAREER_ROLES_DATA: CareerRole[] = [
     {
         title: "Full Stack Developers",
         location: "Onsite/Remote",
@@ -154,7 +156,7 @@ export const CAREER_ROLES_DATA = [
     }
 ];
 
-export const EMPLOYEE_BENEFITS_DATA = [
+export const EMPLOYEE_BENEFITS_DATA: string[] = [
     "Competitive Salary & Performance-Based Growth",
     "Flexible Work Arrangements (Hybrid & Remote Work Options)",
     "Medical & Wellness Benefits (Health insurance, mental well-being programs)",
@@ -163,7 +165,7 @@ export const EMPLOYEE_BENEFITS_DATA = [
     "Annual Team Retreats, Offsite Events & Celebrations"
 ];
 
-export const PRODUCTS_DROPDOWN_DATA = [
+export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
     {
         category: "Analytics & Reporting Tools",
         description: "Turn data into actionable intelligence.",
@@ -301,5 +303,4 @@ export const PRODUCTS_DROPDOWN_DATA = [
             { name: "App & Database Security", href: "#", icon: "Lock", description: "Cloud-based protection." }
         ]
     },
-
 ];

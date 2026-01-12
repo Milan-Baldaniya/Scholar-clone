@@ -19,23 +19,25 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     title: {
-        default: "Scholar Clone - Higher Education Management System | ERP Software",
-        template: "%s | Scholar Clone"
+        default: "Scholar Clone - Leading Higher Education ERP & Campus Management System",
+        template: "%s | Scholar Clone - Education Management ERP"
     },
-    description: "Transform your institution with Scholar Clone's comprehensive Higher Education ERP solution. Streamline academics, administration, and student engagement with our cutting-edge education management system.",
+    description: "Transform your institution with Scholar Clone's AI-powered Higher Education ERP. Comprehensive solutions for Student Lifecycle, Accreditation (NAAC/NBA), Finance, HR, and Examination Management.",
     keywords: [
-        "higher education ERP",
-        "education management system",
-        "student information system",
-        "campus management software",
-        "academic administration",
-        "higher education institute ERP",
-        "higher education institute management system",
-        "student lifecycle management",
-        "education technology",
-        "institutional management"
+        "Higher Education ERP",
+        "Campus Management System",
+        "Student Information System",
+        "University Management Software",
+        "College ERP Software",
+        "Academic Administration System",
+        "Student Lifecycle Management",
+        "NAAC Accreditation Software",
+        "NBA Compliance Tool",
+        "Education ERP India",
+        "AI in Education",
+        "Outcome Based Education Software"
     ],
-    authors: [{ name: "Triz Innovation PVT LTD" }],
+    authors: [{ name: "Scholar Clone Team", url: "https://scholarclone.com" }],
     creator: "Triz Innovation PVT LTD",
     publisher: "Triz Innovation PVT LTD",
     formatDetection: {
@@ -48,16 +50,16 @@ export const metadata: Metadata = {
         canonical: '/',
     },
     openGraph: {
-        title: "Scholar Clone - Higher Education Management System",
-        description: "Transform your institution with Scholar Clone's comprehensive Higher Education ERP solution. Streamline academics, administration, and student engagement.",
+        title: "Scholar Clone - Leading Higher Education ERP & Campus Management System",
+        description: "Transform your institution with Scholar Clone's AI-powered Higher Education ERP. Comprehensive solutions for Student Lifecycle, Accreditation, and Administration.",
         url: 'https://scholarclone.com',
         siteName: 'Scholar Clone',
         images: [
             {
-                url: '/assets/Logo.png',
+                url: '/assets/Logo.png', // Ideally should be a 1200x630 og-image
                 width: 1200,
                 height: 630,
-                alt: 'Scholar Clone - Higher Education ERP',
+                alt: 'Scholar Clone - Transforming Higher Education',
             },
         ],
         locale: 'en_US',
@@ -65,10 +67,11 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Scholar Clone - Higher Education Management System',
-        description: 'Transform your institution with comprehensive ERP solution for higher education.',
+        title: 'Scholar Clone - Higher Education ERP',
+        description: 'AI-powered ERP for Universities & Colleges. Manage Admissions, Exams, Finance & Accreditation seamlessly.',
         images: ['/assets/Logo.png'],
         creator: '@scholarclone',
+        site: '@scholarclone',
     },
     robots: {
         index: true,
@@ -86,10 +89,9 @@ export const metadata: Metadata = {
         apple: '/assets/Logo.png',
     },
     verification: {
-        google: 'your-google-verification-code',
-        // yandex: 'your-yandex-verification-code',
-        // bing: 'your-bing-verification-code',
+        google: 'google-site-verification-code', // Placeholder, verify if user provided real one or leave as placeholder
     },
+    category: 'technology',
 };
 
 

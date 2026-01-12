@@ -8,8 +8,19 @@ import AnalyticsIntelligence from "@/components/pages/research/AnalyticsIntellig
 import DigitalFoundation from "@/components/pages/research/DigitalFoundation";
 
 export const metadata: Metadata = {
-    title: "Research, Collaboration & Institutional Growth | Scholar Clone",
-    description: "Empower your institution with data-driven decision making, Ph.D. management, and collaborative research platforms.",
+    title: 'Research, Collaboration & Institutional Growth Software',
+    description: 'Empower your institution with Scholar Clone\'s Research & Collaboration tools. Manage Ph.D. lifecycles, global linkages, and institutional analytics for strategic growth.',
+    keywords: 'research management software, phd lifecycle management, institutional collaboration tool, higher education analytics, research grant management, university growth strategy, naac nirf data management',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/research-collaboration',
+    },
+    openGraph: {
+        title: 'Research, Collaboration & Institutional Growth Software',
+        description: 'Empower your institution with data-driven decision making, Ph.D. management, and collaborative research platforms.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/research-collaboration',
+        type: 'website',
+    },
 };
 
 export default function ResearchCollaborationPage() {

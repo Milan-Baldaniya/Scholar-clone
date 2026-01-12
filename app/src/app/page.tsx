@@ -6,12 +6,15 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-    title: "Home - Higher Education ERP Software",
-    description: "Scholar Clone provides comprehensive higher education management solutions. Streamline academics, administration, student lifecycle, and institutional growth with our cutting-edge ERP system.",
+    title: "Scholar Clone - Impact Focused Higher Education ERP System",
+    description: "Empower your institution with Scholar Clone's Higher Education ERP. Streamline admissions, academics, accreditation, and alumni management with our AI-driven platform.",
+    alternates: {
+        canonical: 'https://scholarclone.com',
+    },
     openGraph: {
-        title: "Scholar Clone - Transform Your Institution with Modern ERP",
-        description: "Future-ready solutions that empower your campus. Streamline operations, elevate learning, and drive success.",
-        images: ['/Images/Logo.png'],
+        title: "Scholar Clone - Impact Focused Higher Education ERP System",
+        description: "Empower your institution with Scholar Clone's Higher Education ERP. Streamline admissions, academics, accreditation, and alumni management.",
+        images: ['/assets/Logo.png'],
     },
 };
 

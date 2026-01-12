@@ -10,8 +10,19 @@ import ReportingCompliance from "@/components/pages/analytics/ReportingComplianc
 import StrategicGrowth from "@/components/pages/analytics/StrategicGrowth";
 
 export const metadata: Metadata = {
-    title: "Analytics & Reporting Tools | Scholar Clone",
-    description: "Turn institutional data into actionable intelligence with AI-powered analytics and comprehensive reporting.",
+    title: 'Education Analytics & Reporting Tools | Institutional Intelligence',
+    description: 'Turn institutional data into actionable intelligence with Scholar Clone. AI-powered analytics, predictive insights, and stakeholder dashboards for higher education.',
+    keywords: 'education analytics software, institutional reporting tools, student performance analytics, predictive analytics in education, higher education BI, academic dashboard, nbr nif ranking analytics',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/analytics-reporting',
+    },
+    openGraph: {
+        title: 'Education Analytics & Reporting Tools | Institutional Intelligence',
+        description: 'Turn institutional data into strategic insights with Scholar Clone\'s AI analytics platform.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/analytics-reporting',
+        type: 'website',
+    },
 };
 
 export default function AnalyticsReportingPage() {

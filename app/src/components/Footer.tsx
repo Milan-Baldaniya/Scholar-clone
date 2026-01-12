@@ -46,7 +46,6 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Home</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            {/* @ts-ignore */}
                             {FOOTER_LINKS.home.map((link) => (
                                 <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
                             ))}
@@ -57,7 +56,6 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">K-12 Solution</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            {/* @ts-ignore */}
                             {FOOTER_LINKS.k12.map((link) => (
                                 <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
                             ))}
@@ -68,7 +66,6 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Higher Education</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            {/* @ts-ignore */}
                             {FOOTER_LINKS.higherEd.map((link) => (
                                 <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
                             ))}
@@ -79,7 +76,6 @@ export function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold mb-4">Corporate Solution</h3>
                         <ul className="space-y-2 text-sm text-slate-300">
-                            {/* @ts-ignore */}
                             {FOOTER_LINKS.corporate.map((link) => (
                                 <li key={link.name}><Link href={link.href} className="hover:text-white transition-colors">{link.name}</Link></li>
                             ))}

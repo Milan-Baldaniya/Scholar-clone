@@ -3,8 +3,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-    title: 'Examination & Assessment Solutions - AI-Driven & Secure',
-    description: 'Automate examining lifecycles with Scholar Clone\'s AI-driven, secure, and digital assessment processing system.',
+    title: 'Online Examination System & Assessment Software - Secure & AI-Driven',
+    description: 'Automate your entire examination lifecycle with Scholar Clone. Secure online exams, digital question banks, on-screen evaluation, and instant result processing.',
+    keywords: 'online examination system, digital assessment software, exam management system, on-screen evaluation, digital question bank, result processing software, secure online exams, ai proctoring',
+    alternates: {
+        canonical: 'https://scholarclone.com/products/examination-assessment',
+    },
+    openGraph: {
+        title: 'Online Examination System & Assessment Software - Secure & AI-Driven',
+        description: 'Automate examining lifecycles with Scholar Clone\'s AI-driven, secure, and digital assessment processing system.',
+        images: ['/assets/Logo.png'],
+        url: 'https://scholarclone.com/products/examination-assessment',
+        type: 'website',
+    },
 };
 
 import ExamChallenges from '@/components/pages/examination/ExamChallenges';

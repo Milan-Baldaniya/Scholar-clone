@@ -1,79 +1,64 @@
-/**
- * Common type definitions for the Scholar Clone application
- */
+import { LucideIcon } from "lucide-react";
+import * as Icons from "lucide-react";
 
-// Feature card type used across product pages
-export interface FeatureCard {
-    id: number;
-    title: string;
-    description: string;
-    image?: string;
-    icon?: string;
+export type IconName = keyof typeof Icons;
+
+export interface NavItem {
+    name: string;
+    href: string;
+    description?: string;
+    icon?: string | IconName;
+    hasDropdown?: boolean;
+    children?: NavItem[];
 }
 
-// Key feature type for numbered feature lists
-export interface KeyFeature {
-    id: number;
-    number: string;
-    title: string;
-    description: string;
-}
-
-// Product definition
 export interface Product {
-    slug: string;
     name: string;
-    shortName: string;
-    description: string;
-    icon: string;
     href: string;
-    features: string[];
-    heroImage?: string;
-}
-
-// Service definition
-export interface Service {
-    slug: string;
-    name: string;
+    icon: IconName | string; // Allow string for flexibility, but prefer IconName
     description: string;
-    icon: string;
+    slug?: string;
+    features?: string[];
+    shortName?: string;
+}
+
+export interface ProductCategory {
+    category: string; // Used in Dropdown
+    name?: string; // Used in navigation.ts
+    description?: string;
+    icon: IconName | string;
     href: string;
-    features: string[];
+    products: Product[] | NavItem[]; // Allow flexibility for now to support both structures
+    items?: NavItem[]; // navigation.ts uses 'items'
 }
 
-// Team member
-export interface TeamMember {
+export interface Partner {
     id: number;
-    name: string;
-    role: string;
-    image: string;
-    bio?: string;
-    linkedin?: string;
-}
-
-// Testimonial
-export interface Testimonial {
-    id: number;
-    name: string;
-    role: string;
-    company: string;
-    content: string;
-    image?: string;
-    rating?: number;
-}
-
-// Statistics
-export interface Statistic {
-    id: number;
-    value: string;
-    label: string;
-    suffix?: string;
-}
-
-// SEO Metadata
-export interface PageMeta {
+    category: string;
     title: string;
     description: string;
-    keywords?: string[];
-    ogImage?: string;
+    image: string;
+}
+
+export interface CareerRole {
+    title: string;
+    location: string;
+    experience: string;
+    iconKey: string;
+}
+
+export interface FooterSection {
+    home: NavItem[];
+    k12: NavItem[];
+    higherEd: NavItem[];
+    corporate: NavItem[];
+    [key: string]: NavItem[];
+}
+
+export interface CompanyCategory {
+    id: string;
+    name: string;
+    icon: LucideIcon;
+    description: string;
+    href: string;
 }

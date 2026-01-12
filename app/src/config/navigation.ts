@@ -1,23 +1,10 @@
 import { ROUTES } from '@/constants/routes';
+import { NavItem, ProductCategory, Product } from '@/types';
 
 /**
  * Navigation configuration for the application
  * Used by Navbar and other navigation components
  */
-
-export interface NavItem {
-    name: string;
-    href: string;
-    description?: string;
-    icon?: string;
-    children?: NavItem[];
-}
-
-export interface ProductCategory {
-    name: string;
-    icon: string;
-    items: NavItem[];
-}
 
 // Main navigation items
 export const mainNavigation: NavItem[] = [
@@ -116,7 +103,10 @@ export const mainNavigation: NavItem[] = [
 export const productCategories: ProductCategory[] = [
     {
         name: 'Administrative Management Systems',
+        category: 'Administrative Management Systems', // Added for type compatibility
         icon: '🏢',
+        href: ROUTES.PRODUCTS.ROOT, // Added for type compatibility
+        products: [], // Added for type compatibility - or refactor type to be optional
         items: [
             { name: 'University & College Management System', href: ROUTES.PRODUCTS.UNIVERSITY_MANAGEMENT },
             { name: 'Inventory, Purchase & Asset Management', href: ROUTES.PRODUCTS.INVENTORY_MANAGEMENT },
@@ -124,7 +114,10 @@ export const productCategories: ProductCategory[] = [
     },
     {
         name: 'Student Lifecycle & Academic Management',
+        category: 'Student Lifecycle & Academic Management',
         icon: '👩‍🎓',
+        href: ROUTES.PRODUCTS.ROOT,
+        products: [],
         items: [
             { name: 'Alumni Management System', href: ROUTES.PRODUCTS.ALUMNI_MANAGEMENT },
             { name: 'Timetable & Attendance Management', href: ROUTES.PRODUCTS.TIMETABLE_ATTENDANCE },
@@ -132,7 +125,10 @@ export const productCategories: ProductCategory[] = [
     },
     {
         name: 'Operations & Compliance',
+        category: 'Operations & Compliance',
         icon: '⚙️',
+        href: ROUTES.PRODUCTS.ROOT,
+        products: [],
         items: [
             { name: 'Transport & Vehicle Management', href: ROUTES.PRODUCTS.TRANSPORT_MANAGEMENT },
             { name: 'Accreditation & Compliance Management', href: ROUTES.PRODUCTS.ACCREDITATION_COMPLIANCE },
@@ -141,7 +137,7 @@ export const productCategories: ProductCategory[] = [
 ];
 
 // All products list for listing pages
-export const allProducts = [
+export const allProducts: Product[] = [
     {
         slug: 'university-management',
         name: 'University & College Management System',
