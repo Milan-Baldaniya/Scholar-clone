@@ -252,7 +252,7 @@ export function Navbar() {
     };
 
     return (
-        <header className="sticky top-0 z-50 w-full bg-[#2A3E5C] text-white shadow-[0_8px_10px_0px_rgba(42,62,92,0.5)]">
+        <header className="fixed top-0 left-0 z-50 w-full bg-[#2A3E5C] text-white shadow-[0_8px_10px_0px_rgba(42,62,92,0.5)]">
             <nav className="mx-auto w-full flex h-20 items-center justify-between px-4 lg:px-8" aria-label="Global">
                 {/* Left: Logo */}
                 <div className="flex flex-none">

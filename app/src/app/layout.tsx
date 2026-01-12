@@ -7,6 +7,8 @@ import { Footer } from "@/components/Footer";
 import GlobalLoader from "@/components/ui/GlobalLoader";
 import ScrollToTop from "@/components/utils/ScrollToTop";
 
+import BackToTopButton from "@/components/ui/BackToTopButton";
+
 const inter = Inter({ subsets: ["latin"], display: 'swap', variable: '--font-inter' });
 
 export const viewport: Viewport = {
@@ -102,11 +104,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en" suppressHydrationWarning={true}>
-            <body className={inter.className} suppressHydrationWarning={true}>
+            <body className={`${inter.className} pt-20`} suppressHydrationWarning={true}>
                 <Suspense fallback={null}>
                     <GlobalLoader />
                 </Suspense>
                 <ScrollToTop />
+                <BackToTopButton />
                 <Navbar />
                 {children}
                 <Footer />
