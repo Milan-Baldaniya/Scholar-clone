@@ -33,27 +33,28 @@ export default function ProductsDropdown({
 
     return (
         <div
-            className="absolute right-0 top-full z-50 pt-2"
+            className={`fixed top-20 z-50 pt-2 backdrop-blur-sm transition-[left] duration-300 ${activeCategory
+                ? "left-[calc(50%-700px)] translate-x-0"
+                : "left-1/2 -translate-x-1/2"
+                }`}
             onMouseLeave={onMouseLeave}
             onMouseEnter={onMouseEnter}
         >
-
-
             <motion.div
                 initial={{ opacity: 0, y: -10, scale: 0.98 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -10, scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 className={`
-                    relative z-50 rounded-2xl overflow-hidden flex h-[85vh] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top-right
+                    relative z-50 rounded-2xl overflow-hidden flex h-[85vh] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top
                     backdrop-blur-xl bg-white/95 border border-white/20 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/5
-                    ${activeCategory ? 'w-[1100px]' : 'w-[340px]'}
+                    w-fit mx-auto
                 `}
             >
                 {/* LEFT SIDEBAR: Categories */}
                 <div className={`
-                    flex flex-col py-6 relative z-10 transition-all duration-500 bg-slate-50/50
-                    ${activeCategory ? 'w-[35%]' : 'w-full'} 
+                    flex flex-col py-6 relative z-10 transition-all duration-500 bg-slate-50/50 flex-shrink-0
+                    ${activeCategory ? 'w-[340px]' : 'w-[340px]'}
                 `}>
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-50/80 to-slate-100/50 pointer-events-none" />
 
@@ -105,15 +106,14 @@ export default function ProductsDropdown({
                     </div>
                 </div>
 
-                {/* RIGHT CONTENT: Products Grid */}
-                {/* RIGHT CONTENT: Products Grid - SCROLLABLE */}
+                {/* MIDDLE: Products Grid - SCROLLABLE */}
                 <AnimatePresence mode="popLayout" initial={false}>
                     {activeCategory && (
                         <motion.div
-                            className="w-[65%] bg-white/60 p-8 flex flex-col relative h-full overflow-y-auto custom-scrollbar"
-                            initial={{ opacity: 0, x: 20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0 }}
+                            className="bg-white/60 p-8 flex flex-col relative h-full overflow-y-auto custom-scrollbar flex-shrink-0"
+                            initial={{ width: 0, opacity: 0 }}
+                            animate={{ width: 700, opacity: 1 }}
+                            exit={{ width: 0, opacity: 0 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
                         >
                             <div className="absolute inset-0 bg-[url('/assets/grid-pattern.svg')] opacity-[0.03] pointer-events-none sticky top-0" />
@@ -206,6 +206,29 @@ export default function ProductsDropdown({
                                     </Link>
                                 </motion.div>
                             </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                {/* RIGHTMOST: Category Image Preview */}
+                <AnimatePresence mode="wait">
+                    {activeCategory && activeCategory.image && (
+                        <motion.div
+                            key={activeCategory.category}
+                            initial={{ width: 0, opacity: 0 }}
+                            animate={{ width: 360, opacity: 1 }}
+                            exit={{ width: 0, opacity: 0 }}
+                            transition={{ duration: 0.35, ease: [0.25, 1, 0.5, 1] }}
+                            className="relative h-full overflow-hidden z-0 flex-shrink-0"
+                        >
+                            <div className="absolute inset-0 bg-slate-100">
+                                <img
+                                    src={activeCategory.image}
+                                    alt={activeCategory.category}
+                                    className="w-full h-full object-cover opacity-90"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                            </div>
                         </motion.div>
                     )}
                 </AnimatePresence>

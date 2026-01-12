@@ -26,6 +26,7 @@ export interface ProductCategory {
     category: string; // Used in Dropdown
     name?: string; // Used in navigation.ts
     description?: string;
+    image?: string; // Image for dropdown preview
     icon: IconName | string;
     href: string;
     products: Product[] | NavItem[]; // Allow flexibility for now to support both structures

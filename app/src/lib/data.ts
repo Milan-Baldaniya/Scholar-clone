@@ -171,6 +171,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "Turn data into actionable intelligence.",
         icon: "BarChart3",
         href: "/products/analytics-reporting",
+        image: "/assets/analytics_preview.png",
         products: [
             { name: "Institutional Analytics Platform", href: "#", icon: "LayoutDashboard", description: "Unified command center." },
             { name: "Academic Reporting Software", href: "#", icon: "FileText", description: "Compliance and internal reports." },
@@ -189,6 +190,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "Core institutional operations & compliance management.",
         icon: "Building2",
         href: "/products/administrative-management",
+        image: "/assets/admin_preview.png",
         products: [
             { name: "Higher Education Institute Management", href: "#", icon: "LayoutDashboard", description: "Centralized digital platform." },
             { name: "Alumni Management System", href: "#", icon: "UsersRound", description: "Alumni engagement & networking." },
@@ -217,6 +219,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "From admission to graduation, complete student journey.",
         icon: "UserSquare2",
         href: "/products/student-lifecycle",
+        image: "/assets/student_preview.png",
         products: [
             { name: "Education CRM", href: "#", icon: "Megaphone", description: "Lead & inquiry management." },
             { name: "Online Entrance Exam", href: "#", icon: "Laptop", description: "Secure entrance testing." },
@@ -239,6 +242,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "AI-driven, secure & digital exam processing.",
         icon: "FileCheck2",
         href: "/products/examination-assessment",
+        image: "/assets/exam_preview.png",
         products: [
             { name: "Online Exam Form & Admit Card", href: "#", icon: "FileText", description: "Digital applications." },
             { name: "Pre, On & Post Exam Auto", href: "#", icon: "Workflow", description: "Complete lifecycle." },
@@ -255,6 +259,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "Advanced education technology for smart learning.",
         icon: "Presentation",
         href: "/products/learning-teaching",
+        image: "/assets/learning_preview.png",
         products: [
             { name: "Learning Management System", href: "#", icon: "MonitorPlay", description: "LMS & eLearning." },
             { name: "Academic & Lesson Planning", href: "#", icon: "Calendar", description: "Structured delivery." },
@@ -274,6 +279,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "Seamless financial operations & workforce management.",
         icon: "Landmark",
         href: "/products/finance-hr",
+        image: "/assets/finance_preview.png",
         products: [
             { name: "Fee Management", href: "#", icon: "Receipt", description: "Collections & dues." },
             { name: "Govt. Scholarship Mgmt", href: "#", icon: "Award", description: "Fund disbursement." },
@@ -296,6 +302,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
         description: "Data-driven decision-making & academic excellence.",
         icon: "Rocket",
         href: "/products/research-collaboration",
+        image: "/assets/research_preview.png",
         products: [
             { name: "Ph.D. Lifecycle Module", href: "#", icon: "GraduationCap", description: "Registration to degree award." },
             { name: "Research & Collaboration", href: "#", icon: "Network", description: "Grant and project tracking." },
