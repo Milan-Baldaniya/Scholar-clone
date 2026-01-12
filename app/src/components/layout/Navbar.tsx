@@ -20,12 +20,15 @@ interface NavPillProps {
     children?: React.ReactNode;
     className?: string;
     dropdownOpen?: boolean;
+    variant?: "ghost" | "solid";
 }
 
-const NavPill = ({ label, href, onClick, isActive, children, className, dropdownOpen }: NavPillProps) => {
+const NavPill = ({ label, href, onClick, isActive, children, className, dropdownOpen, variant = "ghost" }: NavPillProps) => {
     const circleRef = useRef<HTMLSpanElement>(null);
     const labelRef = useRef<HTMLSpanElement>(null);
     const labelHoverRef = useRef<HTMLSpanElement>(null);
+    const iconRef = useRef<HTMLSpanElement>(null);
+    const iconHoverRef = useRef<HTMLSpanElement>(null);
     const tlRef = useRef<gsap.core.Timeline | null>(null);
     const activeTweenRef = useRef<gsap.core.Tween | null>(null);
 
@@ -120,6 +123,8 @@ const NavPill = ({ label, href, onClick, isActive, children, className, dropdown
     }, [dropdownOpen]);
 
 
+    const textColorClass = variant === "solid" ? "text-white" : "text-slate-200";
+
     const content = (
         <>
             {/* The expanding circle */}
@@ -133,7 +138,7 @@ const NavPill = ({ label, href, onClick, isActive, children, className, dropdown
             <span className="relative inline-block leading-[1] z-[2] overflow-hidden">
                 <span
                     ref={labelRef}
-                    className="relative z-[2] inline-block font-medium text-slate-200"
+                    className={`relative z-[2] inline-block font-medium ${textColorClass}`}
                 >
                     {label}
                 </span>
@@ -148,8 +153,22 @@ const NavPill = ({ label, href, onClick, isActive, children, className, dropdown
 
             {/* Dropdown Chevron (if any) */}
             {children && (
-                <span className="relative z-[10] ml-1">
-                    {children}
+                <span className="relative z-[10] ml-1 inline-flex items-center justify-center overflow-hidden h-4 w-4 align-middle">
+                    {/* Default Icon */}
+                    <span
+                        ref={iconRef}
+                        className={`relative z-[2] inline-flex items-center justify-center ${textColorClass}`}
+                    >
+                        {children}
+                    </span>
+                    {/* Hover Icon (Dark Blue) */}
+                    <span
+                        ref={iconHoverRef}
+                        className="absolute left-0 top-0 z-[3] inline-flex items-center justify-center text-[#2A3E5C]"
+                        aria-hidden="true"
+                    >
+                        {children}
+                    </span>
                 </span>
             )}
         </>
@@ -157,6 +176,7 @@ const NavPill = ({ label, href, onClick, isActive, children, className, dropdown
 
     const baseClasses = cn(
         "relative overflow-hidden inline-flex items-center justify-center rounded-full px-5 py-2 transition-colors",
+        variant === "solid" ? "bg-[#0066CC] shadow-sm hover:bg-[#005bb5]" : "",
         className
     );
 
