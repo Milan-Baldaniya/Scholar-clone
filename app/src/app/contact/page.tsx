@@ -20,7 +20,14 @@ export default function ContactPage() {
     return (
         <main className="min-h-screen bg-white">
             {/* Hero Section */}
+            <h1 className="sr-only">Contact Scholar Clone</h1>
             <ContactHero />
+
+            <div className="max-w-4xl mx-auto px-4 py-8 text-center">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                    We are here to help you transform your educational institution. whether you have questions about our ERP features, need a customized demo, or require technical support, our team is ready to assist you. Reach out to us via the form below, email, or visit our office. Let's build the future of education together.
+                </p>
+            </div>
 
             <ContactForm />
 

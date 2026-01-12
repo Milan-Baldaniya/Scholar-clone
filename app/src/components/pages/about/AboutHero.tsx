@@ -22,9 +22,9 @@ export default function AboutHero() {
 
                 {/* Bottom Section */}
                 <div className="bg-[#AFC1D6] py-10 text-center relative z-20">
-                    <h2 className="text-4xl md:text-5xl font-semibold text-blue-600">
+                    <h1 className="text-4xl md:text-5xl font-semibold text-blue-600">
                         Our Company
-                    </h2>
+                    </h1>
                 </div>
 
                 {/* Angled Cut */}

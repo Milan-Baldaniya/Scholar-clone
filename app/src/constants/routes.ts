@@ -10,10 +10,10 @@ export const ROUTES = {
     PRODUCTS: {
         ROOT: '/products',
         UNIVERSITY_MANAGEMENT: '/products/university-management',
-        ALUMNI_MANAGEMENT: '/products/alumni-management',
-        TIMETABLE_ATTENDANCE: '/products/timetable-attendance',
-        TRANSPORT_MANAGEMENT: '/products/transport-management',
-        INVENTORY_MANAGEMENT: '/products/inventory-management',
+        ALUMNI_MANAGEMENT: '/products/administrative-management',
+        TIMETABLE_ATTENDANCE: '/products/administrative-management',
+        TRANSPORT_MANAGEMENT: '/products/administrative-management',
+        INVENTORY_MANAGEMENT: '/products/administrative-management',
         ACCREDITATION_COMPLIANCE: '/products/accreditation-compliance',
     },
 

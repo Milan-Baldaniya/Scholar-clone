@@ -415,11 +415,11 @@ export function Navbar() {
                                             {[
                                                 { name: "Analytics & Reporting Tools", href: "/products/analytics-reporting" },
                                                 { name: "Higher Education Institute Management System", href: "/products/administrative-management" },
-                                                { name: "Alumni & Exam Management", href: "/products/alumni-management" },
+                                                { name: "Alumni & Exam Management", href: "/products/administrative-management" },
                                                 { name: "Research & Collaboration Platform", href: "/products/research-collaboration" },
-                                                { name: "Timetable & Attendance Management", href: "/products/timetable-attendance" },
-                                                { name: "Transport & Vehicle Management", href: "/products/transport-management" },
-                                                { name: "Inventory & Asset Management", href: "/products/inventory-management" },
+                                                { name: "Timetable & Attendance Management", href: "/products/administrative-management" },
+                                                { name: "Transport & Vehicle Management", href: "/products/administrative-management" },
+                                                { name: "Inventory & Asset Management", href: "/products/administrative-management" },
                                             ].map((product) => (
                                                 <Link
                                                     key={product.name}

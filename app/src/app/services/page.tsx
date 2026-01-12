@@ -7,7 +7,7 @@ import VehicleTrackingBenefits from '@/components/pages/services/VehicleTracking
 import VisualizeModule from '@/components/pages/services/VisualizeModule';
 
 export const metadata: Metadata = {
-    title: 'Services - Implementation, Support & Training',
+    title: 'Services & Support | Scholar Clone',
     description: 'Scholar Clone provides comprehensive services including implementation, 24/7 support, training programs, and digital transformation consulting for educational institutions.',
     keywords: 'education services, implementation, technical support, training, consulting, digital transformation',
     openGraph: {
