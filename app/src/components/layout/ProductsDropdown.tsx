@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import { PRODUCTS_DROPDOWN_DATA } from '@/lib/data';
@@ -19,6 +20,11 @@ export default function ProductsDropdown({
     onMouseLeave?: () => void;
 }) {
     const [activeCategoryIndex, setActiveCategoryIndex] = useState<number | null>(null);
+
+    // Preload all images when component mounts (even if null return, strict React might not run effect, but here we return null if !isOpen.
+    // So preloading happens when isOpen becomes true. This is usually acceptable as user sees list first.
+    // However, to be extra safe, we'll render the hidden images in the main return flow if we moved the null check down, but better to keep component simple.
+    // Since Next.js preloads priority images, we can use <link rel="preload"> but hidden <img> is easiest for dynamic lists.
 
     if (!isOpen) return null;
 
@@ -40,6 +46,13 @@ export default function ProductsDropdown({
             onMouseLeave={onMouseLeave}
             onMouseEnter={onMouseEnter}
         >
+            {/* Preload Hidden Images */}
+            <div className="hidden">
+                {PRODUCTS_DROPDOWN_DATA.map((cat, idx) => (
+                    cat.image && <img key={idx} src={cat.image} alt="" aria-hidden="true" />
+                ))}
+            </div>
+
             <motion.div
                 initial={{ opacity: 0, y: -10, scale: 0.98 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -222,10 +235,13 @@ export default function ProductsDropdown({
                             className="relative h-full overflow-hidden z-0 flex-shrink-0"
                         >
                             <div className="absolute inset-0 bg-slate-100">
-                                <img
+                                <Image
                                     src={activeCategory.image}
                                     alt={activeCategory.category}
-                                    className="w-full h-full object-cover opacity-90"
+                                    fill
+                                    className="object-cover opacity-90"
+                                    sizes="360px"
+                                    priority
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                             </div>
