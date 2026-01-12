@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Turn institutional data into actionable intelligence with Scholar Clone. AI-powered analytics, predictive insights, and stakeholder dashboards for higher education.',
     keywords: 'education analytics software, institutional reporting tools, student performance analytics, predictive analytics in education, higher education BI, academic dashboard, nbr nif ranking analytics',
     alternates: {
-        canonical: 'https://scholarclone.com/products/analytics-reporting',
+        canonical: 'https://scholar-clone.vercel.app/products/analytics-reporting',
     },
     openGraph: {
         title: 'Education Analytics & Reporting Tools | Institutional Intelligence',

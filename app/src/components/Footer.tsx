@@ -85,8 +85,19 @@ export function Footer() {
 
                 </div>
 
+                {/* SEO Description Section */}
+                <div className="mt-12 pt-8 border-t border-slate-700">
+                    <h4 className="text-sm font-semibold text-slate-300 mb-3">About Scholar Clone - Higher Education ERP System</h4>
+                    <p className="text-xs text-slate-400 leading-relaxed text-justify">
+                        Scholar Clone is a premier AI-driven Education Management System designed for Universities, Colleges, and K-12 Schools. Our comprehensive ERP software streamlines academic administration, student lifecycle management, finance & HR operations, and examination processes.
+                        With modules for Accreditation (NAAC/NBA/NIRF), Outcome-Based Education (OBE), and Choice-Based Credit System (CBCS), we empower educational institutions to achieve operational excellence.
+                        Our platform integrates seamlessly with Learning Management Systems (LMS), Alumni handling, and Digital Libraries, providing a unified solution for the digital transformation of education.
+                        Trusted by institutions across India and globally, Scholar Clone leverages advanced analytics and cloud security to deliver a future-proof campus management experience.
+                    </p>
+                </div>
+
                 {/* Bottom Section: Copyright & Social Media */}
-                <div className="mt-12 pt-8 border-t border-slate-600 flex flex-col lg:flex-row justify-between items-center gap-6">
+                <div className="mt-8 pt-8 border-t border-slate-700 flex flex-col lg:flex-row justify-between items-center gap-6">
                     <p className="text-sm text-slate-400">
                         All Rights Are Reserved By 2024 © Scholar Clon.
                     </p>

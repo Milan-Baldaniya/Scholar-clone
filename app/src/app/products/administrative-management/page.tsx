@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: 'Transform your university or college with Scholar Clone. Comprehensive AI-driven ERP for academic administration, student lifecycle, and institutional growth.',
     keywords: 'higher education institute management system, university ERP software, college administration system, student lifecycle management, smart campus solution, AI in higher education, institutional automation',
     alternates: {
-        canonical: 'https://scholarclone.com/products/administrative-management',
+        canonical: 'https://scholar-clone.vercel.app/products/administrative-management',
     },
     openGraph: {
         title: 'Higher Education Institute Management System - AI-Driven ERP',

@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     title: {
         default: "Scholar Clone - Leading Higher Education ERP & Campus Management System",
-        template: "%s | Scholar Clone - Education Management ERP"
+        template: "%s"
     },
     description: "Transform your institution with Scholar Clone's AI-powered Higher Education ERP. Comprehensive solutions for Student Lifecycle, Accreditation (NAAC/NBA), Finance, HR, and Examination Management.",
     keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         "AI in Education",
         "Outcome Based Education Software"
     ],
-    authors: [{ name: "Scholar Clone Team", url: "https://scholarclone.com" }],
+    authors: [{ name: "Scholar Clone Team", url: "https://scholar-clone.vercel.app" }],
     creator: "Triz Innovation PVT LTD",
     publisher: "Triz Innovation PVT LTD",
     formatDetection: {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         address: false,
         telephone: false,
     },
-    metadataBase: new URL('https://scholarclone.com'),
+    metadataBase: new URL('https://scholar-clone.vercel.app'),
     alternates: {
         canonical: '/',
     },

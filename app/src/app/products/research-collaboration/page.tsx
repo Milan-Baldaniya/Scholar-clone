@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Empower your institution with Scholar Clone\'s Research & Collaboration tools. Manage Ph.D. lifecycles, global linkages, and institutional analytics for strategic growth.',
     keywords: 'research management software, phd lifecycle management, institutional collaboration tool, higher education analytics, research grant management, university growth strategy, naac nirf data management',
     alternates: {
-        canonical: 'https://scholarclone.com/products/research-collaboration',
+        canonical: 'https://scholar-clone.vercel.app/products/research-collaboration',
     },
     openGraph: {
         title: 'Research, Collaboration & Institutional Growth Software',
