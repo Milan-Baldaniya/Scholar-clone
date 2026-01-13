@@ -65,75 +65,169 @@ scholar clone/
 ├── .git/                           # Git repository
 ├── .gitignore                      # Git ignore rules
 ├── README.md                       # Project readme
-├── DEVELOPER_GUIDE.md             # This file
+├── DEVELOPER_GUIDE.md             # This file (Developer documentation)
 ├── ADMINISTRATIVE_PRODUCTS_CONTENT.md  # Content documentation
 ├── verify_status.txt              # Verification status
 │
 └── app/                           # Main application directory
     ├── package.json               # Dependencies & scripts
+    ├── package-lock.json          # Locked dependency versions
     ├── next.config.mjs           # Next.js configuration
     ├── tailwind.config.ts        # Tailwind CSS configuration
     ├── tsconfig.json             # TypeScript configuration
     ├── postcss.config.mjs        # PostCSS configuration
+    ├── next-env.d.ts             # Next.js TypeScript declarations
+    ├── tsconfig.tsbuildinfo      # TypeScript build info
+    ├── lint_output.txt           # ESLint output
+    │
+    ├── .next/                    # Next.js build output (generated)
+    ├── node_modules/             # Dependencies (generated)
     │
     ├── public/                   # Static assets
-    │   ├── assets/              # Images, icons, vectors
-    │   └── animations/          # Lottie animation files
+    │   ├── animations/          # Lottie animation files (3 files)
+    │   └── assets/              # Images, icons, vectors (54 files)
+    │       ├── Logo.png
+    │       ├── HeroImage.png
+    │       ├── hero_aboutus.jpg
+    │       ├── hero_timetable.png
+    │       ├── Hero_Career.png
+    │       ├── Hero_Partners.png
+    │       ├── Hero_contactus.png
+    │       ├── Hero_inventory.png
+    │       ├── HeroServices.png
+    │       ├── University Management Dashboard.png
+    │       ├── University Management Interface.png
+    │       ├── University Campus Technology.png
+    │       ├── admin_preview.png
+    │       ├── analytics_preview.png
+    │       ├── exam_preview.png
+    │       ├── finance_preview.png
+    │       ├── learning_preview.png
+    │       ├── research_preview.png
+    │       ├── student_preview.png
+    │       ├── VectorProduct1.png
+    │       ├── Vector 7368.png
+    │       ├── Vector 7369.png
+    │       └── ... (and more)
     │
     └── src/                     # Source code
         ├── app/                 # Next.js App Router pages
-        │   ├── layout.tsx      # Root layout
+        │   ├── layout.tsx      # Root layout with metadata
         │   ├── page.tsx        # Home page
-        │   ├── globals.css     # Global styles
-        │   ├── loading.tsx     # Loading state
-        │   ├── robots.ts       # Robots.txt config
-        │   ├── sitemap.ts      # Sitemap config
+        │   ├── globals.css     # Global styles & CSS variables
+        │   ├── loading.tsx     # Global loading component
+        │   ├── robots.ts       # Robots.txt configuration
+        │   ├── sitemap.ts      # Dynamic sitemap generation
         │   │
-        │   ├── about/          # About pages
+        │   ├── about/          # About Us section
         │   │   └── page.tsx
         │   │
-        │   ├── company/        # Company pages
-        │   │   ├── clients/
-        │   │   ├── partners/
-        │   │   └── contact/
+        │   ├── company/        # Company section
+        │   │   ├── page.tsx   # Company overview
+        │   │   ├── careers/
+        │   │   │   └── page.tsx
+        │   │   └── partners/
+        │   │       └── page.tsx
         │   │
         │   ├── contact/        # Contact page
         │   │   └── page.tsx
         │   │
-        │   ├── products/       # Product pages
-        │   │   ├── university-management/
-        │   │   ├── administrative-management/
-        │   │   ├── timetable-attendance/
-        │   │   ├── transport-management/
-        │   │   ├── inventory-management/
-        │   │   ├── accreditation-compliance/
+        │   ├── products/       # Product pages (8 products)
+        │   │   ├── page.tsx   # Products overview
+        │   │   ├── student-lifecycle/
+        │   │   │   └── page.tsx
+        │   │   ├── learning-teaching/
+        │   │   │   └── page.tsx
         │   │   ├── examination-assessment/
-        │   │   └── alumni-management/
+        │   │   │   └── page.tsx
+        │   │   ├── administrative-management/
+        │   │   │   └── page.tsx
+        │   │   ├── finance-hr/
+        │   │   │   └── page.tsx
+        │   │   ├── analytics-reporting/
+        │   │   │   └── page.tsx
+        │   │   ├── research-collaboration/
+        │   │   │   └── page.tsx
+        │   │   └── accreditation-compliance/
+        │   │       └── page.tsx
         │   │
-        │   └── services/       # Services pages
+        │   └── services/       # Services page
         │       └── page.tsx
         │
         ├── components/         # React components
-        │   ├── Footer.tsx     # Footer component
-        │   ├── layout/        # Layout components (Navbar, etc.)
-        │   ├── pages/         # Page-specific components
-        │   ├── ui/            # Reusable UI components
-        │   └── utils/         # Utility components
+        │   ├── Footer.tsx     # Global footer component
+        │   │
+        │   ├── layout/        # Layout components (3 files)
+        │   │   ├── Navbar.tsx              # Main navigation bar
+        │   │   ├── ProductsDropdown.tsx    # Products dropdown menu
+        │   │   └── CompanyDropdown.tsx     # Company dropdown menu
+        │   │
+        │   ├── pages/         # Page-specific components (12 categories)
+        │   │   ├── home/                   # Home page components (5 files)
+        │   │   │   ├── HomeHero.tsx
+        │   │   │   ├── HomeFeatures.tsx
+        │   │   │   ├── HomeStudentLifecycle.tsx
+        │   │   │   ├── HomeWhyChoose.tsx
+        │   │   │   └── index.ts
+        │   │   │
+        │   │   ├── about/                  # About page components (3 files)
+        │   │   │
+        │   │   ├── student-lifecycle/      # Student Lifecycle components (7 files)
+        │   │   │
+        │   │   ├── learning-teaching/      # Learning & Teaching components (7 files)
+        │   │   │
+        │   │   ├── examination/            # Examination components (6 files)
+        │   │   │
+        │   │   ├── administrative-management/  # Admin components (9 files)
+        │   │   │   ├── AdministrativeHero.tsx
+        │   │   │   ├── AdministrativeFeatures.tsx
+        │   │   │   ├── AdministrativeKeyFeatures.tsx
+        │   │   │   ├── AdministrativeModules.tsx
+        │   │   │   ├── AdministrativeDigitalTransformation.tsx
+        │   │   │   ├── AdministrativeScholarEdge.tsx
+        │   │   │   ├── AdministrativeWhyChoose.tsx
+        │   │   │   ├── AdministrativeHomePage.tsx
+        │   │   │   └── index.ts
+        │   │   │
+        │   │   ├── finance-hr/             # Finance & HR components (7 files)
+        │   │   │
+        │   │   ├── analytics/              # Analytics components (8 files)
+        │   │   │
+        │   │   ├── research/               # Research components (6 files)
+        │   │   │
+        │   │   ├── company/                # Company page components (7 files)
+        │   │   │
+        │   │   ├── contact/                # Contact page components (3 files)
+        │   │   │
+        │   │   └── services/               # Services page components (6 files)
+        │   │
+        │   ├── ui/            # Reusable UI components (7 files)
+        │   │   ├── Button.tsx              # Custom button component
+        │   │   ├── ChipView.tsx            # Chip/tag component
+        │   │   ├── EditText.tsx            # Input field component
+        │   │   ├── Loader.tsx              # Loading spinner
+        │   │   ├── GlobalLoader.tsx        # Full-page loader
+        │   │   ├── BackToTopButton.tsx     # Scroll to top button
+        │   │   └── ScrollAnimation.tsx     # Scroll animation wrapper
+        │   │
+        │   └── utils/         # Utility components (2 files)
+        │       ├── SmoothScroller.tsx      # Lenis smooth scroll
+        │       └── ScrollToTop.tsx         # Scroll restoration
         │
         ├── constants/         # Constants & configuration
-        │   └── routes.ts     # Route definitions
+        │   └── routes.ts     # Centralized route definitions
         │
-        ├── lib/              # Library code
-        │   ├── data.ts      # Data utilities
-        │   └── utils.ts     # Helper functions
+        ├── lib/              # Library code & utilities
+        │   ├── data.ts      # Data utilities & constants
+        │   └── utils.ts     # Helper functions (cn, etc.)
         │
         ├── types/           # TypeScript type definitions
         │   └── index.ts
         │
         ├── config/          # App configuration
-        │   └── site.ts
+        │   └── site.ts      # Site metadata & config
         │
-        └── styles/          # Additional styles
+        └── styles/          # Additional styles (if any)
 ```
 
 ### Directory Breakdown
