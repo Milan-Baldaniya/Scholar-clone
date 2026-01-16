@@ -4,22 +4,25 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ChevronsRight } from 'lucide-react';
 import { PRODUCTS_DROPDOWN_DATA } from '@/lib/data';
 import * as Icons from 'lucide-react';
+import ModuleModal from '../common/ModuleModal';
+import { Product } from '@/types';
 
 export default function ProductsDropdown({
     isOpen,
-    onClose,
-    onMouseEnter,
-    onMouseLeave
+    onClose
 }: {
     isOpen: boolean;
     onClose: () => void;
-    onMouseEnter?: () => void;
-    onMouseLeave?: () => void;
 }) {
     const [activeCategoryIndex, setActiveCategoryIndex] = useState<number | null>(null);
+    const [selectedModule, setSelectedModule] = useState<Product | null>(null);
+
+    const handleModalClose = () => {
+        setSelectedModule(null);
+    };
 
     // Preload all images when component mounts (even if null return, strict React might not run effect, but here we return null if !isOpen.
     // So preloading happens when isOpen becomes true. This is usually acceptable as user sees list first.
@@ -43,8 +46,6 @@ export default function ProductsDropdown({
                 ? "left-[calc(50%-700px)] translate-x-0"
                 : "left-1/2 -translate-x-1/2"
                 }`}
-            onMouseLeave={onMouseLeave}
-            onMouseEnter={onMouseEnter}
         >
             {/* Preload Hidden Images */}
             <div className="hidden">
@@ -123,7 +124,8 @@ export default function ProductsDropdown({
                 <AnimatePresence mode="popLayout" initial={false}>
                     {activeCategory && (
                         <motion.div
-                            className="bg-white/60 p-8 flex flex-col relative h-full overflow-y-auto custom-scrollbar flex-shrink-0"
+                            className="bg-white/60 p-8 flex flex-col relative h-full overflow-y-auto custom-scrollbar flex-shrink-0 overscroll-contain"
+                            data-lenis-prevent
                             initial={{ width: 0, opacity: 0 }}
                             animate={{ width: 700, opacity: 1 }}
                             exit={{ width: 0, opacity: 0 }}
@@ -196,12 +198,20 @@ export default function ProductsDropdown({
                                                     </h4>
 
                                                     {product.description && (
-                                                        <p className="text-[10px] text-white/80 leading-relaxed mb-2 line-clamp-2">
+                                                        <p className="text-[10px] text-white/80 leading-relaxed mb-3 line-clamp-2">
                                                             {product.description}
                                                         </p>
                                                     )}
 
-
+                                                    <button
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            setSelectedModule(product as Product);
+                                                        }}
+                                                        className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-[10px] font-semibold transition-colors flex items-center gap-1.5 border border-white/20 backdrop-blur-sm"
+                                                    >
+                                                        View Details <ChevronsRight className="w-3 h-3" />
+                                                    </button>
                                                 </div>
                                             </div>
                                         </motion.div>
@@ -220,11 +230,12 @@ export default function ProductsDropdown({
                                 </motion.div>
                             </motion.div>
                         </motion.div>
-                    )}
-                </AnimatePresence>
+                    )
+                    }
+                </AnimatePresence >
 
                 {/* RIGHTMOST: Category Image Preview */}
-                <AnimatePresence mode="wait">
+                < AnimatePresence mode="wait" >
                     {activeCategory && activeCategory.image && (
                         <motion.div
                             key={activeCategory.category}
@@ -247,8 +258,19 @@ export default function ProductsDropdown({
                             </div>
                         </motion.div>
                     )}
-                </AnimatePresence>
-            </motion.div>
-        </div>
+                </AnimatePresence >
+            </motion.div >
+
+            {/* Module Detail Modal */}
+            < ModuleModal
+                isOpen={!!selectedModule}
+                onClose={handleModalClose}
+                title={selectedModule?.name || ""}
+                description={selectedModule?.description || ""}
+                icon={selectedModule ? getIcon(selectedModule.icon, "w-8 h-8") : null}
+                benefits={selectedModule?.benefits}
+                whyChooseUs={selectedModule?.whyChooseUs}
+            />
+        </div >
     );
 }

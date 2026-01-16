@@ -218,6 +218,9 @@ export function Navbar() {
         function handleClickOutside(event: MouseEvent) {
             const target = event.target as Node;
 
+            // Ignore if target is no longer in the document (e.g. unmounted modal close button)
+            if (!target.isConnected) return;
+
             // Handle Products Dropdown
             if (productsDropdownOpen && productsDropdownRef.current && !productsDropdownRef.current.contains(target)) {
                 setProductsDropdownOpen(false);
@@ -300,8 +303,6 @@ export function Navbar() {
                                     key={item.name}
                                     className="relative h-full flex items-center"
                                     ref={productsDropdownRef}
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}
                                 >
                                     <NavPill
                                         label={item.name}
@@ -323,8 +324,6 @@ export function Navbar() {
                                     <ProductsDropdown
                                         isOpen={productsDropdownOpen}
                                         onClose={() => setProductsDropdownOpen(false)}
-                                        onMouseEnter={handleMouseEnter}
-                                        onMouseLeave={handleMouseLeave}
                                     />
                                 </div>
                             );

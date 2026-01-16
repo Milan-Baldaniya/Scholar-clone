@@ -20,6 +20,8 @@ export interface Product {
     slug?: string;
     features?: string[];
     shortName?: string;
+    benefits?: string[];
+    whyChooseUs?: string[];
 }
 
 export interface ProductCategory {
