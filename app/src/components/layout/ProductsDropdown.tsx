@@ -60,7 +60,7 @@ export default function ProductsDropdown({
                 exit={{ opacity: 0, y: -10, scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 300, damping: 25 }}
                 className={`
-                    relative z-50 rounded-2xl overflow-hidden flex h-[85vh] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top
+                    relative z-50 rounded-xl overflow-hidden flex h-[85vh] transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-top
                     backdrop-blur-xl bg-white/95 border border-white/20 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.15)] ring-1 ring-black/5
                     w-fit mx-auto
                 `}
@@ -84,7 +84,7 @@ export default function ProductsDropdown({
                                 onClick={onClose}
                                 onMouseEnter={() => setActiveCategoryIndex(idx)}
                                 className={`
-                                    relative flex items-center gap-4 px-5 py-4 rounded-xl text-left transition-all duration-300 group overflow-hidden
+                                    relative flex items-center gap-4 px-5 py-4 rounded-lg text-left transition-all duration-300 group overflow-hidden
                                     ${activeCategoryIndex === idx
                                         ? 'bg-gradient-to-r from-[#2A3E5C] to-[#3B5478] text-white shadow-lg shadow-[#2A3E5C]/30 translate-x-1'
                                         : 'text-slate-600 hover:bg-white hover:shadow-sm hover:text-[#2A3E5C]'}
@@ -154,7 +154,7 @@ export default function ProductsDropdown({
                                     className="mb-6 shrink-0"
                                 >
                                     <div className="flex items-center gap-3 mb-2">
-                                        <div className="p-3 bg-gradient-to-br from-[#2A3E5C]/10 to-[#3B5478]/5 rounded-xl text-[#2A3E5C] shadow-sm ring-1 ring-[#2A3E5C]/10">
+                                        <div className="p-3 bg-gradient-to-br from-[#2A3E5C]/10 to-[#3B5478]/5 rounded-lg text-[#2A3E5C] shadow-sm ring-1 ring-[#2A3E5C]/10">
                                             {getIcon(activeCategory.icon, "w-6 h-6")}
                                         </div>
                                         <div>
@@ -178,41 +178,54 @@ export default function ProductsDropdown({
                                             key={pIdx}
                                             variants={{ hidden: { opacity: 0, scale: 0.95 }, visible: { opacity: 1, scale: 1 } }}
                                         >
-                                            <div
-                                                className="group relative h-[160px] bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden cursor-default border border-slate-100"
-                                            >
-                                                {/* Card Content (Default State) */}
-                                                <div className="absolute inset-0 p-4 flex flex-col items-center justify-center text-center transition-transform duration-300 group-hover:-translate-y-2">
-                                                    <div className="p-2.5 bg-[#2A3E5C]/5 rounded-full text-[#2A3E5C] mb-2 group-hover:scale-110 transition-transform duration-300">
-                                                        {getIcon(product.icon || "Circle", "w-7 h-7")}
+                                            <div className="group relative flex flex-col gap-2 cursor-default">
+                                                <div
+                                                    className="relative h-[120px] bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-slate-100"
+                                                >
+                                                    {/* Card Content (Default State) */}
+                                                    <div className="absolute inset-0 flex items-center justify-center text-center transition-transform duration-300 group-hover:scale-105">
+                                                        {(product as Product).image ? (
+                                                            <div className="relative w-full h-full bg-slate-50">
+                                                                <Image
+                                                                    src={(product as Product).image!}
+                                                                    alt={product.name}
+                                                                    fill
+                                                                    className="object-cover"
+                                                                    sizes="(max-width: 768px) 100vw, 33vw"
+                                                                />
+                                                                <div className="absolute inset-0 bg-black/5" />
+                                                            </div>
+                                                        ) : (
+                                                            <div className="p-3 bg-[#2A3E5C]/5 rounded-full text-[#2A3E5C]">
+                                                                {getIcon(product.icon || "Circle", "w-8 h-8")}
+                                                            </div>
+                                                        )}
                                                     </div>
-                                                    <h4 className="font-bold text-xs text-slate-800 leading-tight">
-                                                        {product.name}
-                                                    </h4>
+
+                                                    {/* Hover Overlay (Slide Up) */}
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-[#2A3E5C]/95 via-[#2A3E5C]/90 to-[#2A3E5C]/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out flex flex-col items-center justify-center p-3 text-center backdrop-blur-[2px]">
+                                                        {product.description && (
+                                                            <p className="text-[10px] text-white/90 leading-relaxed mb-3 line-clamp-3 px-2">
+                                                                {product.description}
+                                                            </p>
+                                                        )}
+
+                                                        <button
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                setSelectedModule(product as Product);
+                                                            }}
+                                                            className="px-4 py-1.5 bg-white text-[#2A3E5C] hover:bg-white/90 rounded-md text-[10px] font-bold transition-all flex items-center gap-1.5 shadow-lg active:scale-95"
+                                                        >
+                                                            View Details <ChevronsRight className="w-3.5 h-3.5" />
+                                                        </button>
+                                                    </div>
                                                 </div>
 
-                                                {/* Hover Overlay (Slide Up) */}
-                                                <div className="absolute inset-0 bg-gradient-to-t from-[#2A3E5C] via-[#2A3E5C] to-[#3B5478] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out flex flex-col items-center justify-center p-4 text-center">
-                                                    <h4 className="font-bold text-xs text-white mb-2 leading-tight">
-                                                        {product.name}
-                                                    </h4>
-
-                                                    {product.description && (
-                                                        <p className="text-[10px] text-white/80 leading-relaxed mb-3 line-clamp-2">
-                                                            {product.description}
-                                                        </p>
-                                                    )}
-
-                                                    <button
-                                                        onClick={(e) => {
-                                                            e.stopPropagation();
-                                                            setSelectedModule(product as Product);
-                                                        }}
-                                                        className="px-3 py-1.5 bg-white/10 hover:bg-white/20 text-white rounded-lg text-[10px] font-semibold transition-colors flex items-center gap-1.5 border border-white/20 backdrop-blur-sm"
-                                                    >
-                                                        View Details <ChevronsRight className="w-3 h-3" />
-                                                    </button>
-                                                </div>
+                                                {/* Text Module Name - Outside Card */}
+                                                <h4 className="font-bold text-[11px] text-slate-700 leading-tight text-center px-1 group-hover:text-[#2A3E5C] transition-colors">
+                                                    {product.name}
+                                                </h4>
                                             </div>
                                         </motion.div>
                                     ))}
@@ -267,7 +280,17 @@ export default function ProductsDropdown({
                 onClose={handleModalClose}
                 title={selectedModule?.name || ""}
                 description={selectedModule?.description || ""}
-                icon={selectedModule ? getIcon(selectedModule.icon, "w-8 h-8") : null}
+                icon={selectedModule?.image ? (
+                    <div className="relative w-20 h-20 rounded-lg overflow-hidden shadow-inner ring-1 ring-white/20 bg-white/10 backdrop-blur-sm">
+                        <Image
+                            src={selectedModule.image}
+                            alt={selectedModule?.name || "Module Icon"}
+                            fill
+                            className="object-cover"
+                            sizes="80px"
+                        />
+                    </div>
+                ) : selectedModule ? getIcon(selectedModule.icon, "w-8 h-8") : null}
                 benefits={selectedModule?.benefits}
                 whyChooseUs={selectedModule?.whyChooseUs}
             />

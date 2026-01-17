@@ -177,6 +177,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Institutional Analytics Platform",
                 href: "#",
                 icon: "LayoutDashboard",
+                image: "/assets/institutional_analytics_dashboard.png",
                 description: "A centralized command center consolidating data from all departments into a single source of truth for institutional oversight.",
                 benefits: [
                     "Unified view of campus operations.",
@@ -193,6 +194,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Academic Reporting Software",
                 href: "#",
                 icon: "FileText",
+                image: "/assets/academic_reporting_dashboard.png",
                 description: "Comprehensive reporting engine for academic tracking, form attendance and marks to syllabus coverage and learning outcomes.",
                 benefits: [
                     "Automated grade and transcript generation.",
@@ -209,6 +211,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "AI Insights & Prediction",
                 href: "#",
                 icon: "BrainCircuit",
+                image: "/assets/ai_insights_prediction_dashboard.png",
                 description: "Advanced AI algorithms that analyze historical data to forecast trends and identify potential risks before they occur.",
                 benefits: [
                     "Early warning systems for at-risk students.",
@@ -225,6 +228,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Performance Analytics",
                 href: "#",
                 icon: "Activity",
+                image: "/assets/performance_analytics_dashboard.png",
                 description: "Granular analysis of institutional performance metrics against set KPIs and accreditation standards.",
                 benefits: [
                     "KPI tracking and visualization.",
@@ -241,6 +245,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Student Performance Analytics",
                 href: "#",
                 icon: "GraduationCap",
+                image: "/assets/student_performance_analytics_dashboard.png",
                 description: "Deep-dive analytics into individual and cohort student performance to personalize learning paths and support mechanisms.",
                 benefits: [
                     "Individual learning gap identification.",
@@ -257,6 +262,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Teacher Performance Analytics",
                 href: "#",
                 icon: "Users",
+                image: "/assets/teacher_performance_analytics_dashboard.png",
                 description: "Evaluation tools to assess teaching effectiveness, research output, and student feedback for faculty development.",
                 benefits: [
                     "Teaching effectiveness scores.",
@@ -273,6 +279,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Stakeholder Dashboards",
                 href: "#",
                 icon: "PieChart",
+                image: "/assets/stakeholder_dashboards.png",
                 description: "Tailored analytical views for different stakeholders—Students, Parsent, Faculty, Management, and Administrators.",
                 benefits: [
                     "Role-specific data visualization.",
@@ -289,6 +296,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Reports Engine",
                 href: "#",
                 icon: "ScrollText",
+                image: "/assets/reports_engine_dashboard.png",
                 description: "Flexible, custom report builder allowing institutions to generate specific statutory and internal reports on demand.",
                 benefits: [
                     "Drag-and-drop report builder.",
@@ -305,6 +313,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Predictive Analytics",
                 href: "#",
                 icon: "TrendingUp",
+                image: "/assets/predictive_analytics_dashboard.png",
                 description: "Forward-looking models that use regression and machine learning to map out future institutional scenarios.",
                 benefits: [
                     "Budget forecasting models.",
@@ -321,6 +330,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Admission Prediction",
                 href: "#",
                 icon: "UserCheck",
+                image: "/assets/admission_prediction_dashboard.png",
                 description: "Specialized tools to analyze admission inquiries, conversion rates, and demographic trends to optimize enrollment.",
                 benefits: [
                     "Lead conversion probability.",
@@ -346,6 +356,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Higher Education Institute Management",
                 href: "#",
                 icon: "LayoutDashboard",
+                image: "/assets/University Management Dashboard.png",
                 description: "A centralized digital platform that serves as the backbone of your institution. It integrates every department, campus, and stakeholder into a single, unified ecosystem, ensuring that academic planning, student services, finance, and governance operate in perfect synchronization.",
                 benefits: [
                     "Seamless integration of all academic and admin departments.",
@@ -362,6 +373,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Alumni Management System",
                 href: "#",
                 icon: "UsersRound",
+                image: "/assets/alumni_management_dashboard.png",
                 description: "Build and maintain lifelong relationships with your alumni network. This module helps track engagement, manage contributions, and foster a vibrant community that supports the institution's growth and branding.",
                 benefits: [
                     "Comprehensive alumni profiling and career tracking.",
@@ -378,6 +390,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Timetable & Attendance",
                 href: "#",
                 icon: "CalendarClock",
+                image: "/assets/timetable_attendance_dashboard.png",
                 description: "Automate the complex scheduling of classes and tracking of attendance using advanced technologies like RFID, Biometrics, and Mobile QR. Ensure compliance and improve punctuality effortlessly.",
                 benefits: [
                     "Zero-conflict automated timetable scheduling.",
@@ -394,6 +407,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Transport & Vehicle Management",
                 href: "#",
                 icon: "Truck",
+                image: "/assets/transport_vehicle_dashboard.png",
                 description: "Manage your entire fleet of vehicles with precision. From route optimization and fuel tracking to student safety and driver performance, this system handles the logistics so you don't have to.",
                 benefits: [
                     "GPS-enabled real-time vehicle tracking.",
@@ -410,6 +424,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Inventory & Asset Management",
                 href: "#",
                 icon: "Boxes",
+                image: "/assets/inventory_asset_dashboard.png",
                 description: "Digitize your procurement and asset management lifecycle. Track every item from purchase request to disposal, ensuring accountability, preventing loss, and optimizing inventory levels.",
                 benefits: [
                     "Centralized vendor management and purchase history.",
@@ -426,6 +441,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Accreditation & Compliance",
                 href: "#",
                 icon: "ShieldCheck",
+                image: "/assets/accreditation_compliance_dashboard.png",
                 description: "Stay audit-ready 24/7. This system streamlines the preparation for NAAC, NBA, NIRF, and other regulatory bodies by centralizing data collection and evidence management.",
                 benefits: [
                     "Central repository for all compliance-related documents.",
@@ -442,6 +458,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Affiliation & Licensing",
                 href: "#",
                 icon: "FileBadge",
+                image: "/assets/affiliation_licensing_dashboard.png",
                 description: "Navigate the complex landscape of statutory compliances effortlessly. Manage affiliations, track license renewals, and ensure your institution never misses a critical regulatory deadline.",
                 benefits: [
                     "Automated reminders for license and affiliation renewals.",
@@ -458,6 +475,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Website Management System",
                 href: "#",
                 icon: "Globe",
+                image: "/assets/website_management_dashboard.png",
                 description: "Empower non-technical staff to keep the institutional website dynamic and up-to-date. Manage news, events, faculty profiles, and notifications centrally without writing a single line of code.",
                 benefits: [
                     "User-friendly CMS designed for educational content.",
@@ -474,6 +492,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Lapses & Grievance Management",
                 href: "#",
                 icon: "MessageCircleWarning",
+                image: "/assets/grievance_management_dashboard.png",
                 description: "Foster a transparent and trust-based environment with a confidential grievance redressal mechanism. Ensure that every voice is heard and every issue is resolved within a defined timeline.",
                 benefits: [
                     "Multi-channel complaint lodging (Web, Mobile, Email).",
@@ -490,6 +509,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "360° Feedback System",
                 href: "#",
                 icon: "MessagesSquare",
+                image: "/assets/feedback_360_dashboard.png",
                 description: "Drive continuous quality improvement by collecting holistic feedback from all stakeholders—students, faculty, alumni, parents, and employers. Turn perceptions into actionable data.",
                 benefits: [
                     "Customizable survey templates for Course/Faculty/Infra.",
@@ -506,6 +526,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Doc Tracking & Journey",
                 href: "#",
                 icon: "FileSearch",
+                image: "/assets/doc_tracking_dashboard.png",
                 description: "End the chaos of lost files and delayed approvals. This module tracks the entire lifecycle of every application and file within the higher education institute, providing real-time status visibility to all stakeholders.",
                 benefits: [
                     "Unique tracking ID for every file/application.",
@@ -522,6 +543,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Guest House & Hall Booking",
                 href: "#",
                 icon: "Hotel",
+                image: "/assets/guest_house_booking_dashboard.png",
                 description: "Maximize the utilization of your physical assets. A digital reservation system for guest houses, seminar halls, and vehicles that eliminates double-bookings and streamlines billing.",
                 benefits: [
                     "Visual calendar view of resource availability.",

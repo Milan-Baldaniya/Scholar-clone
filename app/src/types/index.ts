@@ -16,6 +16,7 @@ export interface Product {
     name: string;
     href: string;
     icon: IconName | string; // Allow string for flexibility, but prefer IconName
+    image?: string; // Image for module card
     description: string;
     slug?: string;
     features?: string[];
