@@ -8,7 +8,7 @@ import AnalyticsIntelligence from "@/components/pages/research/AnalyticsIntellig
 import DigitalFoundation from "@/components/pages/research/DigitalFoundation";
 
 export const metadata: Metadata = {
-    title: 'Research & Collaboration | Scholar Clone',
+    title: 'Research Management & Collaboration Platform | Ph.D. Lifecycle & Analytics',
     description: 'Empower your institution with Scholar Clone\'s Research & Collaboration tools. Manage Ph.D. lifecycles, global linkages, and institutional analytics for strategic growth.',
     keywords: 'research management software, phd lifecycle management, institutional collaboration tool, higher education analytics, research grant management, university growth strategy, naac nirf data management',
     alternates: {

@@ -10,7 +10,7 @@ import ReportingCompliance from "@/components/pages/analytics/ReportingComplianc
 import StrategicGrowth from "@/components/pages/analytics/StrategicGrowth";
 
 export const metadata: Metadata = {
-    title: 'Analytics & Reporting Tools | Scholar Clone',
+    title: 'Education Analytics & Reporting Software | AI-Powered Insights',
     description: 'Turn institutional data into actionable intelligence with Scholar Clone. AI-powered analytics, predictive insights, and stakeholder dashboards for higher education.',
     keywords: 'education analytics software, institutional reporting tools, student performance analytics, predictive analytics in education, higher education BI, academic dashboard, nbr nif ranking analytics',
     alternates: {

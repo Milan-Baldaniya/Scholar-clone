@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { AdministrativeHomePage } from '@/components/pages/administrative-management';
 
 export const metadata: Metadata = {
-    title: 'Institute Management System | Scholar Clone',
+    title: 'Higher Education Institute Management System | AI-Driven Campus ERP',
     description: 'Transform your university or college with Scholar Clone. Comprehensive AI-driven ERP for academic administration, student lifecycle, and institutional growth.',
     keywords: 'higher education institute management system, university ERP software, college administration system, student lifecycle management, smart campus solution, AI in higher education, institutional automation',
     alternates: {

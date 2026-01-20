@@ -49,12 +49,18 @@ export function HomeStudentLifecycle() {
                             </p>
 
                             <ul className="space-y-2 text-sm">
-                                <li>
-                                    <span className="text-green-400 font-medium">
-                                        Admissions & Enrollment:
-                                    </span>{" "}
-                                    Automate applications, document verification, and fee payments.
-                                </li>
+                                <span className="text-green-400 font-medium block mb-1">
+                                    Admissions & Enrollment:
+                                </span>
+                                <p className="mb-2 text-slate-200">
+                                    Our automated admission system reduces processing time by 70% and minimizes errors by 95%.
+                                </p>
+                                <ul className="list-disc pl-4 space-y-1 text-slate-300 text-xs">
+                                    <li>Online application forms with instant validation</li>
+                                    <li>Document verification with AI-powered checks</li>
+                                    <li>Automated fee payment integration</li>
+                                    <li>Real-time application status tracking</li>
+                                </ul>
                                 <li>
                                     <span className="text-green-400 font-medium">
                                         Student Information System (SIS):

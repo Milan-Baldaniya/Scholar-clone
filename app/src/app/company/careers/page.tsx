@@ -7,11 +7,11 @@ import CareerRoles from '@/components/pages/company/CareerRoles';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Careers",
-    description: "Build the future of education with Scholar Clone. Explore career opportunities, our culture, and benefits. Join our team today.",
+    title: "Careers at Scholar Clone | Join Our Mission to Transform Education",
+    description: "Build the future of education with Scholar Clone. Explore career opportunities, company culture, and benefits. Join our passionate team in Pune, India.",
     openGraph: {
-        title: "Careers at Scholar Clone - Join Our Team",
-        description: "Join our mission to transform education. View open positions and benefits.",
+        title: "Careers at Scholar Clone | Join Our Team",
+        description: "Join our mission to transform education with technology. View open positions and benefits.",
         images: ['/Images/Hero_Career.png'],
     },
 };

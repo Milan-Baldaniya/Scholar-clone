@@ -10,7 +10,7 @@ import {
 } from '@/components/pages/student-lifecycle';
 
 export const metadata: Metadata = {
-    title: 'Student Lifecycle Management System (SLCM) | Scholar Clone',
+    title: 'Student Lifecycle Management System (SLCM) | Admission to Alumni',
     description: 'A unified Student Lifecycle Management System (SLCM) managing the complete journey from admission to alumni success. specialized for universities and colleges.',
     keywords: 'student lifecycle management, slcm software, student information system, higher education crm, admission management system, student success platform, alumni management, university student portal',
     alternates: {

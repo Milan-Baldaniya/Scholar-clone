@@ -7,11 +7,11 @@ import VehicleTrackingBenefits from '@/components/pages/services/VehicleTracking
 import VisualizeModule from '@/components/pages/services/VisualizeModule';
 
 export const metadata: Metadata = {
-    title: 'Services & Support | Scholar Clone',
-    description: 'Scholar Clone provides comprehensive services including implementation, 24/7 support, training programs, and digital transformation consulting for educational institutions.',
+    title: 'Education ERP Services | Implementation, Support & Training - Scholar Clone',
+    description: 'Expert implementation, 24/7 technical support, and comprehensive training services for Scholar Clone\'s Higher Education ERP system. Ensure your institution\'s digital success.',
     keywords: 'education services, implementation, technical support, training, consulting, digital transformation',
     openGraph: {
-        title: 'Scholar Clone Services - Implementation, Support & Training',
+        title: 'Education ERP Services | Implementation, Support & Training',
         description: 'Comprehensive services to help your institution succeed with our education management solutions.',
         images: ['/Images/Logo.png'],
         type: 'website',

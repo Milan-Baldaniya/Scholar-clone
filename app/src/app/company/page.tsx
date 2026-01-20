@@ -2,14 +2,14 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'About Scholar Clone - Our Company, Partners & Clients',
-    description: 'Learn about Scholar Clone\'s mission to transform education technology. Discover our strategic partnerships, success stories, and latest company news.',
+    title: 'About Scholar Clone | Our Company, Global Partners & Clients',
+    description: 'Learn about Scholar Clone\'s mission to transform higher education technology. Discover our strategic partnerships, client success stories, and latest company news.',
     keywords: 'scholar clone company, education technology partners, edtech clients, company news, about scholar clone, education software provider',
     alternates: {
         canonical: 'https://scholarclone.com/company',
     },
     openGraph: {
-        title: 'About Scholar Clone - Innovation in Education Technology',
+        title: 'About Scholar Clone | Innovation in Education Technology',
         description: 'Partners, clients, and the latest news from Scholar Clone. Join us in building the future of education.',
         images: ['/assets/Logo.png'],
         url: 'https://scholarclone.com/company',

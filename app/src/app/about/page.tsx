@@ -5,10 +5,10 @@ import SuccessJourney from '@/components/pages/about/SuccessJourney';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Us",
-    description: "Learn about Scholar Clone's mission to revolutionize education management. Discover our journey, values, and the team driving digital transformation in higher education.",
+    title: "About Scholar Clone | Impact-Focused Education ERP & Team",
+    description: "Discover Scholar Clone's mission to transform higher education with AI-powered ERP solutions. Meet the team driving innovation in campus management for universities and colleges.",
     openGraph: {
-        title: "About Scholar Clone - Revolutionizing Education Management",
+        title: "About Scholar Clone | Impact-Focused Education ERP & Team",
         description: "Discover our mission to empower institutions with cutting-edge ERP solutions.",
         images: ['/Images/hero_aboutus.jpg'],
     },

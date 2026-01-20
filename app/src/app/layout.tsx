@@ -22,10 +22,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
     title: {
-        default: "Scholar Clone - Leading Higher Education ERP & Campus Management System",
+        default: "Scholar Clone | Higher Education ERP Software for Colleges & Universities",
         template: "%s"
     },
-    description: "Transform your institution with Scholar Clone's AI-powered Higher Education ERP. Comprehensive solutions for Student Lifecycle, Accreditation (NAAC/NBA), Finance, HR, and Examination Management.",
+    description: "Scholar Clone: A comprehensive Higher Education ERP system that streamlines admissions, LMS, finance, and campus management. Improve efficiency with AI-powered insights for colleges and universities.",
     keywords: [
         "Higher Education ERP",
         "Campus Management System",

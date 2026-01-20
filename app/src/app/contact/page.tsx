@@ -29,6 +29,44 @@ export default function ContactPage() {
                 </p>
             </div>
 
+            <div className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-12">
+                <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-slate-100">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">Global Headquarters</h2>
+                    <ul className="space-y-4 text-slate-700">
+                        <li className="flex items-start gap-3">
+                            <span className="font-semibold min-w-[100px]">Address:</span>
+                            <span>Triz Innovation PVT LTD, Tech Park, Pune, Maharashtra, India - 411045</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="font-semibold min-w-[100px]">Phone:</span>
+                            <a href="tel:+919876543210" className="hover:text-[#2A518A] transition-colors">+91-98765-43210</a>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="font-semibold min-w-[100px]">Email:</span>
+                            <a href="mailto:contact@scholarclone.com" className="hover:text-[#2A518A] transition-colors">contact@scholarclone.com</a>
+                        </li>
+                        <li className="flex items-start gap-3">
+                            <span className="font-semibold min-w-[100px]">Time Zone:</span>
+                            <span>IST (UTC+05:30) - 9:00 AM to 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="bg-[#F8FAFC] p-8 rounded-2xl border border-slate-100">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6">Regional Support</h2>
+                    <div className="space-y-6">
+                        <div>
+                            <h3 className="font-semibold text-[#2A518A] mb-2">USA & North America</h3>
+                            <p className="text-slate-600 text-sm">Dedicated support line: +1-555-0123-456 (EST 9AM - 5PM)</p>
+                        </div>
+                        <div>
+                            <h3 className="font-semibold text-[#2A518A] mb-2">Europe</h3>
+                            <p className="text-slate-600 text-sm">London Office: +44 20 7123 4567 (GMT 9AM - 5PM)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <ContactForm />
 
             <ContactMap />

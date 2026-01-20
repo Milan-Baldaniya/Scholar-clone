@@ -9,7 +9,7 @@ import {
 } from '@/components/pages/finance-hr';
 
 export const metadata: Metadata = {
-    title: 'Finance & HR Management Software for Educational Institutions',
+    title: 'Finance & HR Management Software | Payroll, Fees & Budget Automation',
     description: 'Simplify financial operations and workforce management with Scholar Clone. Features include fee management, payroll automation, budgeting, and compliance.',
     keywords: 'finance management software, hr management for schools, payroll automation education, fee collection system, budget management tool, institutional accounting software, employee records management',
     alternates: {

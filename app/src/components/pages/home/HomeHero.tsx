@@ -42,7 +42,7 @@ export function HomeHero() {
                         className="text-3xl md:text-4xl lg:text-[3.5rem] font-bold tracking-tight text-slate-900"
                         style={{ lineHeight: '1.4' }}
                     >
-                        Future-Ready Solutions that Empower Your Campus
+                        Future-Ready Education ERP for Colleges & Universities
                     </h1>
 
                     {/* First paragraph */}
@@ -54,7 +54,7 @@ export function HomeHero() {
                     <p className="text-base text-slate-600 leading-relaxed max-w-lg lg:ml-12 mt-4">
                         Scholar Clone is a Higher Education ERP that streamlines academics,
                         administration, and student engagement, integrating technology for
-                        efficiency and success.
+                        efficiency and success. Trusted by educational institutions across the Globe.
                     </p>
 
                     {/* Buttons */}
@@ -87,8 +87,8 @@ export function HomeHero() {
                 <div className="relative w-full h-full">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="/assets/HeroImage.png"
-                        alt="Higher Education Campus"
+                        src="/assets/higher-education-erp-dashboard.png"
+                        alt="Scholar Clone ERP dashboard for university management"
                         className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-gradient-to-l from-transparent to-[#F6F7ED]/20"></div>

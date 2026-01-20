@@ -10,7 +10,7 @@ import {
 } from '@/components/pages/learning-teaching';
 
 export const metadata: Metadata = {
-    title: 'Learning & Teaching Platforms - LMS, OBE & CBCS Solutions',
+    title: 'Learning & Teaching Platforms | LMS, OBE & CBCS Solutions',
     description: 'Empower academic excellence with Scholar Clone\'s digital learning platforms. Integrated LMS, Outcome Based Education (OBE), CBCS, and AI-driven personalized learning.',
     keywords: 'learning management system, lms for higher education, outcome based education software, obe system, cbcs management, academic planning tool, digital learning platform, personalized adaptive learning',
     alternates: {
