@@ -205,7 +205,7 @@ export default function ProductsDropdown({
                                                     {/* Hover Overlay (Slide Up) */}
                                                     <div className="absolute inset-0 bg-gradient-to-t from-[#2A3E5C]/95 via-[#2A3E5C]/90 to-[#2A3E5C]/80 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out flex flex-col items-center justify-center p-3 text-center backdrop-blur-[2px]">
                                                         {product.description && (
-                                                            <p className="text-[10px] text-white/90 leading-relaxed mb-3 line-clamp-3 px-2">
+                                                            <p className="text-sm text-white/90 leading-relaxed mb-3 line-clamp-3 px-2">
                                                                 {product.description}
                                                             </p>
                                                         )}
@@ -215,7 +215,7 @@ export default function ProductsDropdown({
                                                                 e.stopPropagation();
                                                                 setSelectedModule(product as Product);
                                                             }}
-                                                            className="px-4 py-1.5 bg-white text-[#2A3E5C] hover:bg-white/90 rounded-md text-[10px] font-bold transition-all flex items-center gap-1.5 shadow-lg active:scale-95"
+                                                            className="px-4 py-1.5 bg-white text-[#2A3E5C] hover:bg-white/90 rounded-md text-sm font-bold transition-all flex items-center gap-1.5 shadow-lg active:scale-95"
                                                         >
                                                             View Details <ChevronsRight className="w-3.5 h-3.5" />
                                                         </button>
@@ -223,7 +223,7 @@ export default function ProductsDropdown({
                                                 </div>
 
                                                 {/* Text Module Name - Outside Card */}
-                                                <h4 className="font-bold text-[11px] text-slate-700 leading-tight text-center px-1 group-hover:text-[#2A3E5C] transition-colors">
+                                                <h4 className="font-bold text-base text-slate-700 leading-tight text-center px-1 group-hover:text-[#2A3E5C] transition-colors">
                                                     {product.name}
                                                 </h4>
                                             </div>

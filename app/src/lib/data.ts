@@ -475,7 +475,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Website Management System",
                 href: "#",
                 icon: "Globe",
-                image: "/assets/website_management_dashboard.png",
+                image: "/assets/University Management Interface.png",
                 description: "Empower non-technical staff to keep the institutional website dynamic and up-to-date. Manage news, events, faculty profiles, and notifications centrally without writing a single line of code.",
                 benefits: [
                     "User-friendly CMS designed for educational content.",
@@ -492,7 +492,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Lapses & Grievance Management",
                 href: "#",
                 icon: "MessageCircleWarning",
-                image: "/assets/grievance_management_dashboard.png",
+                image: "/assets/admin_preview.png",
                 description: "Foster a transparent and trust-based environment with a confidential grievance redressal mechanism. Ensure that every voice is heard and every issue is resolved within a defined timeline.",
                 benefits: [
                     "Multi-channel complaint lodging (Web, Mobile, Email).",
@@ -509,7 +509,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "360° Feedback System",
                 href: "#",
                 icon: "MessagesSquare",
-                image: "/assets/feedback_360_dashboard.png",
+                image: "/assets/student_preview.png",
                 description: "Drive continuous quality improvement by collecting holistic feedback from all stakeholders—students, faculty, alumni, parents, and employers. Turn perceptions into actionable data.",
                 benefits: [
                     "Customizable survey templates for Course/Faculty/Infra.",
@@ -526,7 +526,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Doc Tracking & Journey",
                 href: "#",
                 icon: "FileSearch",
-                image: "/assets/doc_tracking_dashboard.png",
+                image: "/assets/finance_preview.png",
                 description: "End the chaos of lost files and delayed approvals. This module tracks the entire lifecycle of every application and file within the higher education institute, providing real-time status visibility to all stakeholders.",
                 benefits: [
                     "Unique tracking ID for every file/application.",
@@ -543,7 +543,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Guest House & Hall Booking",
                 href: "#",
                 icon: "Hotel",
-                image: "/assets/guest_house_booking_dashboard.png",
+                image: "/assets/hero_timetable.png",
                 description: "Maximize the utilization of your physical assets. A digital reservation system for guest houses, seminar halls, and vehicles that eliminates double-bookings and streamlines billing.",
                 benefits: [
                     "Visual calendar view of resource availability.",
@@ -560,6 +560,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Event Management Program",
                 href: "#",
                 icon: "CalendarHeart",
+                image: "/assets/HeroServices.png",
                 description: "From academic conferences to cultural fests, plan and execute events flawlessly. Manage registrations, venue booking, certificates, and participant feedback in one platform.",
                 benefits: [
                     "Online event publishing and participant registration.",
@@ -576,6 +577,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Convocation Management",
                 href: "#",
                 icon: "PartyPopper",
+                image: "/assets/student_life.png",
                 description: "Streamline the most important day for your students. Manage the entire convocation workflow from list generation and degree verification to seat allocation and medal distribution.",
                 benefits: [
                     "Automated eligible student list generation.",
@@ -592,6 +594,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "National & Int. Linkages",
                 href: "#",
                 icon: "Link",
+                image: "/assets/partner_university.png",
                 description: "Strengthen your global footprint by managing collaborations effectively. Track MoUs, student exchange programs, and joint research initiatives to maximize their impact.",
                 benefits: [
                     "Digital repository of all MoUs and agreements.",
@@ -608,6 +611,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Communication System",
                 href: "#",
                 icon: "Megaphone",
+                image: "/assets/Visual_services.png",
                 description: "Bridge the communication gap. A unified broadcast system that ensures the right information reaches the right people at the right time via App, Email, and SMS.",
                 benefits: [
                     "Targeted notifications (Dept-wise, Year-wise, etc.).",
@@ -624,6 +628,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Workflow Management",
                 href: "#",
                 icon: "GitMerge",
+                image: "/assets/WorkflowBuilder_alumni.png",
                 description: "Transform rigid bureaucratic processes into agile digital workflows. Create custom approval paths for any request type, ensuring transparency and accountability at every step.",
                 benefits: [
                     "Drag-and-drop workflow designer.",
@@ -640,6 +645,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Campus Security (Visitor)",
                 href: "#",
                 icon: "ShieldAlert",
+                image: "/assets/Smart Data Collection.png",
                 description: "Secure your campus perimeter with a digital visitor management system. Replace manual registers with digital logs, ensuring only authorized personnel enter the premises.",
                 benefits: [
                     "Digital visitor entry with photo and ID capture.",
@@ -656,6 +662,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Impact Study Management",
                 href: "#",
                 icon: "Target",
+                image: "/assets/Actionable Insights.png",
                 description: "Move beyond operations to outcomes. Measure the tangible impact of your institution's initiatives, community outreach, and research on society and stakeholders.",
                 benefits: [
                     "Framework for defining and tracking impact metrics.",
@@ -681,6 +688,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Education CRM",
                 href: "#",
                 icon: "Megaphone",
+                image: "/assets/admission_prediction_dashboard.png",
                 description: "This module manages student lead and inquiry lifecycle. Prospective student interactions are tracked centrally.",
                 benefits: [
                     "Automated follow-ups improve conversion rates.",
@@ -697,6 +705,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Online Entrance Exam",
                 href: "#",
                 icon: "Laptop",
+                image: "/assets/exam_preview.png",
                 description: "This system conducts secure online entrance exams. Exam registration and scheduling are automated.",
                 benefits: [
                     "Question delivery is controlled and secure.",
@@ -713,6 +722,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Pre-Registration & Eligibility",
                 href: "#",
                 icon: "FileCheck",
+                image: "/assets/student_intro.png",
                 description: "This module simplifies pre-admission processes. Candidates register online with minimal effort.",
                 benefits: [
                     "Eligibility rules are validated automatically.",
@@ -729,6 +739,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Student Information System",
                 href: "#",
                 icon: "Users",
+                image: "/assets/student_preview.png",
                 description: "This system is the core student data repository. Academic, personal, and administrative records are centralized.",
                 benefits: [
                     "Data consistency is maintained across modules.",
@@ -745,6 +756,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Admission & Migration",
                 href: "#",
                 icon: "UserPlus",
+                image: "/assets/University Management Dashboard.png",
                 description: "This module manages admissions and transfers digitally. Application processing follows structured workflows.",
                 benefits: [
                     "Seat allocation is automated and transparent.",
@@ -761,6 +773,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Academic Data Configuration",
                 href: "#",
                 icon: "Settings",
+                image: "/assets/admin_preview.png",
                 description: "This system defines academic structures digitally. Programs, courses, credits, and semesters are configured.",
                 benefits: [
                     "Regulatory compliance is ensured.",
@@ -777,6 +790,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Attendance Tracking",
                 href: "#",
                 icon: "Clock",
+                image: "/assets/timetable_attendance_dashboard.png",
                 description: "This module monitors student and staff attendance. Multiple attendance modes are supported.",
                 benefits: [
                     "Real-time data ensures accuracy.",
@@ -793,6 +807,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Hostel & Accommodation",
                 href: "#",
                 icon: "Home",
+                image: "/assets/institution1_inventory.png",
                 description: "This system manages hostel operations digitally. Room allocation follows defined policies.",
                 benefits: [
                     "Occupancy is tracked in real time.",
@@ -809,6 +824,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Extracurricular Management",
                 href: "#",
                 icon: "Trophy",
+                image: "/assets/student_life.png",
                 description: "This module tracks student participation beyond academics. Clubs, sports, and activities are managed centrally.",
                 benefits: [
                     "Participation records support holistic evaluation.",
@@ -825,6 +841,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Career Counseling",
                 href: "#",
                 icon: "Briefcase",
+                image: "/assets/Hero_Career.png",
                 description: "This system supports student career readiness. Counseling sessions are scheduled digitally.",
                 benefits: [
                     "Skill development activities are tracked.",
@@ -841,6 +858,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Student Portal",
                 href: "#",
                 icon: "Layout",
+                image: "/assets/student_preview.png",
                 description: "This portal provides students centralized access. Academic records are available anytime.",
                 benefits: [
                     "Fee payments and applications are simplified.",
@@ -857,6 +875,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Mobile App",
                 href: "#",
                 icon: "Smartphone",
+                image: "/assets/University Management Interface.png",
                 description: "This app extends ERP access on mobile devices. Students and staff access information anytime.",
                 benefits: [
                     "Push notifications ensure instant alerts.",
@@ -873,6 +892,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Club Management",
                 href: "#",
                 icon: "Users",
+                image: "/assets/what_we_1_about.png",
                 description: "This module manages academic and cultural clubs. Membership registration is digitized.",
                 benefits: [
                     "Activity planning and approvals are streamlined.",
@@ -889,6 +909,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Student Transfer/Migration",
                 href: "#",
                 icon: "ArrowRightLeft",
+                image: "/assets/University Campus Technology.png",
                 description: "This system manages student movement between institutions. Transfer requests are processed digitally.",
                 benefits: [
                     "Document verification is automated.",
@@ -914,6 +935,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Online Exam Form & Admit Card",
                 href: "#",
                 icon: "FileText",
+                image: "/assets/exam_preview.png",
                 description: "This module digitizes exam application and admit card generation. Students submit exam forms online with validation checks.",
                 benefits: [
                     "Students submit exam forms online with validation checks.",
@@ -933,6 +955,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Pre, On & Post Exam Auto",
                 href: "#",
                 icon: "Settings",
+                image: "/assets/reports_engine_dashboard.png",
                 description: "This system automates the complete examination lifecycle. Exam schedules and workflows are configured centrally.",
                 benefits: [
                     "Exam schedules and workflows are configured centrally.",
@@ -952,6 +975,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Exam Centre Management",
                 href: "#",
                 icon: "MapPin",
+                image: "/assets/institution2_inventory.png",
                 description: "This module manages exam centers and capacity planning. Center allocation is automated based on rules.",
                 benefits: [
                     "Center allocation is automated based on rules.",
@@ -971,6 +995,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Digital Question Bank",
                 href: "#",
                 icon: "Database",
+                image: "/assets/Smart Data Collection.png",
                 description: "This system manages secure question repositories. Questions are categorized by subject and difficulty.",
                 benefits: [
                     "Questions are categorized by subject and difficulty.",
@@ -990,6 +1015,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "On-Screen Evaluation",
                 href: "#",
                 icon: "MonitorCheck",
+                image: "/assets/analytics_preview.png",
                 description: "This module enables digital answer script evaluation. Evaluators assess scripts securely online.",
                 benefits: [
                     "Evaluators assess scripts securely online.",
@@ -1009,6 +1035,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Internal Assessment Marks",
                 href: "#",
                 icon: "UploadCloud",
+                image: "/assets/teacher_performance_analytics_dashboard.png",
                 description: "This system digitizes internal assessment entry. Faculty submit marks securely online.",
                 benefits: [
                     "Faculty submit marks securely online.",
@@ -1028,6 +1055,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Result Processing",
                 href: "#",
                 icon: "GraduationCap",
+                image: "/assets/academic_reporting_dashboard.png",
                 description: "This module automates result computation. Marks aggregation follows academic rules.",
                 benefits: [
                     "Marks aggregation follows academic rules.",
@@ -1047,6 +1075,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Rechecking & Reassessment",
                 href: "#",
                 icon: "RefreshCw",
+                image: "/assets/Visual_services.png",
                 description: "This system manages result re-evaluation requests. Students apply digitally for rechecking.",
                 benefits: [
                     "Students apply digitally for rechecking.",
@@ -1075,6 +1104,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Learning Management System",
                 href: "#",
                 icon: "BookOpen",
+                image: "/assets/learning_preview.png",
                 description: "This platform delivers digital learning experiences. Courses are hosted with multimedia content.",
                 benefits: [
                     "Courses are hosted with multimedia content.",
@@ -1091,6 +1121,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Academic & Lesson Planning",
                 href: "#",
                 icon: "CalendarDays",
+                image: "/assets/Next-Gen Learning.png",
                 description: "This module supports structured academic planning. Faculty prepare lesson plans digitally.",
                 benefits: [
                     "Course coverage is monitored in real time.",
@@ -1107,6 +1138,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Course & Content Creation",
                 href: "#",
                 icon: "FileEdit",
+                image: "/assets/Smart Learning Environment.png",
                 description: "This system enables digital course development. Faculty create structured learning content.",
                 benefits: [
                     "Multimedia resources enhance delivery.",
@@ -1123,6 +1155,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Assessment & Rubrics",
                 href: "#",
                 icon: "ClipboardCheck",
+                image: "/assets/student_performance_analytics_dashboard.png",
                 description: "This module standardizes assessment design. Rubrics define clear evaluation criteria.",
                 benefits: [
                     "Assessment content aligns with learning outcomes.",
@@ -1139,6 +1172,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Curriculum Management",
                 href: "#",
                 icon: "BookCopy",
+                image: "/assets/admin_preview.png",
                 description: "This system manages curriculum structures digitally. Syllabus versions are controlled centrally.",
                 benefits: [
                     "Regulatory alignment is ensured.",
@@ -1155,6 +1189,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Outcome-Based Education",
                 href: "#",
                 icon: "Boxes",
+                image: "/assets/performance_analytics_dashboard.png",
                 description: "This module implements OBE frameworks effectively. Program outcomes are mapped digitally.",
                 benefits: [
                     "Course outcomes align with objectives.",
@@ -1171,6 +1206,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Choice-Based Credit (CBCS)",
                 href: "#",
                 icon: "MousePointerClick",
+                image: "/assets/effortless_timetable.png",
                 description: "This system supports flexible academic choices. Students select courses digitally.",
                 benefits: [
                     "Credit rules are enforced automatically.",
@@ -1187,6 +1223,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Personalized Adaptive Learning",
                 href: "#",
                 icon: "Lightbulb",
+                image: "/assets/ai_insights_prediction_dashboard.png",
                 description: "This platform personalizes learning paths. Student performance data drives adaptation.",
                 benefits: [
                     "Content adjusts to learner needs.",
@@ -1203,6 +1240,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Feedback Management",
                 href: "#",
                 icon: "MessageSquare",
+                image: "/assets/student_preview.png",
                 description: "This system manages structured feedback collection. Multiple feedback cycles are supported.",
                 benefits: [
                     "Anonymous responses ensure honesty.",
@@ -1219,6 +1257,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Digital Library & KRC",
                 href: "#",
                 icon: "Library",
+                image: "/assets/institution3_inventory.png",
                 description: "This module manages digital academic resources. E-books, journals, and databases are centralized.",
                 benefits: [
                     "Access is role-based and secure.",
@@ -1235,6 +1274,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Internship & Placement",
                 href: "#",
                 icon: "Briefcase",
+                image: "/assets/Hero_Career.png",
                 description: "This system manages experiential learning programs. Internship opportunities are tracked centrally.",
                 benefits: [
                     "Student applications are digitized.",
@@ -1260,6 +1300,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Fee Management",
                 href: "#",
                 icon: "IndianRupee",
+                image: "/assets/finance_preview.png",
                 description: "Comprehensive fee collection system covering tuition, hostel, mess, and exam fees with online payment integration.",
                 benefits: [
                     "Automated receipt generation & reconciliation.",
@@ -1276,6 +1317,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Govt. Scholarship Mgmt",
                 href: "#",
                 icon: "Award",
+                image: "/assets/institution4_inventory.png",
                 description: "Streamlined processing of government and private scholarships, ensuring eligible students receive funds on time.",
                 benefits: [
                     "Automated eligibility verification.",
@@ -1292,6 +1334,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Payroll & Salary",
                 href: "#",
                 icon: "Banknote",
+                image: "/assets/Employee_Benifits_Career.png",
                 description: "Automated payroll generation linked with attendance, taxes, and deductions for teaching and non-teaching staff.",
                 benefits: [
                     "One-click salary slip generation.",
@@ -1308,6 +1351,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Employee Records & Info",
                 href: "#",
                 icon: "Users",
+                image: "/assets/admin_preview.png",
                 description: "Centralized database for all employee information combined with smart biometric/RFID attendance tracking.",
                 benefits: [
                     "Digital service book maintenance.",
@@ -1324,6 +1368,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Leave & Workflow",
                 href: "#",
                 icon: "CalendarCheck",
+                image: "/assets/timetable_attendance_dashboard.png",
                 description: "Digital workflow for leave applications and approvals, replacing manual paper forms.",
                 benefits: [
                     "Paperless leave application process.",
@@ -1340,6 +1385,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Recruitment & Onboarding",
                 href: "#",
                 icon: "Briefcase",
+                image: "/assets/Hero_Partners.png",
                 description: "End-to-end management of the hiring process from job posting to candidate onboarding.",
                 benefits: [
                     "Centralized applicant tracking system.",
@@ -1356,6 +1402,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Financial Accounting",
                 href: "#",
                 icon: "Calculator",
+                image: "/assets/finance_preview.png",
                 description: "Complete double-entry accounting system tailored for educational institutions.",
                 benefits: [
                     "Automated ledgers and trial balance.",
@@ -1372,6 +1419,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Contingency Fund Mgmt",
                 href: "#",
                 icon: "Coins",
+                image: "/assets/institution1_inventory.png",
                 description: "Track and manage emergency and contingency funds to ensure financial stability.",
                 benefits: [
                     "Separate fund allocation tracking.",
@@ -1388,6 +1436,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Budget Module",
                 href: "#",
                 icon: "PieChart",
+                image: "/assets/analytics_preview.png",
                 description: "Plan, allocate, and monitor department-wise budgets to prevent overspending.",
                 benefits: [
                     "Department-wise budget allocation.",
@@ -1404,6 +1453,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Appraisal & Performance",
                 href: "#",
                 icon: "TrendingUp",
+                image: "/assets/performance_analytics_dashboard.png",
                 description: "360-degree performance evaluation system for faculty and staff career progression.",
                 benefits: [
                     "Goal setting and KRA mapping.",
@@ -1420,6 +1470,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Org Structure Mgmt",
                 href: "#",
                 icon: "Network",
+                image: "/assets/University Management Interface.png",
                 description: "Define and manage the hierarchy and functional structure of the institution covering all departments and roles.",
                 benefits: [
                     "Clear reporting lines.",
@@ -1436,6 +1487,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Compliance Management",
                 href: "#",
                 icon: "Gavel",
+                image: "/assets/accreditation_compliance_dashboard.png",
                 description: "Track and ensure adherence to UGC, AICTE, NAAC, and government statutory regulations.",
                 benefits: [
                     "Automated compliance alerts.",
@@ -1452,6 +1504,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Committee Management",
                 href: "#",
                 icon: "Users2",
+                image: "/assets/stakeholder_dashboards.png",
                 description: "Manage various institutional committees, their members, meetings, and minutes.",
                 benefits: [
                     "Member role assignment.",
@@ -1468,6 +1521,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Institute Handbook",
                 href: "#",
                 icon: "Book",
+                image: "/assets/learning_preview.png",
                 description: "Digital access to institute policies, code of conduct, and operational guidelines for all stakeholders.",
                 benefits: [
                     "Easy access to rules & policies.",
@@ -1493,6 +1547,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Ph.D. Lifecycle Module",
                 href: "#",
                 icon: "GraduationCap",
+                image: "/assets/research_preview.png",
                 description: "A complete digital lifecycle management system for doctoral programs, from scholar enrollment to final degree award.",
                 benefits: [
                     "Scholar registration and coursework tracked digitally.",
@@ -1509,6 +1564,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Research & Collaboration",
                 href: "#",
                 icon: "Network",
+                image: "/assets/Hero_Partners.png",
                 description: "A centralized platform to foster academic collaboration, track projects, managed funding, and document research output.",
                 benefits: [
                     "Projects and government grants tracked centrally.",
@@ -1525,6 +1581,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Institutional Analytics",
                 href: "#",
                 icon: "BrainCircuit",
+                image: "/assets/institutional_analytics_dashboard.png",
                 description: "Advanced AI-driven intelligence to analyze institutional data, identify trends, and support strategic decision-making.",
                 benefits: [
                     "AI models analyze performance across departments.",
@@ -1541,6 +1598,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "App & Database Security",
                 href: "#",
                 icon: "ShieldCheck",
+                image: "/assets/Smart Data Collection.png",
                 description: "Bank-grade security infrastructure protecting your institutional data with encryption, access controls, and constant monitoring.",
                 benefits: [
                     "Data encryption protects sensitive info.",
@@ -1557,6 +1615,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Neo4j - Knowledge Graph",
                 href: "#",
                 icon: "Share2",
+                image: "/assets/ai_insights_prediction_dashboard.png",
                 description: "Utilizes graph database technology to map complex relationships between research entities, funding bodies, and citations.",
                 benefits: [
                     "Visualizes complex academic relationships.",
@@ -1573,6 +1632,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Report Engine",
                 href: "#",
                 icon: "FileBarChart",
+                image: "/assets/Actionable Insights.png",
                 description: "A powerful, drag-and-drop reporting tool allowing customized report generation for any metric within the university system.",
                 benefits: [
                     "Custom reports created without coding.",
@@ -1589,6 +1649,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Template Engine",
                 href: "#",
                 icon: "LayoutTemplate",
+                image: "/assets/admin_preview.png",
                 description: "Dynamic document generation system for certificates, transcripts, and official letters with customizable placeholders.",
                 benefits: [
                     "Standardizes official document formats.",
@@ -1605,6 +1666,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Recommendation Engine",
                 href: "#",
                 icon: "Sparkles",
+                image: "/assets/predictive_analytics_dashboard.png",
                 description: "AI-driven system suggesting courses, research topics, and library resources based on user behavior and academic profile.",
                 benefits: [
                     "Personalizes student learning paths.",
@@ -1621,6 +1683,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Security TLS Maintaining",
                 href: "#",
                 icon: "Shield",
+                image: "/assets/University Campus Technology.png",
                 description: "Ensures all data transmission is encrypted using latest Transport Layer Security (TLS) protocols, guaranteeing privacy.",
                 benefits: [
                     "End-to-end encryption for all data transit.",
@@ -1637,6 +1700,7 @@ export const PRODUCTS_DROPDOWN_DATA: ProductCategory[] = [
                 name: "Quality Assurance",
                 href: "#",
                 icon: "ClipboardCheck",
+                image: "/assets/Smart Learning Environment.png",
                 description: "Integrated automated testing and monitoring to ensure high system availability, performance, and bug-free operations.",
                 benefits: [
                     "Automated regression testing for stable updates.",
